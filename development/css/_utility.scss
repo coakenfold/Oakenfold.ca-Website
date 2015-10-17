@@ -1,0 +1,46 @@
+.u-clear { clear: both;}
+
+.select-trans::selection { background-color: transparent;}
+
+.u-ellipsis {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.u-center {
+    text-align: center;
+}
+
+.u-dn,
+.is-hidden {
+    display: none !important;
+}
+
+.is-not-ready {
+    opacity: 0.25 !important;
+    cursor: progress !important;
+}
+
+.is-empty {
+    opacity: 0.5;
+}
+
+.u-overlay {
+    background: #000;
+    background: rgba(0, 0, 0, 0.25);
+    bottom: 0;
+    display: none;
+    left: 0;
+    left: 0;
+    opacity: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 2;
+
+    &[data-state='show'] {
+        display: block;
+        opacity: 1;
+    }
+}

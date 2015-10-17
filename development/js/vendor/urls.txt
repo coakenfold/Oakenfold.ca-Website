@@ -1,0 +1,11 @@
+bluebird: https://github.com/petkaantonov/bluebird/releases
+foundation: https://github.com/zurb/foundation/releases, https://github.com/zurb/bower-foundation/releases (for vendor .js)
+jquery: https://jquery.com/download/
+moment: https://github.com/moment/moment/releases
+pubsub: https://github.com/mroderick/PubSubJS/tags
+querystring: https://github.com/sindresorhus/query-string/releases
+require: http://requirejs.org/docs/download.html
+slick: https://github.com/kenwheeler/slick/releases
+underscore: https://github.com/jashkenas/underscore/releases
+waypoints: https://github.com/imakewebthings/waypoints/releases
+webshim: https://github.com/aFarkas/webshim/releases

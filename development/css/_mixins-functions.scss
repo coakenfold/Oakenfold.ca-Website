@@ -1,0 +1,459 @@
+// @mixin proxima-thin()
+//
+// <code>@include proxima-thin();</code>
+//
+// Compatibility untested.
+//
+// Styleguide 1.4
+// --------------------------------------------------------------
+
+@font-face {
+    font-family: 'ProximaNovaT-Thin';
+    src: url($CDN + 'fonts/proxima/proxima-nova-thin/webfonts/proxima-nova-thin.eot');
+    src: url($CDN + 'fonts/proxima/proxima-nova-thin/webfonts/proxima-nova-thin.eot?#iefix') format('embedded-opentype'),
+         url($CDN + 'fonts/proxima/proxima-nova-thin/webfonts/proxima-nova-thin.woff2') format('woff2'),
+         url($CDN + 'fonts/proxima/proxima-nova-thin/webfonts/proxima-nova-thin.woff') format('woff'),
+         url($CDN + 'fonts/proxima/proxima-nova-thin/webfonts/proxima-nova-thin.ttf') format('truetype'),
+         url($CDN + 'fonts/proxima/proxima-nova-thin/webfonts/proxima-nova-thin.svg#ywftsvg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+} 
+
+@mixin proxima-thin() {
+    font-family: 'ProximaNovaT-Thin', sans-serif;
+}
+
+// @mixin proxima-light()
+//
+// <code>@include proxima-light();</code>
+//
+// Compatibility untested.
+//
+// Styleguide 1.4
+// --------------------------------------------------------------
+
+@font-face {
+    font-family: 'ProximaNova-Light';
+    src: url($CDN + 'fonts/proxima/proxima-nova-light/webfonts/proxima-nova-light.eot');
+    src: url($CDN + 'fonts/proxima/proxima-nova-light/webfonts/proxima-nova-light.eot?#iefix') format('embedded-opentype'),
+         url($CDN + 'fonts/proxima/proxima-nova-light/webfonts/proxima-nova-light.woff2') format('woff2'),
+         url($CDN + 'fonts/proxima/proxima-nova-light/webfonts/proxima-nova-light.woff') format('woff'),
+         url($CDN + 'fonts/proxima/proxima-nova-light/webfonts/proxima-nova-light.ttf') format('truetype'),
+         url($CDN + 'fonts/proxima/proxima-nova-light/webfonts/proxima-nova-light.svg#ywftsvg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+} 
+
+@mixin proxima-light() {
+    font-family: 'ProximaNova-Light', sans-serif;
+}
+
+// @mixin proxima-regular()
+//
+// <code>@include proxima-regular();</code>
+//
+// Compatibility untested.
+//
+// Styleguide 1.4
+// --------------------------------------------------------------
+
+@font-face {
+    font-family: 'ProximaNova-Regular';
+    src: url($CDN + 'fonts/proxima/proxima-nova-regular/webfonts/proxima-nova-regular.eot');
+    src: url($CDN + 'fonts/proxima/proxima-nova-regular/webfonts/proxima-nova-regular.eot?#iefix') format('embedded-opentype'),
+         url($CDN + 'fonts/proxima/proxima-nova-regular/webfonts/proxima-nova-regular.woff2') format('woff2'),
+         url($CDN + 'fonts/proxima/proxima-nova-regular/webfonts/proxima-nova-regular.woff') format('woff'),
+         url($CDN + 'fonts/proxima/proxima-nova-regular/webfonts/proxima-nova-regular.ttf') format('truetype'),
+         url($CDN + 'fonts/proxima/proxima-nova-regular/webfonts/proxima-nova-regular.svg#ywftsvg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+} 
+
+@mixin proxima-regular() {
+    font-family: 'ProximaNova-Regular', sans-serif;
+}
+
+// @mixin proxima-semibold()
+//
+// <code>@include proxima-semibold();</code>
+//
+// Compatibility untested.
+//
+// Styleguide 1.4
+// --------------------------------------------------------------
+@font-face {
+    font-family: 'ProximaNova-Semibold';
+    src: url($CDN + 'fonts/proxima/proxima-nova-semibold/webfonts/proxima-nova-semibold.eot');
+    src: url($CDN + 'fonts/proxima/proxima-nova-semibold/webfonts/proxima-nova-semibold.eot?#iefix') format('embedded-opentype'),
+         url($CDN + 'fonts/proxima/proxima-nova-semibold/webfonts/proxima-nova-semibold.woff2') format('woff2'),
+         url($CDN + 'fonts/proxima/proxima-nova-semibold/webfonts/proxima-nova-semibold.woff') format('woff'),
+         url($CDN + 'fonts/proxima/proxima-nova-semibold/webfonts/proxima-nova-semibold.ttf') format('truetype'),
+         url($CDN + 'fonts/proxima/proxima-nova-semibold/webfonts/proxima-nova-semibold.svg#ywftsvg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@mixin proxima-semibold() {
+    font-family: "ProximaNova-Semibold", sans-serif;
+}
+
+// @mixin proxima-bold()
+//
+// <code>@include proxima-bold();</code>
+//
+// Compatibility untested.
+//
+// Styleguide 1.4
+// --------------------------------------------------------------
+@font-face {
+    font-family: 'ProximaNova-Bold';
+    src: url($CDN + 'fonts/proxima/proxima-nova-bold/webfonts/proxima-nova-bold.eot');
+    src: url($CDN + 'fonts/proxima/proxima-nova-bold/webfonts/proxima-nova-bold.eot?#iefix') format('embedded-opentype'),
+         url($CDN + 'fonts/proxima/proxima-nova-bold/webfonts/proxima-nova-bold.woff2') format('woff2'),
+         url($CDN + 'fonts/proxima/proxima-nova-bold/webfonts/proxima-nova-bold.woff') format('woff'),
+         url($CDN + 'fonts/proxima/proxima-nova-bold/webfonts/proxima-nova-bold.ttf') format('truetype'),
+         url($CDN + 'fonts/proxima/proxima-nova-bold/webfonts/proxima-nova-bold.svg#ywftsvg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@mixin proxima-bold() {
+    font-family: "ProximaNova-Bold", sans-serif;
+}
+
+// @mixin proxima-extra-bold()
+//
+// <code>@include proxima-extra-bold();</code>
+//
+// Compatibility untested.
+//
+// Styleguide 1.4
+// --------------------------------------------------------------
+@font-face {
+    font-family: 'ProximaNova-Extrabld';
+    src: url($CDN + 'fonts/proxima/proxima-nova-extra-bold/webfonts/proxima-nova-extrabold.eot');
+    src: url($CDN + 'fonts/proxima/proxima-nova-extra-bold/webfonts/proxima-nova-extrabold.eot?#iefix') format('embedded-opentype'),
+         url($CDN + 'fonts/proxima/proxima-nova-extra-bold/webfonts/proxima-nova-extrabold.woff2') format('woff2'),
+         url($CDN + 'fonts/proxima/proxima-nova-extra-bold/webfonts/proxima-nova-extrabold.woff') format('woff'),
+         url($CDN + 'fonts/proxima/proxima-nova-extra-bold/webfonts/proxima-nova-extrabold.ttf') format('truetype'),
+         url($CDN + 'fonts/proxima/proxima-nova-extra-bold/webfonts/proxima-nova-extrabold.svg#ywftsvg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@mixin proxima-bold() {
+    font-family: "ProximaNova-Extrabld", sans-serif;
+}
+
+// @mixin proxima-black()
+//
+// <code>@include proxima-black();</code>
+//
+// Compatibility untested.
+//
+// Styleguide 1.4
+// --------------------------------------------------------------
+@font-face {
+    font-family: 'ProximaNova-Black';
+    src: url($CDN + 'fonts/proxima/proxima-nova-black/webfonts/proxima-nova-black.eot');
+    src: url($CDN + 'fonts/proxima/proxima-nova-black/webfonts/proxima-nova-black.eot?#iefix') format('embedded-opentype'),
+         url($CDN + 'fonts/proxima/proxima-nova-black/webfonts/proxima-nova-black.woff2') format('woff2'),
+         url($CDN + 'fonts/proxima/proxima-nova-black/webfonts/proxima-nova-black.woff') format('woff'),
+         url($CDN + 'fonts/proxima/proxima-nova-black/webfonts/proxima-nova-black.ttf') format('truetype'),
+         url($CDN + 'fonts/proxima/proxima-nova-black/webfonts/proxima-nova-black.svg#ywftsvg') format('svg');
+    font-weight: normal;
+    font-style: normal; 
+}
+
+@mixin proxima-black() {
+    font-family: "ProximaNova-Black",sans-serif;
+}
+
+
+// @mixin line-height($font-size, $line-height)
+//
+// <code>@include line-height(15, 40);</code>
+//
+// $font-size - TODO
+// $line-height - TODO
+//
+// Compatibility untested.
+//
+// Styleguide 1.4
+// --------------------------------------------------------------
+@mixin line-height($font-size, $line-height) {
+    line-height: $line-height/$font-size;
+};
+
+// @mixin text-replace()
+//
+// Hides text for image replacement
+//
+// <code>@include text-replace();</code>
+//
+// Compatibility untested.
+//
+// Styleguide 1.4
+// --------------------------------------------------------------
+@mixin text-replace() {
+    // text-align: left;
+    // text-indent: -100%;
+    // overflow: hidden;
+
+    // Zeldman
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+};
+
+
+
+
+
+// @mixin svg-bg($width-height: true)
+//
+// Prepares an element to be used as an svg icon
+//
+// EG: To exclude the <code>width</code> & <code>height</code> declarations you would call:
+//
+// <code>@include svg-bg(false);</code>
+//
+// $width-height - Flag to include <code>width: 100%; height: 100%;</code>. Defaults to true;
+//
+// Compatibility untested.
+//
+// Styleguide 1.4
+// --------------------------------------------------------------
+@mixin svg-bg($width-height: true) {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    display: inline-block;
+    vertical-align: top;
+    @if $width-height == true {
+        width: 100%;
+        height: 100%;
+    }
+};
+
+// @mixin rem($property, $values...)
+//
+// Creates declarations that use rem units with a px fallback
+//
+// EG: If the <code>html</code> <code>font-size</code> is equivalent to <code>10px</code>
+// to generate a <code>margin</code> shorthand equal to  <code>16px, auto</code> you would call:
+//
+//<code>@include rem(margin, 1.6, auto);</code>
+//
+// Will <code>error</code> with <code>font</code> shorthand
+//
+// Will <code>warn</code> with <code>line-height</code>, or any variation of <code>border</code>
+//
+// $property - font-size, margin-top, margin, etc.
+// $values - single or multiple values using rem multiplier.
+//
+// Compatibility untested.
+//
+// Styleguide 1.4
+// --------------------------------------------------------------
+@function strip-unit($num) {
+    @return $num / ($num * 0 + 1);
+}
+
+@mixin rem($property, $values...) {
+
+    @if $property == font {
+        @warn "#{$property}: We don't support this shorthand. Besides, IE 9 & IE 10 do not support rem units when used in the font shorthand property (the entire declaration is ignored) or when used on pseudo elements.";
+    }
+    @if $property == line-height {
+        @warn "#{$property}: IE 9, 10 and 11 do not support rem units when used in the 'line-height' property when used on :before and :after pseudo elements (https://connect.microsoft.com/IE/feedback/details/776744).";
+        @warn "#{$property}: Use the line-height mixin instead, eg: @include line-height($unitless-font-size, $unitless-desired-line-height)";
+    }
+
+    $error-chrome: 0;
+    @if $property == border {
+        $error-chrome: 1;
+    }
+    @if $property == border-top {
+        $error-chrome: 1;
+    }
+    @if $property == border-right {
+        $error-chrome: 1;
+    }
+    @if $property == border-bottom {
+        $error-chrome: 1;
+    }
+    @if $property == border-left {
+        $error-chrome: 1;
+    }
+    @if $error-chrome == 1 {
+        @warn "#{$property}: We don't support this shorthand. Besides, there is a Chrome bug with borders sized in rem: they disappear when the page is zoomed out.";
+    }
+
+    $max: length($values);
+    $px-values: '';
+    $rem-values: '';
+
+    @for $i from 1 through $max {
+        $cur-prop: nth($values, $i);
+        @if $cur-prop == auto {
+            $px-values: #{$px-values + auto};
+
+            @if $i < $max {
+                $px-values: #{$px-values + " "};
+            }
+        } @else {
+            $value: strip-unit($cur-prop);
+            $px-values: #{$px-values + $value*10}px;
+
+            @if $i < $max {
+                $px-values: #{$px-values + " "};
+            }
+        }
+    } 
+
+    @for $i from 1 through $max {
+        $cur-prop: nth($values, $i);
+        @if $cur-prop == auto {
+            $rem-values: #{$rem-values + auto};
+
+            @if $i < $max {
+                $rem-values: #{$rem-values + " "};
+            }
+        } @else {
+            $value: strip-unit($cur-prop);
+            $rem-values: #{$rem-values + $value}rem;
+
+            @if $i < $max {
+                $rem-values: #{$rem-values + " "};
+            }
+        }
+    } 
+
+    #{$property}: $px-values; 
+    #{$property}: $rem-values; 
+}
+
+
+
+// @mixin small($css)
+//
+//    //medium
+//    @media only screen and (min-width:40.063em) {
+//    }
+//    //large
+//    @media only screen and (min-width:64.063em) {
+//    }
+// $values - single or multiple values using rem multiplier.
+//
+// Compatibility untested.
+//
+// Styleguide 1.4
+// --------------------------------------------------------------
+@mixin mq-s {
+    @media only screen {
+        @content;
+    }
+}
+
+@mixin mq-s-t {
+    @media #{$mq-s} {
+        @content;
+    }
+    
+}
+
+@mixin mq-m {
+    @media #{$mq-m} {
+        @content;
+    }
+    
+}
+
+@mixin mq-m-t {
+    @media #{$mq-m-t} {
+        @content;
+    }
+    
+}
+
+@mixin mq-m14 {
+    @media #{$mq-m14} {
+        @content;
+    }
+    
+}
+
+@mixin mq-m14u {
+    @media #{$mq-m14u} {
+        @content;
+    }
+    
+}
+
+@mixin mq-m24 {
+    @media #{$mq-m24} {
+        @content;
+    }
+    
+}
+
+@mixin mq-m24u {
+    @media #{$mq-m24u} {
+        @content;
+    }
+    
+}
+
+@mixin mq-m34 {
+    @media #{$mq-m34} {
+        @content;
+    }
+    
+}
+
+@mixin mq-m34u {
+    @media #{$mq-m34u} {
+        @content;
+    }
+    
+}
+
+@mixin mq-m44 {
+    @media #{$mq-m44} {
+        @content;
+    }
+    
+}
+
+@mixin mq-m44u {
+    @media #{$mq-m44u} {
+        @content;
+    }
+    
+}
+
+@mixin mq-l {
+    @media #{$mq-l} {
+        @content;
+    }
+    
+}
+
+
+//anim_frame(1, 10, 60, 224)
+@function anim_frame($alpha, $omega, $frame, $frames) {
+    @if $frame == 0 and $frames == 0 {
+        @return $alpha;
+    } @else if $frame == 1 and $frames == 1 {
+        @return $omega;
+    } @else {
+        $step: ($omega - $alpha)/$frames;
+        $current_step: $step * $frame;
+        @return $alpha + $current_step;
+    }
+}
+
+
+
