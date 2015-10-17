@@ -1,0 +1,2 @@
+cd ~/Documents/WebDevelopment/Oakenfold Enterprises Ltd./Website/v1
+/usr/local/bin/redis-server ./lib/redis.conf
