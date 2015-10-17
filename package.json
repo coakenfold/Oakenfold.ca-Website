@@ -3,8 +3,16 @@
   "version": "0.0.1",
   "description": "",
   "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coakenfold/Oakenfold.ca-Website.git"
+  },
   "author": "@c_oak",
-  "license": "GPL-2.0",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/coakenfold/Oakenfold.ca-Website/issues"
+  },
+  "homepage": "https://github.com/coakenfold/Oakenfold.ca-Website",
   "dependencies": {
     "good": "^6.4.0",
     "good-console": "^5.1.0",
