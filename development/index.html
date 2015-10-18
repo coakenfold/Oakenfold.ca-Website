@@ -11,6 +11,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
     <link rel="stylesheet" href="css/oakenfold.css">
+
+
+<style type="text/css">
+body {
+background-color: #4d4d4d;
+color: #B4B4B4;
+font-family: sans-serif;
+font-size: 1.6em;
+line-height: 1.2;
+margin: 0;
+}
+a {
+    color: #0d86ff;/* #ECB72F;*/
+    text-decoration: none;
+    font-weight: 100;
+}
+a:hover {
+    color: #ECB72F;
+    border-bottom: 1px solid #ECB72F;
+}
+.content {
+    max-width: 70rem;
+    margin: 0 auto;
+    padding: 1rem;
+}
+header {
+}
+footer {
+    opacity: 0.8;
+}
+footer small {
+    font-size: 0.8rem;
+    float: right;
+    clear: right;
+}
+</style>
+
 </head>
 <body>
     <!--[if lt IE 8]>
@@ -18,19 +55,75 @@
     <![endif]-->
 
     <header>
-        <h2><a href='/'>oakenfold.ca</a></h2>
-        <ul>
-            <li><a href='/'>Front Page</a></li>
-            <li><a href='/selection'>Past Items</a></li>
-        </ul>
+        <div class='content'>
+<a class='logo__container' href='/'>
+    <svg class='logo' 
+        title="&lt;!-- tbd --&gt;" 
+        version="1.1" 
+        viewBox="0 0 247.8 281.4"
+        xmlns="http://www.w3.org/2000/svg" 
+        >
+        <ellipse class="logo__space" 
+            cx="123.9" 
+            cy="140.7" 
+            rx="123.4" 
+            ry="140.2"/>
+        <circle class="logo__o" 
+            cx="141.7" 
+            cy="127.5" 
+            r="80.4"/>
+        <circle class="logo__c" 
+            cx="101.7" 
+            cy="127.5" 
+            r="80.4"/>
+    </svg>
+
+<span class='logo__txt'>oakenfold.ca</span>
+</a>
+
+<style type="text/css">
+.logo__container {
+    display: inline-block;
+    position: relative;
+    padding: 1rem 1rem 1rem 3rem;
+}
+.logo {
+position: absolute;
+top: 0.25rem;
+left: 0.25rem;
+width: 3rem;
+display: inline-block;
+z-index: 0;
+
+}
+.logo__o{
+    fill:#ECB72F;
+}
+.logo__c{
+    fill:#FFFFFF;
+}
+.logo__txt {
+    font-size: 1.6rem;
+    z-index: 1;
+    position: relative;
+    padding-left: 1rem;
+    color: #ECB72F;
+    font-weight: 100;
+}
+</style>
+
+                <ul>
+                    <li><a href='/'>Front Page</a></li>
+                    <li><a href='/selection'>Past Items</a></li>
+                </ul>
+        </div>
     </header>
 
     <div class='content js-content'>
-        &lt;!-- tbd --&gt;
     </div>
 
     <footer>
-        <small>Oakenfold Enterprises LTD.</small>
+        <div class='content'><small>Oakenfold Enterprises LTD.</small></div>
     </footer>
 
     <script data-main="js/app" src="js/require.js"></script>
