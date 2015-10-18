@@ -1,0 +1,23 @@
+- review repurcussions of gpl 3
+
+- swipe to view source could also record every click 
+-- Neat if it worked like a movie + a 'closed caption' sidebar displaying the synched screenplay, eg:
+    leave contact us. 
+    enter home.
+    clicked [id of item]
+    [meta re: item: position in a list, day & time of display, ...]
+--- see about existing record & replay systems for user interaction. ØØØ
+
+
+FLOWS
+    LOGIN
+    FORM
+    MODAL
+
+FUN THINGS
+    // SWIPE TO SHOW SOURCE?
+    FLUX
+    REACT
+    BACKBONE
+    ES6
+    DESIGN DOCS: BRANDING?

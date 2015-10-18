@@ -14,7 +14,6 @@ module.exports = {
         cwd: 'development/media/svg/source',
         src: ['**/*.svg'],
         dest: 'development/media/svg/svgmin',
-        /*ext: '.colors-want-find-mine.svg'*/
         ext: '.svg'
     }
 }
