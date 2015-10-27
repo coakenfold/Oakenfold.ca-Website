@@ -50,7 +50,8 @@
     "test": "",
     "coverage": "",
     "jshint": "./node_modules/jshint/bin/jshint -c .jshintrc --exclude-path .gitignore .",
-    "start": "PORT=8000 ./node_modules/.bin/nodemon ./development/server.js",
+    "start": "PORT=8000 ./node_modules/.bin/nodemon ./development/server-deploy.js",
+    "startDep": "PORT=8000 ./node_modules/.bin/nodemon ./development/server-deploy.js",
     "redisStart": "/usr/local/bin/redis-server ./lib/redis.conf"
   },
   "pre-commit": [

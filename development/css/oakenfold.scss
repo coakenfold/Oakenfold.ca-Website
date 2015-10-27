@@ -5,7 +5,7 @@
 // Some utility classes are found in here, eg: .clear { clear: both; }
 // --------------------------------------------------------------
 @import 'init';
-@import 'utilities';
+@import 'utility';
 
 
 // Base
@@ -15,7 +15,7 @@
 // _base.scss: mostly targeting tag selectors: a, p, div, etc.
 // --------------------------------------------------------------
 @import 'base/normalize';
-@import 'base/base';
+//@import 'base/base';
 
 
 

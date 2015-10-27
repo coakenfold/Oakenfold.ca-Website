@@ -30,22 +30,6 @@ module.exports = {
         flatten: false,
         filter: 'isFile'
     },
-    media_svg_css: {
-        cwd: 'development/media/svg/generated/grunticon',
-        src: ['*.css'],
-        dest: 'deploy/css/',
-        expand: true,
-        flatten: false,
-        filter: 'isFile'
-    },
-    media_svg_png: {
-        cwd: 'development/media/svg/generated/grunticon',
-        src: ['svg_fallback/**'],
-        dest: 'deploy/media/img/',
-        expand: true,
-        flatten: false,
-        filter: 'isFile'
-    },
     // Copy our js
     // -----------------------------------------
     js_custom: {

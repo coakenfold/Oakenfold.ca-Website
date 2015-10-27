@@ -40,84 +40,9 @@ $c3rd: 33.33%;
 @import 'colors';
 
 
-// Foundation
-// --------------------------------------------------------------
-// Some vars from above are used in _foundation_settings.scss
-@import 'foundation-settings';
-// Toggle Foundation features in here
-@import 'foundation-components';
-
-
-
-
 // Mixins & Functions
-//
-// Styleguide 1.4
 // --------------------------------------------------------------
 @import 'mixins-functions';
-
-
-// http://foundation.zurb.com/docs/javascript-utilities.html#media-queries
-meta.mq-s {
-  font-family: "/" + $mq-s + "/";
-  width: 40em;
-}
-
-meta.mq-m {
-  font-family: "/" + $mq-m + "/";
-  width: 40em;
-}
-
-meta.mq-m-t {
-  font-family: "/" + $mq-m-t + "/";
-  width: 40em;
-}
-
-meta.mq-m14 {
-  font-family: "/" + $mq-m14 + "/";
-  width: 40em;
-}
-
-meta.mq-m14u {
-  font-family: "/" + $mq-m14u + "/";
-  width: 40em;
-}
-
-meta.mq-m24 {
-  font-family: "/" + $mq-m24 + "/";
-  width: 40em;
-}
-
-meta.mq-m24u {
-  font-family: "/" + $mq-m24u + "/";
-  width: 40em;
-}
-
-meta.mq-m34 {
-  font-family: "/" + $mq-m34 + "/";
-  width: 40em;
-}
-
-meta.mq-m34u {
-  font-family: "/" + $mq-m34u + "/";
-  width: 40em;
-}
-
-meta.mq-m44 {
-  font-family: "/" + $mq-m44 + "/";
-  width: 40em;
-}
-
-meta.mq-m44u {
-  font-family: "/" + $mq-m44u + "/";
-  width: 40em;
-}
-
-meta.mq-l {
-  font-family: "/" + $mq-l + "/";
-  width: 40em;
-}
-
 
 .mq-debug {
 
@@ -138,7 +63,7 @@ meta.mq-l {
 
     .mq-debug__line::after {
         background-color: rgba(255, 255, 255, 0.8);
-        color: $black;
+        color: $b;
         font-size: 9px;
         line-height: 1;
         height: $mq-vert;

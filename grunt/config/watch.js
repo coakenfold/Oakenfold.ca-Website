@@ -4,11 +4,13 @@
 module.exports = {
     all: {
         files: [
-            'development/sass/**/*.scss',
-            '!development/sass/vendor/**/*',
+            'development/css/**/*.scss',
+            '!development/css/vendor/**/*',
             'development/js/**/*',
             '!development/js/vendor/**/*',
-            'development/html/**/*'
+            'development/html/**/*',
+            'development/index.html',
+            'development/html.html'
         ],
         tasks: ['watch-all-task'],
         options: {
@@ -18,8 +20,8 @@ module.exports = {
     },
     css: {
         files: [
-            'development/sass/**/*.scss',
-            '!development/sass/vendor/**/*'
+            'development/css/**/*.scss',
+            '!development/css/vendor/**/*'
         ],
         tasks: ['watch-css-task'],
         options: {
@@ -30,7 +32,7 @@ module.exports = {
     },
     lint: {
         files: [
-            'development/sass/**/*.scss'
+            'development/css/**/*.scss'
         ],
         tasks: ['watch-lint-task'],
         options: {

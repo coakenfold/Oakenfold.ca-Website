@@ -6,10 +6,9 @@ module.exports = function(grunt) {
     grunt.registerTask('watch-css-task', [
         //'clean',
         'sass',
+        'newer:copy:html',
         'newer:copy:media',
         'newer:copy:media_svg',
-        'newer:copy:media_svg_css',
-        'newer:copy:media_svg_png',
         'autoprefixer:deploy'
     ]);
 };

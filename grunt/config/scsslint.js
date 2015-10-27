@@ -3,19 +3,17 @@
 ================================================ */
 module.exports = {
     development: [
-        'development/sass/**/*.scss'
+        'development/css/**/*.scss'
     ],
     components: [
-        'development/sass/components/*.scss'
+        'development/css/components/*.scss'
     ],
     options: {
         force: true,
-        config: 'development/sass/lint/scss-lint.yml',
-        exclude: ['development/sass/_foundation-components.scss',
-            'development/sass/_foundation-settings.scss',
-            'development/sass/base/_normalize.scss',
-            'development/sass/vendor/**/*.scss'
+        config: 'development/css/lint/scss-lint.yml',
+        exclude: ['development/css/base/_normalize.scss',
+            'development/css/vendor/**/*.scss'
         ],
-        reporterOutput: 'development/sass/lint/scss-lint-report.xml'
+        reporterOutput: 'development/lint/scss-lint-report.xml'
     }
 }

@@ -21,7 +21,7 @@ server.register(require('inert'), function (err) {
 
     var getContent = function (request, reply) {
 
-        return reply.file('./development/html/'+request.params.top);
+        return reply.file('./deploy/html/'+request.params.top);
         // return reply('You asked for ' +
         //     (request.params.secondary ? request.params.secondary + ' from ' : '') +
         //     request.params.top);
@@ -31,7 +31,31 @@ server.register(require('inert'), function (err) {
         method: 'GET',
         path: '/',
         handler: function (request, reply) {
-            reply.file('./development/index.html');
+            reply.file('./deploy/index.html');
+        }
+    });
+
+    server.route({
+        method: 'GET',
+        path: '/html',
+        handler: function (request, reply) {
+            reply.file('./deploy/html.html');
+        }
+    });
+
+    server.route({
+        method: 'GET',
+        path: '/css/{file}',
+        handler: function (request, reply) {
+            reply.file('./deploy/css/'+request.params.file);
+        }
+    });
+
+    server.route({
+        method: 'GET',
+        path: '/js/{file}',
+        handler: function (request, reply) {
+            reply.file('./deploy/js/'+request.params.file);
         }
     });
 
@@ -39,7 +63,7 @@ server.register(require('inert'), function (err) {
         method: 'GET',
         path: '/content/',
         handler: function (request, reply) {
-            return reply.file('./development/html/index.html');
+            return reply.file('./deploy/html/index.html');
         }
     });
 

@@ -4,9 +4,11 @@ module.exports = function(grunt) {
     // This task is run when grunt watch is active and changes are detected
     // 
     grunt.registerTask('watch-all-task', [
-        //'clean',
+        'clean',
         'sass',
-        'newer:copy',
-        'newer:autoprefixer:deploy'
+        'newer:copy:html',
+        'newer:copy:media',
+        'newer:copy:media_svg',
+        'autoprefixer:deploy'
     ]);
 };

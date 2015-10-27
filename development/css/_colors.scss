@@ -17,120 +17,47 @@
 /* ================================================
    Descriptive Color Variables
 ================================================ */
-$white: #fff; //rgb(255,255,255)
-$black: #000; //rgb(0,0,0)
+$b: #000;
+$w: #fff;
 
-// Shades: Blacks, Whites
-// ------------------------------------------------
-$boulder:      #797979; //rgb(121,121,121)
-$calypso:      #31708f; // $msg--info--font: rgb(49, 112, 143);
-$cararra:      rgb(235, 235, 235); // #EBEBEB
-$celeste:      #cbcbcb; //rgb(203,203,203)
-$champagne:    #faebcc; // $msg-warning-border: rgb(250, 235, 204);
-$charlotte:    #bce8f1; // $msg--info--border: rgb(188, 232, 241);
-$chrome-white: #e9f0d8; // $msg-success-bg: rgb(223, 240, 216);
-$dove-gray:    #6d6d6d; // rgb(109,109,109)
-$emperor:      #4d4d4d; // rgb(77,77,77)
-$gallery-lt:   #ededed; // rgb(237, 237, 237)
-$gallery:      #efefef; // rgb(239,239,239)
-$link-water:   #d9edf7; // $msg--info--bg: rgb(217, 237, 247);
-$log-cabin:    #232323; // rgb(35,35,35)
-$mercury:      #e4e4e4; // rgb(228,228,228)
-$mine-shaft-lt: #3d3d3d; // rgb(61,61,61) 
-$mine-shaft-md: #373737; // rgb(55,55,55)
-$mine-shaft:   #333; // rgb(51,51,51)
-$pesto:        #8a6d3b; // $msg-warning-font: rgb(138, 109, 59);
-$shady-lady:   #a9a9a9; // rgb(169,169,169)
-$solitaire:    #fcf8e3; // $msg-warning-bg: rgb(252, 248, 227);
-$vanilla-ice:  #f2dede; // $msg-danger-bg: rgb(242, 222, 222);
-$gray:         #808080; // rgb(128, 128, 128)
-$silver:       #ccc; // rgb(204,204,204)  
-$dusty-gray:   #9a9a9a; // rgb(154,154,154)  
-$gray-90:      #7f7f7f; // rgb(127,127,127)
-
-
-// Yellows, Oranges, Reds
-// ------------------------------------------------
-$apple-blossom:      #a94442; // $msg-danger-font: rgb(169, 68, 66);
-$california:         #ff9c02; // rgb(255,156,2)
-$ecstasy:            #f96f0d; // rgb(249,111,13)
-$flamingo:           #e95524; // rgb(233,85,36)
-$neon-carrot-opaque: rgba(245, 144, 50, 0.99);
-$neon-carrot-trans:  rgba(245, 144, 50, 0);
-$orange-peel:        #ffa102; // rgb(255,161,2)
-$oyster-pink:        #ebccd1; // $msg-danger-border: rgb(235, 204, 209);
-$pizazz:             #ff8d07; // rgb(255,141,7)
-$sorbus-opaque:      rgba(248, 124, 6, 0.99);
-$sorbus-trans:       rgba(248, 124, 6, 0);
-$tree-poppy:         #f99d1c; // rgb(249,157,28)
-$tree-poppy-lt:      #fd9218; // rgb(253,146,24)
-$tree-poppy-opaque:  rgba(249, 157, 28, 0.99);
-$tree-poppy-trans:   rgba(249, 157, 28, 0);
-$trinidad:           #ef560b; // rgb(239,86,11)
-$yellow-orange:      #fcb042; // rgb(252,176,66)
-$yellow:             #f5ff00; // rgb(245,255,0)
-$red:                #f00;  // rgb(255,0,0)
-$orange-peel:        #ff9c02; // rgb(255,156,2)
-$orange-peel-lt:     #ffa102; // rgb(255,161,2)      
-$sea-buckthorn:      #f89c31; // rgb(248, 156, 49) 
-$pirate-gold:        #d18402; // rgb(209,132,2)
-
-// Greens
-// ------------------------------------------------
-$beryl-green: #d6e9c6; // $msg-success-border: rgb(214, 233, 198);
-$killarney:   #3c763d; // $msg-success-font: rgb(60, 118, 61);
-$wild-willow: #a3c966; // rgb(163, 201, 102)
-
-// Blues
-// ------------------------------------------------
-$azure-radiance: #0089fa; // rgb(0,137,250)
-$cerulean: #00a8e0; // rgb(0,168,224)
-$downy: #75bad5; // rgb(117, 186, 213) 
-$cerulean-dr: #009fd4; //rgb(0, 159, 212)   
-$cerulean: #00a8e0; // rgb(0, 168, 224)
-$cerulean-lt: #00b8e2; // rgb(0,184,226) 
-$pacific-blue: #0d8fbd; // rgb(13,143,189)
-
+$apple-blossom:  #a94442;
+$azure-radiance: #0d86ff;
+$beryl-green:    #d6e9c6;
+$calypso:        #31708f;
+$champagne:      #faebcc;
+$charlotte:      #bce8f1;
+$chrome-white:   #e9f0d8;
+$killarney:      #3c763d;
+$link-water:     #d9edf7;
+$oyster-pink:    #ebccd1;
+$pesto:          #8a6d3b;
+$sea-buckthorn:  #f89c31;
+$solitaire:      #fcf8e3;
+$vanilla-ice:    #f2dede;
+$tulip-tree:     #ECB72F;
+$emperor: #4d4d4d;
+$nobel: #B4B4B4;
 // Brand Colors
 // ------------------------------------------------
-$brand-orange:    #ff9b32; // $fyndit-orange: rgb(255, 155, 50);
-$brand-blue:      #00a8e0; // $brand-blue: rgb(0, 168, 224);
-
-$brand-facebook:  #4c6fa4; // $facebook: #4c6fa4;
-$brand-pinterest: #cb2027; // $pinterest: #cb2027;
-$brand-tumblr:    #3c5f7b; // $tumblr: #3c5f7b;
-$brand-twitter:   #55acee; // $twitter: #55acee;
+$brand-facebook:  #4c6fa4;
+$brand-pinterest: #cb2027;
+$brand-tumblr:    #3c5f7b;
+$brand-twitter:   #55acee;
 
 
 /* ================================================
   Functional Variable Names
 ================================================ */
-// site base colors
-$fyndit-orange: $brand-orange;
-$fyndit-blue: $brand-blue;
-
-// btn
-$btn-shadow: rgba(0,0,0, 0.1);
-$btn-filter-active: $tree-poppy;
-$btn--follow-shadow: $pirate-gold;
-$btn-edit: $dusty-gray;
+$base-bg: $emperor;
+$base-text: $nobel;
 
 // link
-$link-cta: $sea-buckthorn;
+$link-hover-opaque: rgba(236, 183, 47, 1);
+$link-hover-trans: rgba(236, 183, 47, 0);
+$link-hover: $tulip-tree;
+$link: $azure-radiance;
 
-// text colors
-$text-default: $black;
-$text-accent: $white;
-$text-emphasis: $orange-peel;
-
-// Hot 30 week button colors
-$bg-hot-30-week-0: $trinidad;
-$bg-hot-30-week-1: $ecstasy;
-$bg-hot-30-week-2: $sorbus-opaque;
-$bg-hot-30-week-3: $pizazz;
-$bg-hot-30-week-4: $orange-peel;
-
-//Message colors optimized for accessibility
+//Message color sets
 $msg-success-bg: $chrome-white;
 $msg-success-border: $beryl-green;
 $msg-success-font: $killarney;
@@ -147,86 +74,8 @@ $msg-danger-bg: $vanilla-ice;
 $msg-danger-border: $oyster-pink;
 $msg-danger-font: $apple-blossom;
 
-
-
 // social media colors
 $facebook: $brand-facebook;
 $twitter: $brand-twitter;
 $pinterest: $brand-pinterest;
 $tumblr: $brand-tumblr;
-
-// table links
-$want-link: $downy;
-$find-link: $wild-willow;
-$sort: $gray-90;
-$table__link: $black;
-$table__link-hover: $gray;
-
-// footer 
-$footer-bg: $orange-peel;
-$footer-bg-gradient: radial-gradient(circle at top center, #ffb700 0%, $orange-peel 25%);
-$footer-border: $tree-poppy-lt;
-
-// ad
-$ad__link-bg: $black;
-$ad__img-shadow: $pacific-blue;
-$ad--similar-bg: $orange-peel-lt;
-
-// banner
-$banner-text: $yellow-orange;
-$banner-bg: $mine-shaft;
-$banner--admin-text: $yellow;
-$banner--admin-bg: $azure-radiance;
-
-// header 
-$header-bg: $white;
-$header__container-shadow: 0 2px 3px -2px rgba(120, 120, 120, 0.3);
-$header__search-bg: $gallery;
-
-// item
-$item-bg: $gallery-lt;
-$item-bg-gradient: linear-gradient(to bottom, rgba(239, 239, 239, 1) 0%, rgba(232, 232, 232, 1) 100%);
-$item-border: $mercury;
-$item-member-border: $cararra;
-$item-detail-bg: $gallery;
-$item-tag: $cerulean;
-
-//member
-$member-text: $boulder;
-$member__handle-text: $emperor;
-$member__avatar-border: $shady-lady;
-
-//menu
-$menu-member-border: $silver;
-
-//profile
-$profile-border: $black;
-
-//search
-$search-auto-text: $gallery;
-$search-auto-border: $mine-shaft;
-
-//sidebar
-$sidebar-border: $black;
-$sidebar__link-bg: $black;
-
-// social-count
-$social__count-bg: $red;
-
-// container
-$container-bg: $gallery;
-
-// standalone-footer
-$standalone-footer-bg: $mine-shaft;
-
-// detail page
-$detail-header-border: $cararra;
-
-
-
-
-
-
-
-
-
