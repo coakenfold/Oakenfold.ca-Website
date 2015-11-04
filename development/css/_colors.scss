@@ -19,7 +19,7 @@
 ================================================ */
 $b: #000;
 $w: #fff;
-
+$daintree: #012B38;
 $apple-blossom:  #a94442;
 $azure-radiance: #0d86ff;
 $beryl-green:    #d6e9c6;
@@ -48,13 +48,16 @@ $brand-twitter:   #55acee;
 /* ================================================
   Functional Variable Names
 ================================================ */
-$base-bg: $emperor;
-$base-text: $nobel;
+$base-bg: rgb(245,245,245);
+$base-text: $daintree;
 
 // link
+$link-bs-hover: rgba(0, 0, 0, 0.2);
+$link-bg-hover: $w;
+$link-bg: $base-bg;
 $link-hover-opaque: rgba(236, 183, 47, 1);
 $link-hover-trans: rgba(236, 183, 47, 0);
-$link-hover: $tulip-tree;
+$link-hover: $azure-radiance;
 $link: $azure-radiance;
 
 //Message color sets
@@ -79,3 +82,5 @@ $facebook: $brand-facebook;
 $twitter: $brand-twitter;
 $pinterest: $brand-pinterest;
 $tumblr: $brand-tumblr;
+
+$fieldset: rgba(255,255,255,0.3);

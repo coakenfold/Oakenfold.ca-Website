@@ -23,3 +23,9 @@ FUN THINGS
     BACKBONE
     ES6
     DESIGN DOCS: BRANDING?
+
+
+
+npm run-script startDep
+
+node/es-6 import from ... < aka moment.js

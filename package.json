@@ -40,7 +40,6 @@
     "grunt-sass": "^0.18.0",
     "grunt-scss-lint": "^0.3.4",
     "grunt-shell": "^0.7.0",
-    "grunt-styledocco": "^0.2.1",
     "grunt-svgmin": "^2.0.0",
     "jshint": "^2.8.0",
     "nodemon": "^1.4.1",
