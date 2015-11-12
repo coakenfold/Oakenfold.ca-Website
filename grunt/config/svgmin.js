@@ -11,9 +11,15 @@ module.exports = {
     },
     dist: {
         expand: true,
-        cwd: 'development/media/svg/source',
+        cwd: 'development/media/svg',
         src: ['**/*.svg'],
-        dest: 'development/media/svg/svgmin',
+        dest: 'development/media/svgmin',
         ext: '.svg'
     }
+    
+    //dist: {
+    //    files: {
+    //        'development/media/svgmin/logo-twitter.svg': 'development/media/svg/logo-twitter.svg'
+    //    }
+    //}
 }

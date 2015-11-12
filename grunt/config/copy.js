@@ -16,14 +16,14 @@ module.exports = {
     // -----------------------------------------
     media: {
         cwd: 'development/media',
-        src: ['**/*','!svg/**/*'],
+        src: ['img/**/*'],
         dest: 'deploy/media/',
         expand: true,
         flatten: false,
         filter: 'isFile'
     },
     media_svg: {
-        cwd: 'development/media/svg/generated/svgmin',
+        cwd: 'development/media/svgmin',
         src: ['*.svg'],
         dest: 'deploy/media/svg/',
         expand: true,

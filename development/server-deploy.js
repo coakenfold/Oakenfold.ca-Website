@@ -61,6 +61,14 @@ server.register(require('inert'), function (err) {
 
     server.route({
         method: 'GET',
+        path: '/media/svg/{file}',
+        handler: function (request, reply) {
+            reply.file('./deploy/media/svg/' + request.params.file); 
+        }
+    });
+
+    server.route({
+        method: 'GET',
         path: '/content/',
         handler: function (request, reply) {
             return reply.file('./deploy/html/index.html');

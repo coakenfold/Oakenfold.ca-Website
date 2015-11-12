@@ -3,7 +3,7 @@
 html { font-size: 62.5%; }
 
 body {
-    background-color: $base-bg;
+    background-color: $site-bg;
     color: $base-text;
     font-family: sans-serif;
     font-size: 1.6em;
@@ -57,14 +57,14 @@ a {
     text-decoration: none;
     font-weight: 100;
     //box-shadow: 0 0 0 rgba(255, 255, 255, 1);
-    transition: all 100ms cubic-bezier(0.785, 0.135, 0.15, 0.86); 
+    transition: all 100ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
 }
 
 a:hover {
     $linkxy: 2px;
-    background-color: $link-bg-hover;
+    background-image: linear-gradient(rgba(255,255,255, 0),rgba(255,255,255, 1));
     color: $link-hover;
-    box-shadow: -2px 1px 4px $link-bs-hover;
+    box-shadow: 0 1px 0 $link-hover;
     transform: translate3d($linkxy, -1*$linkxy, 0);
 }
 
@@ -81,23 +81,13 @@ blockquote {
 fieldset > legend {
     width: 100%;
     font-size: 24px;
-    border-bottom: 1px solid $base-text;
     box-sizing: border-box;
     color: $base-text;
 }
 
 footer {
-    opacity: 0.8;
-
-    small {
-        display: block;
-        font-size: 0.8rem;
-        margin: 0.5rem 0;
-
-        // a:hover {
-        //     border-bottom: 1px solid rgba(236, 183, 47, 0);
-        // }
-    }
+    text-align: center;
+    padding: 2rem 0;
 }
 
 
@@ -107,7 +97,6 @@ h3,
 h4,
 h5,
 h6 {
-    border-bottom: 2px solid $base-text;
     color: $base-text;
     margin-bottom: 2rem;
 }
@@ -133,6 +122,10 @@ h6 {
 header {
 }
 
+main {
+    display: block;
+}
+
 mark {
     padding: 0 0.2rem;
     background-color: rgb(255, 255, 127);
@@ -145,9 +138,6 @@ ul,
 ol {
     padding-left: 2rem;
     padding-right: 2rem;
-    li {
-        list-style-position: inside;
-    }
 }
 
 ul li {
@@ -156,6 +146,7 @@ ul li {
 
 
 .logo__twitter{
+    background-color: $brand-twitter;
     border-radius: 100%;
     display: inline-block;
     margin-right: 0.2rem;
@@ -165,21 +156,20 @@ ul li {
     min-width:20px;
     padding: 0;
     width: 100%;
-    background-color: $brand-twitter;
+
+    img {
+        width: 100%;
+        height: 100%;
+        border: none;
+    }
 }
 
 .logo__twitter:hover {
     background-color: $brand-twitter;
+    background-image: none;
 }
 
 .header__link {
     display: inline-block;
-    padding: 1rem;
-}
-
-
-.content {
-    max-width: 102.4rem;
-    margin: 0 auto;
     padding: 1rem;
 }

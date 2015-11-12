@@ -27,6 +27,14 @@ server.register(require('inert'), function (err) {
         //     request.params.top);
     };
 
+    var getMedia = function (request, reply) {
+
+        return reply.file('./development/media/'+request.params.top);
+        // return reply('You asked for ' +
+        //     (request.params.secondary ? request.params.secondary + ' from ' : '') +
+        //     request.params.top);
+    };
+
     server.route({
         method: 'GET',
         path: '/',
@@ -42,6 +50,13 @@ server.register(require('inert'), function (err) {
             return reply.file('./development/html/index.html');
         }
     });
+
+    server.route({
+        method: 'GET',
+        path: '/media/{top}',
+        handler: getMedia
+    });
+
 
     server.route({
         method: 'GET',
