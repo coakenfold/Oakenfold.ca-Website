@@ -4,15 +4,6 @@
     padding: 1rem 2rem;
 }
 
-.b-footer {
-    color: #BDE3F8;
-}
-
-.b-legal {
-    text-align: center;
-    margin: 1rem 0;
-}
-
 .b-link-ext {
     &:after{
         content: attr(href);

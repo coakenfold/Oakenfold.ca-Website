@@ -1,0 +1,85 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+    <title>CO Mment Sort | Oakenfold.ca</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <meta name="description" content="Front End Web Development. Nanaimo, BC, Canada. Javascript, HTML, and CSS.">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="css/oakenfold.css">
+</head>
+<body>
+    <!--[if lt IE 8]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <main class='b-main'>
+        <div class='b-content js-content'>
+            <h1>
+                CO Mment Sort: A wordpress plugin.
+            </h1>
+
+            <p><a href='https://bcdevexchange.org/home'>BCDevExchange</a> put out a request for some Wordpress upgrades to help in sorting &amp; filtering comments.</p>
+
+            <p>This plugin meets the following requirements.</p>
+            
+            <h2>Sorting</h2>
+            <ol>
+              <li>
+                A user selects a sort by date toggle: 
+                <ul>
+                  <li>the initial state is most recent.</li>
+                  <li>Toggle and the comments are returned by oldest.</li>
+                  <li>Toggle again and the sort and the comments are returned by most recent.</li>
+                </ul>
+              </li>
+              <li>
+                A user selects to sort by number of replies toggle, the initial state is default, with no sort applied at all. 
+
+                <ul>
+                  <li>Toggle once and the comments are returned by the highest number of replies, </li>
+                  <li>toggle twice and the comments are returned by the least number of replies, </li>
+                  <li>and finally toggle three times and the comments are returned at the default.</li>
+                </ul>
+              </li>
+            </ol>
+
+            <h2>Filtering</h2>
+            <ol>
+              <li>
+                A user can filter information through a date field: 
+                <ul>
+                  <li>by today's date</li>
+                  <li>by week </li>
+                  <li>by month</li>
+                </ul>
+              </li>
+              <li>
+                A user can filter information through a search field, by:
+                <ul>
+                  <li>keywords from within comment fields</li>
+                  <li>keywords associated with author name</li>
+                </ul>
+              </li>
+              <li>The results will return comments, in the same default format.</li>
+            </ol>
+            
+            <h2>Repository</h2>
+            <p>Here is the fork of the bcgov/citizen-engagement-web-toolkit (which includes extra stuff like their wordpress theme): <a href='https://github.com/coakenfold/citizen-engagement-web-toolkit'>https://github.com/coakenfold/citizen-engagement-web-toolkit</a></p>
+
+            <p>The actual Wordpress plugin can be found in this sub directory: <a href='https://github.com/coakenfold/citizen-engagement-web-toolkit/tree/master/code/bcgov-comment-theme/lib/custom/co-mment-sort'>https://github.com/coakenfold/citizen-engagement-web-toolkit/tree/master/code/bcgov-comment-theme/lib/custom/co-mment-sort</a></p>
+        </div>
+    </main>
+    <footer>
+        <div class='b-content'>
+                <img  class='b-logo-oakenfold__icon' src='media/svg/logo-oakenfold-enterprises.svg' />
+                <span class='b-logo-oakenfold__name'>Oakenfold Enterprises Ltd.</span> 
+        </div>
+    </footer>
+
+</body>
+</html>

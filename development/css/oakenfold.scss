@@ -1,19 +1,8 @@
-// Init
-//
-// Import mixins, variables, Foundation, Compass modules, etc
-//
-// Some utility classes are found in here, eg: .clear { clear: both; }
-// --------------------------------------------------------------
 @import 'init';
-@import 'utility';
-
 
 // Base
-//
-// Includes Normalize and our Base styles
-//
-// _base.scss: mostly targeting tag selectors: a, p, div, etc.
 // --------------------------------------------------------------
+// Includes Normalize and our Base styles
 @import 'base/baseline';
 @import 'base/base'; 
 
@@ -21,8 +10,7 @@
 
 // Components
 // --------------------------------------------------------------
-//@import 'components/ad';
-//@import 'components/vendor';
 
 
 
+@import 'utility';
