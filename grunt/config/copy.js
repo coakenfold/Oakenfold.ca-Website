@@ -6,7 +6,7 @@ module.exports = {
     // -----------------------------------------
     html: {
         cwd: 'development',
-        src: ['*.html'],
+        src: ['**/*.html'],
         dest: 'deploy/',
         expand: true,
         flatten: false,
