@@ -1,0 +1,28 @@
+{
+  "name": "oakenfold.ca",
+  "version": "0.0.2",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "browser-sync start --config 'bs-config.js'",
+    "start0": "npm run copy; browser-sync start --config 'bs-config.js'",
+    "copy": "node copy.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coakenfold/Oakenfold.ca-Website.git"
+  },
+  "author": {
+    "name": "Chad Oakenfold",
+    "url": "http://oakenfold.ca/",
+    "email": "web@oakenfold.ca"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/coakenfold/Oakenfold.ca-Website/issues"
+  },
+  "homepage": "https://github.com/coakenfold/Oakenfold.ca-Website",
+  "dependencies": {
+    "copy": "^0.3.2"
+  }
+}

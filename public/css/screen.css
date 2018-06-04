@@ -1,0 +1,206 @@
+/* Base, Utility 
+======================================== */
+
+* {
+    box-sizing: content-box;
+}
+body {
+    margin: 0;
+    /* Thanks to Google PWA Starter Kit for the font stack, body styling  */
+    /* This is a font-stack that tries to use the system-default sans-serifs first */
+    font-family: Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    line-height: 1.5;
+    min-height: 100vh;
+    -webkit-font-smoothing: antialiased;
+    background-color: rgba(255,255,255,0.9);
+}
+
+:target {
+    box-shadow: 2px 2px 18px rgba(0,0,0,0.05);
+    padding: 12px;
+    border: 1px solid rgba(0,0,0,0.1);
+    background-color: rgba(255,255,255,1);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 12px;
+}
+a {
+    color: #aa0000;
+    padding: 4px;
+    display: inline-block;
+    transition: all 0.25s ease-out;
+}
+a:hover {
+    text-decoration: underline;
+}
+a:focus {
+    background-color: #aa0000;
+    color: #fff;
+}
+figure {
+    margin: 0;
+}
+figcaption {
+    font-size: 12px;
+}
+footer {
+    background-color: #05182A;
+    color: #fff;
+    margin-top: 56px;
+}
+
+.u-dn {
+    display: none;
+}
+
+/* B
+======================================== */
+.banner {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    line-height: 1;
+    padding: 12px;
+    font-size: 24px;
+    background-color: #aa0000;
+    color: #fff;
+    box-shadow: 0 2px 0 rgba(0,0,0,0.1);
+    position: relative;
+    z-index:1;
+}
+
+.banner .oakca {
+    margin-right: 12px;
+}
+
+.but-mighty {
+    display: block;
+    text-align: center;
+    padding: 12px;
+}
+
+/* C 
+======================================== */
+.card {
+    transition: all 0.25s ease-out;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.02);
+    padding: 12px;
+    border: 1px solid rgba(0,0,0,0.005);
+    margin-bottom: 12px;
+}
+.card:target {
+    box-shadow: 2px 2px 18px rgba(0,0,0,0.05);
+    padding: 12px;
+    border: 1px solid rgba(0,0,0,0.1);
+    background-color: rgba(255,255,255,1);
+}
+.card--contact {
+    padding: 24px;
+}
+.card--contact:target {
+    background-color: transparent;
+    padding: 36px;
+}
+
+/* F 
+======================================== */
+
+.fold {
+    margin: 0 auto;
+}
+
+
+/* J
+======================================== */
+.jump-top {
+    float: right;
+    font-size: 12px;
+    text-decoration: none;
+    padding: 4px;
+}
+.jump-top:focus {
+    background-color: #aa0000;
+    color: #fff;
+}
+.jump-top--light {
+    color: #fff;
+}
+.jump-top--light:focus {
+    background-color: #fff;
+    color: #000;
+}
+
+/* M
+======================================== */
+
+.messaging {
+    margin: 0 auto;
+}
+
+.menu {
+    display: flex;
+    list-style-type: none;
+    justify-content: left;
+    padding: 0;
+    margin: 0 0 12px;
+    background: rgb(201,61,61);
+    background: linear-gradient(100deg, rgba(201,61,61,1) 12%, rgba(221,10,10,1)  100%);
+    box-shadow: 0 0 4px rgba(0,0,0,0.2);
+}
+
+.menu__section {
+    padding: 12px;
+
+    box-shadow: 3px 0px 2px rgba(0,0,0,0.1);
+}
+.menu__item {
+    font-weight: 900;
+    font-size: 16px;
+    text-decoration: none;
+    color: #000;
+}
+
+.menu__item:focus {
+    background-color: #fff;
+    color: #000;
+}
+.menu__item:hover {
+    text-decoration: underline;
+}
+
+.menu__sub {
+    margin: 0;
+    list-style-type: decimal-leading-zero;
+}
+
+
+/* O
+======================================== */
+.oakca {    
+    width: 50px;
+    height: 57px;
+}
+.oakca__outer{fill:#05182A;stroke:#fff;stroke-miterlimit:10;}
+.oakca__inner{fill:#ecb72f;}
+.oakca__negative{fill:#fff;}
+
+/* T
+*/
+#top,
+#top:target {
+    padding: 0;
+    box-shadow: none;
+    border: none;
+    background-color: transparent;
+}
+/* W
+======================================== */
+.work {
+    padding: 12px;
+}

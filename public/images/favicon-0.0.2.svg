@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 282 282">
+	 <style>.oakca__outer{fill:#05182A;stroke:#fff;stroke-miterlimit:10;}
+.oakca__inner{fill:#ecb72f;}
+.oakca__negative{fill:#fff;}
+</style>
+<g>
+	<ellipse class="oakca__outer" cx="141" cy="141" rx="123.4" ry="140.2"/>
+	<circle class="oakca__inner" cx="158.8" cy="127.8" r="80.4"/>
+	<circle class="oakca__negative" cx="118.8" cy="127.8" r="80.4"/>
+</g>
+</svg>

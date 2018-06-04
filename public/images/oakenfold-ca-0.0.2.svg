@@ -1,13 +1,9 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 612 792" style="enable-background:new 0 0 612 792;" xml:space="preserve">
-<style type="text/css">
-	.st0{stroke:#FFFFFF;stroke-miterlimit:10;}
-	.st1{fill:#ECB72F;}
-	.st2{fill:#FFFFFF;}
+<svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 247.78 281.43">
+<style>.oakca__outer{fill:#05182A;stroke:#fff;stroke-miterlimit:10;}
+.oakca__inner{fill:#ecb72f;}
+.oakca__negative{fill:#fff;}
 </style>
-<ellipse class="st0" cx="268.3" cy="254.1" rx="123.4" ry="140.2"/>
-<circle class="st1" cx="286.1" cy="241" r="80.4"/>
-<circle class="st2" cx="246.1" cy="241" r="80.4"/>
+	<ellipse class="oakca__outer" cx="123.89" cy="140.72" rx="123.39" ry="140.22"/>
+	<circle class="oakca__inner" cx="141.72" cy="127.54" r="80.43"/>
+	<circle class="oakca__negative" cx="101.72" cy="127.54" r="80.43"/>
 </svg>
