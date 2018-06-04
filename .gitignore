@@ -2,8 +2,4 @@
 *.sublime-workspace
 node_modules
 deploy
-
-*.zip
-
-*.log
-content/goals.*
+resources

@@ -1,6 +1,0 @@
-supervisord -c ./lib/supervisord.conf; 
-supervisorctl -c ./lib/supervisord.conf;
-
-cd ~/Documents/WebDevelopment/Oakenfold\ Enterprises\ Ltd./Website/v1;
-supervisord -c ./lib/supervisord.conf;
-supervisorctl -c ./lib/supervisord.conf;
