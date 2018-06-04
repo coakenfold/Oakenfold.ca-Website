@@ -3,4 +3,10 @@
     .menu {
         flex-direction: column;
     }
+    .menu__sub {
+        flex-grow: 2;
+    }
+    .menu__item--full {
+        width: 100%;
+    }
 }

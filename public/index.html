@@ -15,12 +15,287 @@
 <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#aa0000">
 <meta name="msapplication-TileColor" content="#aa0000">
 <meta name="theme-color" content="#ffffff">
-
+<!--
 <link rel="stylesheet" href="css/screen.css">
 <link rel="stylesheet" href="css/screen-small.css">
 <link rel="stylesheet" href="css/screen-medium.css">
 <link rel="stylesheet" href="css/screen-large.css">
+-->
+<style>
+/* Base, Utility 
+======================================== */
 
+* {
+    box-sizing: content-box;
+}
+body {
+    margin: 0;
+    /* Thanks to Google PWA Starter Kit for the font stack, body styling  */
+    /* This is a font-stack that tries to use the system-default sans-serifs first */
+    font-family: Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    line-height: 1.5;
+    min-height: 100vh;
+    -webkit-font-smoothing: antialiased;
+    background-color: rgba(255,255,255,0.9);
+}
+
+:target {
+    box-shadow: 2px 2px 18px rgba(0,0,0,0.05);
+    padding: 12px;
+    border: 1px solid rgba(0,0,0,0.1);
+    background-color: rgba(255,255,255,1);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 12px;
+    font-weight: 400;
+}
+a {
+    color: rgba(170, 0, 0, 1);
+    padding: 4px;
+    display: inline-block;
+    transition: all 0.25s ease-out, color 0.12s ease-out, background-color 0.12s ease-out;
+}
+a:hover {
+    background-color: rgba(170, 0, 0, 0.8);
+    text-decoration: underline;
+    color: #fff;
+}
+a:focus {
+    background-color: rgba(170, 0, 0, 1);
+    text-decoration: underline;
+    color: #fff;
+    outline-color: #ecb72f;
+}
+figure {
+    margin: 0;
+}
+figcaption {
+    font-size: 12px;
+}
+footer {
+    background-color: #05182A;
+    color: #fff;
+    margin-top: 56px;
+}
+
+.u-dn {
+    display: none;
+}
+.u-visually-hidden {
+    /* https://snook.ca/archives/html_and_css/hiding-content-for-accessibility */
+    position: absolute !important;
+    height: 1px; width: 1px; 
+    overflow: hidden;
+    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
+}
+
+/* B
+======================================== */
+.banner {
+    margin: 0;
+    color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 2px 0 rgba(0,0,0,0.1);
+    position: relative;
+    z-index:1;
+    font-weight: 400;
+}
+
+.banner a {
+    display: flex;
+    align-items: center;
+    line-height: 1;
+    padding: 24px 12px;
+    font-size: 24px;
+    background-color: #fff /*rgba(170, 0, 0, 1)*/;
+    color: rgba(0,0,0,0.9)/*rgba(255, 255, 255, 0.9)*/;
+    font-weight: 400;
+    border: 0;
+    box-shadow: 0;
+    text-decoration: none;
+}
+.banner a:focus {
+    text-decoration: none;
+}
+.banner a:target {
+    box-shadow: 0;
+    outline: 0;
+    border: 0;
+    text-decoration: none
+}
+.banner .oakca {
+    margin-right: 12px;
+}
+
+.but-mighty {
+    display: block;
+    text-align: center;
+    padding: 12px;
+}
+
+/* C 
+======================================== */
+.card {
+    transition: all 0.25s ease-out;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.02);
+    padding: 12px;
+    border: 1px solid rgba(0,0,0,0.005);
+    margin-bottom: 12px;
+}
+.card:target {
+    box-shadow: 2px 2px 18px rgba(0,0,0,0.05);
+    padding: 12px;
+    border: 1px solid rgba(0,0,0,0.1);
+    background-color: rgba(255,255,255,1);
+}
+.card--contact {
+    padding: 24px;
+    background-image: linear-gradient(180deg, rgba(0,0,0,1) 12%, rgba(0,0,0,0) 100%);
+}
+.card--contact a{
+    color: #fff;
+    color: #ecb72f;
+}
+.card--contact a:focus {
+    background-color: #fff;
+    color: #000;
+}
+.card--contact {
+    padding: 24px;
+    background-image: linear-gradient(180deg, rgba(0,0,0,1) 12%, rgba(0,0,0,0) 100%);
+    box-shadow: none;
+    border: 0;
+}
+.card--contact:target {
+    background-color: transparent;
+    background-image: linear-gradient(180deg, rgba(0,0,0,1) 12%, rgba(0,0,0,0) 100%);
+    padding: 24px;
+    box-shadow: none;
+    border: 0;
+}
+.card--contact:target h2 {
+    border-bottom: 1px solid transparent;
+}
+.card--contact:target h2 {
+    border-bottom: 1px solid #ecb72f;
+}
+
+/* F 
+======================================== */
+
+.fold {
+    margin: 0 auto;
+}
+
+
+/* J
+======================================== */
+.jump-top {
+    float: right;
+    font-size: 12px;
+    text-decoration: none;
+    padding: 4px;
+}
+.jump-top:focus {
+    background-color: #aa0000;
+    color: #fff;
+}
+.jump-top--light {
+    color: #fff;
+}
+.jump-top--light:focus {
+    background-color: #fff;
+    color: #000;
+}
+
+/* M
+======================================== */
+
+.messaging {
+    margin: 0 auto;
+}
+
+.menu {
+    display: flex;
+    list-style-type: none;
+    justify-content: left;
+    padding: 0;
+    margin: 0 0 12px;
+    background-color: #aa0000;
+    background-image: linear-gradient(-90deg, rgba(170, 0, 0, 0.5) 12%, rgba(221, 10, 10, 0.5) 100%);
+    box-shadow: 0 0 4px rgba(0,0,0,0.2);
+    color: rgba(0,0,0,0.75);
+}
+
+.menu__section {
+    box-shadow: 3px 0px 2px rgba(0,0,0,0.1);
+    display: flex;
+}
+.menu__item {
+    font-weight: 900;
+    font-size: 16px;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.9);
+    font-weight: 400;
+    padding: 12px;
+    box-sizing: border-box;
+}
+.menu__item:focus {
+    background-color: #fff;
+    color: #000;
+    outline-color: #ecb72f;
+}
+.menu__item:hover {
+    background-color: #ecb72f /*rgba(255,255,255,0.5)*/;
+    color: #000;
+}
+.menu__item:hover {
+    text-decoration: underline;
+}
+
+.menu__sub {
+    margin: 8px 0;
+    list-style-type: decimal-leading-zero;
+}   
+.menu__sub .menu__item {
+    padding: 4px 12px 4px;
+    width: 100%;    
+}
+
+/* O
+======================================== */
+.oakca {    
+    width: 100px/*50px*/;
+    height: 114px/*57px*/;
+}
+.oakca__outer{fill:#05182A;stroke:#fff;stroke-miterlimit:10;}
+.oakca__inner{fill:#ecb72f;}
+.oakca__negative{fill:#fff;}
+
+/* W
+======================================== */
+.work {
+    padding: 12px;
+}
+
+@media screen and (max-width: 500px) {
+    .menu {
+        flex-direction: column;
+    }
+    .menu__sub {
+        flex-grow: 2;
+    }
+    .menu__item--full {
+        width: 100%;
+    }
+}
+</style>
 <!--<link rel="stylesheet" href="css/screen-small--theme-1.css">
 <link rel="stylesheet" href="css/screen-large--theme-1.css">-->
 </head>
@@ -29,8 +304,7 @@
     <div class="fold">
         <div class="messaging"></div>
 
-        <span id="top"></span>
-        <h1 class="banner"><a id="home" href="#home"><svg class="oakca" aria-label="oakenfold logo"><use xlink:href="#oakca" /></svg> Oakenfold Enterprises Ltd.</a></h1>
+        <h1 class="banner"><a id="home" href="#home"><svg class="oakca" aria-label="oakenfold logo"><use xlink:href="#oakca" /></svg> Chad Oakenfold</a></h1>
 
         <ul id="menu" class="menu">
             <li class="menu__section">
@@ -42,8 +316,8 @@
                     <li class=""><a href="#html-css" class="menu__item">HTML, CSS</a></li>
                 </ul>
             </li>
-            <li class="menu__section"><a href="#contact" class="menu__item">Contact</a></li>
-            <li class="menu__section"><a href="#settings" class="menu__item">Settings</a></li>
+            <li class="menu__section"><a href="#contact" class="menu__item menu__item--full">Contact</a></li>
+            <li class="menu__section"><a href="#settings" class="menu__item menu__item--full">Settings</a></li>
         </ul>
 
     </div>
@@ -83,7 +357,12 @@
     <div id="contact" class="card card--contact">
         <a class="jump-top jump-top--light" href="#home">Top</a>
         <h2>Contact</h2>
-        <p>Sunt esse veniam culpa nostrud consectetur exercitation sit Lorem voluptate. Mollit velit mollit consequat enim eiusmod minim magna cillum commodo ea cupidatat enim. Veniam pariatur ex laboris laboris enim labore voluptate ullamco minim officia aliquip aliqua irure incididunt. Lorem nostrud duis ullamco non quis tempor do sint veniam eiusmod ut in est reprehenderit. Quis labore reprehenderit tempor tempor esse non.</p>
+        <dl>
+        <dt>Chad Oakenfold creates &ldquo;intricate and beautiful complexities&rdquo; straight from the rainforests of Vancouver Island.</dt>
+        <dd>I'm active on <a href="https://twitter.com/coak" target="_blank">Twitter,</a></dd>
+        <dd>you could mailto: <strong>web@(this url)</strong>,</dd>
+        <dd>or even connect via <a href="https://www.linkedin.com/in/chad-oakenfold-a9a65a4/" target="_blank">LinkedIn.</a></dd>
+        </dl>
     </div>
 
     <small class="but-mighty">Oak inc forever</small>
