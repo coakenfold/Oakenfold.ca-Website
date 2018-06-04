@@ -31,17 +31,21 @@ h6 {
     margin: 0 0 12px;
 }
 a {
-    color: #aa0000;
+    color: rgba(170, 0, 0, 1);
     padding: 4px;
     display: inline-block;
-    transition: all 0.25s ease-out;
+    transition: all 0.25s ease-out, color 0.12s ease-out, background-color 0.12s ease-out;
 }
 a:hover {
+    background-color: rgba(170, 0, 0, 0.8);
     text-decoration: underline;
+    color: #fff;
 }
 a:focus {
-    background-color: #aa0000;
+    background-color: rgba(170, 0, 0, 1);
+    text-decoration: underline;
     color: #fff;
+    outline-color: #ecb72f;
 }
 figure {
     margin: 0;
@@ -62,19 +66,36 @@ footer {
 /* B
 ======================================== */
 .banner {
-    display: flex;
-    align-items: center;
     margin: 0;
-    line-height: 1;
-    padding: 12px;
-    font-size: 24px;
-    background-color: #aa0000;
-    color: #fff;
+    color: rgba(255, 255, 255, 0.9);
     box-shadow: 0 2px 0 rgba(0,0,0,0.1);
     position: relative;
     z-index:1;
+    font-weight: 400;
 }
 
+.banner a {
+    display: flex;
+    align-items: center;
+    line-height: 1;
+    padding: 12px;
+    font-size: 24px;
+    background-color: #fff /*rgba(170, 0, 0, 1)*/;
+    color: rgba(0,0,0,0.9)/*rgba(255, 255, 255, 0.9)*/;
+    font-weight: 400;
+    border: 0;
+    box-shadow: 0;
+    text-decoration: none;
+}
+.banner a:focus {
+    text-decoration: underline;
+}
+.banner a:target {
+    box-shadow: 0;
+    outline: 0;
+    border: 0;
+    text-decoration: underline
+}
 .banner .oakca {
     margin-right: 12px;
 }
@@ -150,24 +171,31 @@ footer {
     padding: 0;
     margin: 0 0 12px;
     background: rgb(201,61,61);
-    background: linear-gradient(100deg, rgba(201,61,61,1) 12%, rgba(221,10,10,1)  100%);
+    background: linear-gradient(-90deg, rgb(170, 0, 0) 12%, rgb(221, 10, 10) 100%);
     box-shadow: 0 0 4px rgba(0,0,0,0.2);
+    color: rgba(0,0,0,0.75);
 }
 
 .menu__section {
-    padding: 12px;
-
     box-shadow: 3px 0px 2px rgba(0,0,0,0.1);
+    display: flex;
 }
 .menu__item {
     font-weight: 900;
     font-size: 16px;
     text-decoration: none;
-    color: #000;
+    color: rgba(255, 255, 255, 0.9);
+    font-weight: 400;
+    padding: 12px;
+    box-sizing: border-box;
 }
-
 .menu__item:focus {
     background-color: #fff;
+    color: #000;
+    outline-color: #ecb72f;
+}
+.menu__item:hover {
+    background-color: #ecb72f /*rgba(255,255,255,0.5)*/;
     color: #000;
 }
 .menu__item:hover {
@@ -175,9 +203,19 @@ footer {
 }
 
 .menu__sub {
-    margin: 0;
+    margin: 8px 0;
     list-style-type: decimal-leading-zero;
+}   
+.menu__sub .menu__item {
+    padding: 4px 12px 4px;
+    width: 100%;    
 }
+/*.menu__sub li:first-child .menu__item {
+    padding-top: 12px;
+}
+.menu__sub li:last-child .menu__item {
+    padding-bottom: 12px;
+}*/
 
 
 /* O
