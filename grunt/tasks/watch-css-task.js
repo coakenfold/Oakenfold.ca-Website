@@ -4,8 +4,6 @@ module.exports = function(grunt) {
     // This task is run when grunt watch-css is active and changes are detected
     // 
     grunt.registerTask('watch-css-task', [
-        //'clean',
-        'sass',
         'newer:copy:html',
         'newer:copy:media',
         'newer:copy:media_svg',

@@ -4,8 +4,6 @@ module.exports = function(grunt) {
     // This task is run when grunt watch is active and changes are detected
     // 
     grunt.registerTask('watch-all-task', [
-        'clean',
-        'sass',
         'svgmin',
         'copy:html',
         'copy:media',

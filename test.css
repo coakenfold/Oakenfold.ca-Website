@@ -1,0 +1,328 @@
+/* ================================================
+   Descriptive Color Variables
+================================================ */
+/* ================================================
+  Functional Variable Names
+================================================ */
+.mq-debug:hover .mq-debug__line {
+  opacity: 0.4; }
+
+.mq-debug .mq-debug__line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 900;
+  opacity: 1;
+  transition: opacity 100ms ease-in-out; }
+
+.mq-debug .mq-debug__line::after {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #000;
+  font-size: 9px;
+  line-height: 1;
+  height: 10px;
+  position: absolute;
+  left: 0;
+  display: none;
+  white-space: nowrap; }
+
+.mq-debug .mq-debug__line--1 {
+  top: 0; }
+  @media only screen {
+    .mq-debug .mq-debug__line--1::after {
+      content: '@include mq-s()';
+      display: block; } }
+
+.mq-debug .mq-debug__line--2 {
+  top: 10px; }
+  @media only screen and (min-width: 40.063em) {
+    .mq-debug .mq-debug__line--2::after {
+      content: '@include mq-m()';
+      display: block; } }
+
+.mq-debug .mq-debug__line--3 {
+  top: 20px; }
+  @media only screen and (min-width: 64.063em) {
+    .mq-debug .mq-debug__line--3::after {
+      content: '@include mq-l()';
+      display: block; } }
+
+.mq-debug .mq-debug__line--4 {
+  top: 30px; }
+  @media only screen and (max-width: 40.063em) {
+    .mq-debug .mq-debug__line--4::after {
+      content: '@include mq-s-t()';
+      display: block; } }
+  @media only screen and (min-width: 40.063em) and (max-width: 64.063em) {
+    .mq-debug .mq-debug__line--4::after {
+      content: '@include mq-m-t()';
+      display: block; } }
+
+.mq-debug .mq-debug__line--5 {
+  top: 40px; }
+  @media only screen and (min-width: 40.063em) and (max-width: 46.063em) {
+    .mq-debug .mq-debug__line--5::after {
+      content: '@include mq-m14()';
+      display: block; } }
+  @media only screen and (min-width: 46.063em) and (max-width: 52.063em) {
+    .mq-debug .mq-debug__line--5::after {
+      content: '@include mq-m24()';
+      display: block; } }
+  @media only screen and (min-width: 52.063em) and (max-width: 58.063em) {
+    .mq-debug .mq-debug__line--5::after {
+      content: '@include mq-m34()';
+      display: block; } }
+  @media only screen and (min-width: 58.063em) and (max-width: 64.063em) {
+    .mq-debug .mq-debug__line--5::after {
+      content: '@include mq-m44()';
+      display: block; } }
+
+.mq-debug .mq-debug__line--6 {
+  top: 50px; }
+  @media only screen and (min-width: 40.063em) {
+    .mq-debug .mq-debug__line--6::after {
+      content: '@include mq-m14u()';
+      display: block; } }
+
+.mq-debug .mq-debug__line--7 {
+  top: 60px; }
+  @media only screen and (min-width: 46.063em) {
+    .mq-debug .mq-debug__line--7::after {
+      content: '@include mq-m24u()';
+      display: block; } }
+
+.mq-debug .mq-debug__line--8 {
+  top: 70px; }
+  @media only screen and (min-width: 52.063em) {
+    .mq-debug .mq-debug__line--8::after {
+      content: '@include mq-m34u()';
+      display: block; } }
+
+.mq-debug .mq-debug__line--9 {
+  top: 80px; }
+  @media only screen and (min-width: 58.063em) {
+    .mq-debug .mq-debug__line--9::after {
+      content: '@include mq-m44u()';
+      display: block; } }
+
+.mq-debug.mq-debug--right .mq-debug__line,
+.mq-debug.mq-debug--right .mq-debug__line::after {
+  right: 0;
+  left: inherit; }
+
+legend {
+  padding: 0;
+  display: table; }
+
+fieldset {
+  border: 0;
+  padding: 0.01em 0 0 0;
+  margin: 0;
+  min-width: 0; }
+
+body:not(:-moz-handler-blocked) fieldset {
+  display: table-cell; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  background-color: #2b2b2b;
+  color: #012b38;
+  font-family: sans-serif;
+  font-size: 1.6em;
+  line-height: 1.6;
+  margin: 0; }
+
+code,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+kbd,
+p,
+div,
+ul,
+ol,
+dl,
+table,
+blockquote,
+fieldset > legend {
+  font-weight: 100;
+  font-size: 1.6rem; }
+
+code,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+kbd,
+p,
+div,
+ul,
+ol,
+dl,
+table,
+blockquote,
+fieldset > legend {
+  margin: 1rem 0; }
+
+a {
+  color: #0d86ff;
+  display: inline-block;
+  background-color: #fafaff;
+  text-decoration: none;
+  font-weight: 100;
+  transition: all 100ms cubic-bezier(0.785, 0.135, 0.15, 0.86); }
+
+a:hover {
+  background-image: linear-gradient(rgba(255, 255, 255, 0), white);
+  color: #0d86ff;
+  box-shadow: 0 1px 0 #0d86ff;
+  transform: translate3d(2px, -2px, 0); }
+
+a:active {
+  box-shadow: 0 0 0 white;
+  transform: translate3d(0, 0, 0); }
+
+blockquote {
+  margin-left: 2rem;
+  margin-right: 2rem; }
+
+fieldset > legend {
+  width: 100%;
+  font-size: 24px;
+  box-sizing: border-box;
+  color: #012b38; }
+
+footer {
+  color: #BDE3F8;
+  padding: 1rem 2rem; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #012b38;
+  margin-bottom: 2rem; }
+
+h1 {
+  font-size: 2.8rem; }
+
+h2 {
+  font-size: 2.6rem; }
+
+h3 {
+  font-size: 2.4rem; }
+
+h4 {
+  font-size: 2.2rem; }
+
+h5 {
+  font-size: 2rem; }
+
+h6 {
+  font-size: 1.8rem; }
+
+main {
+  display: block; }
+
+mark {
+  padding: 0 0.2rem;
+  background-color: #ffff7f; }
+
+dd {
+  margin-left: 2rem; }
+
+ul,
+ol {
+  padding-left: 2rem;
+  padding-right: 2rem; }
+
+ul li {
+  list-style-type: square; }
+
+.logo__twitter {
+  background-color: #55acee;
+  border-radius: 100%;
+  display: inline-block;
+  margin-right: 0.2rem;
+  max-height: 40px;
+  max-width: 40px;
+  min-height: 20px;
+  min-width: 20px;
+  padding: 0;
+  width: 100%; }
+  .logo__twitter img {
+    width: 100%;
+    height: 100%;
+    border: none; }
+
+.logo__twitter:hover {
+  background-color: #55acee;
+  background-image: none; }
+
+.header__link {
+  display: inline-block;
+  padding: 1rem; }
+
+.b-content {
+  max-width: 102.4rem;
+  margin: 0 auto;
+  padding: 1rem 2rem; }
+
+.b-link-ext:after {
+  content: attr(href);
+  padding: 0 0 0 0.5rem;
+  font-size: 1.2rem; }
+
+.b-logo-oakenfold__icon {
+  width: 4rem;
+  height: 4rem;
+  vertical-align: middle; }
+
+.b-logo-oakenfold__name {
+  line-height: 4rem;
+  white-space: nowrap;
+  font-size: 1.2rem; }
+
+.b-main {
+  background-color: #fafaff;
+  margin: 0;
+  padding: 1rem 2rem 4rem; }
+
+.u-center {
+  text-align: center; }
+
+.u-clear {
+  clear: both; }
+
+.u-db {
+  display: block; }
+
+.u-dn {
+  display: none !important; }
+
+.u-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; }
+
+.u-fl {
+  float: left; }
+
+.u-fr {
+  float: right; }
+
+.u-mt {
+  margin-top: 2rem; }
+
+.u-pinch {
+  padding-left: 2rem;
+  padding-right: 2rem; }

@@ -10,7 +10,6 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-grunticon');
     grunt.loadNpmTasks('grunt-newer');
-    grunt.loadNpmTasks('grunt-sass');
     grunt.loadNpmTasks('grunt-scss-lint');
     grunt.loadNpmTasks('grunt-svgmin');
 

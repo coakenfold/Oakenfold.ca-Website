@@ -42,19 +42,16 @@
     "grunt-shell": "^0.7.0",
     "grunt-svgmin": "^2.0.0",
     "jshint": "^2.8.0",
-    "nodemon": "^1.4.1",
-    "pre-commit": "1.1.1"
+    "node-sass": "^4.9.0",
+    "nodemon": "^1.4.1"
   },
   "scripts": {
     "test": "",
     "coverage": "",
     "jshint": "./node_modules/jshint/bin/jshint -c .jshintrc --exclude-path .gitignore .",
+    "build": "grunt build; mkdir deploy/css; node sass.js; grunt autoprefixer:deploy;",
     "start": "PORT=8000 ./node_modules/.bin/nodemon ./development/server-deploy.js",
     "startDep": "PORT=8000 ./node_modules/.bin/nodemon ./development/server-deploy.js",
     "redisStart": "/usr/local/bin/redis-server ./lib/redis.conf"
-  },
-  "pre-commit": [
-    "jshint",
-    "coverage"
-  ]
+  }
 }
