@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "browser-sync start --config 'bs-config.js'",
-    "start0": "npm run copy; browser-sync start --config 'bs-config.js'",
     "copy": "node buildScripts/copy.js",
-    "inlineCss": "node buildScripts/inlineCss.js"
+    "inlineCss": "node buildScripts/inlineCss.js",
+    "build": "npm run copy; npm run inlineCss;"
   },
   "repository": {
     "type": "git",
@@ -26,8 +26,6 @@
   "dependencies": {},
   "devDependencies": {
     "copy": "^0.3.2",
-    "critical": "^1.3.2",
-    "jsdom": "^11.11.0",
-    "loadcss": "0.0.2"
+    "critical": "^1.3.2"
   }
 }
