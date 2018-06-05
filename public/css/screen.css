@@ -84,30 +84,49 @@ footer {
     font-weight: 400;
 }
 
-.banner a {
+.banner__link {
     display: flex;
     align-items: center;
     line-height: 1;
     padding: 24px 12px;
     font-size: 55px;
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0.02) 36%);
     color: rgba(0,0,0,0.9)/*rgba(255, 255, 255, 0.9)*/;
     font-weight: 600;
     border: 0;
     box-shadow: 0;
     text-decoration: none;
 }
-.banner a:focus {
-    text-decoration: none;
-}
-.banner a:target {
+.banner__link:target {
     box-shadow: 0;
     outline: 0;
     border: 0;
-    text-decoration: none
+    text-decoration: none;
+    background-color: transparent;
 }
-.banner .oakca {
+.banner__link:hover {
+    text-decoration: none;
+    background-color: transparent;
+    color: black;
+}
+.banner__link:focus {
+    text-decoration: none;
+}
+.banner__logo {
     margin-right: 12px;
+}
+.banner__title {
+    border-bottom: 4px solid rgba(236, 183, 47, 0);
+    color: rgb(0, 0, 0);
+    transition: border-bottom 0.25s ease-in-out, color 0.25s ease-in-out;
+}
+.banner__link:target .banner__title {
+    color: rgb(0, 0, 0);
+    border-bottom: 4px solid rgba(0, 0, 0, 1);
+}
+
+.banner__link:hover .banner__title {
+    color: rgb(236, 183, 47);
+    border-bottom: 4px solid rgba(236, 183, 47, 1);
 }
 
 .but-mighty {
@@ -120,7 +139,7 @@ footer {
 ======================================== */
 .card {
     transition: all 0.25s ease-out;
-    box-shadow: 0 1px 0 rgba(0,0,0,0.02);
+    box-shadow: 0 1px 0 rgba(0,0,0,0);
     padding: 12px;
     border: 1px solid rgba(0,0,0,0.005);
     margin-bottom: 12px;
@@ -128,8 +147,15 @@ footer {
 .card:target {
     box-shadow: 2px 2px 18px rgba(0,0,0,0.05);
     padding: 12px;
-    border: 1px solid rgba(0,0,0,0.1);
+    border: 1px solid rgba(236, 183, 47, 1);
     background-color: rgba(255,255,255,1);
+}
+.card:target .card__title {
+    border-bottom: 2px solid rgba(236, 183, 47, 1);
+}
+.card__title {
+    border-bottom: 2px solid rgba(236, 183, 47, 0);
+    transition: border-bottom 0.25s ease-in-out;
 }
 .card--contact {
     padding: 24px;
@@ -143,11 +169,16 @@ footer {
     background-color: #fff;
     color: #000;
 }
+.card--contact a:hover {
+    background-color: rgba(255,255,255,1);
+    color: #000;
+}
 .card--contact {
     padding: 24px;
     background-image: linear-gradient(180deg, rgba(0,0,0,1) 12%, rgba(0,0,0,0) 100%);
     box-shadow: none;
     border: 0;
+    border-top: 0 solid rgba(236, 183, 47, 1);
 }
 .card--contact:target {
     background-color: transparent;
@@ -155,12 +186,16 @@ footer {
     padding: 24px;
     box-shadow: none;
     border: 0;
+    border-top: 10px solid rgba(236, 183, 47, 1);
 }
 .card--contact:target h2 {
     border-bottom: 1px solid transparent;
 }
 .card--contact:target h2 {
     border-bottom: 1px solid #ecb72f;
+}
+.card--settings {
+    margin: 12px;
 }
 
 /* F 
@@ -259,4 +294,8 @@ footer {
 ======================================== */
 .work {
     padding: 12px;
+    margin: 12px;
+}
+.work .card {
+    padding: 12px 24px;
 }
