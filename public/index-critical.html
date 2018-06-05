@@ -16,10 +16,18 @@
 <meta name="msapplication-TileColor" content="#aa0000">
 <meta name="theme-color" content="#ffffff">
 
-<link rel="stylesheet" href="css/screen.css">
-<link rel="stylesheet" href="css/screen-small.css">
-<link rel="stylesheet" href="css/screen-medium.css">
-<link rel="stylesheet" href="css/screen-large.css">
+<style>
+    *{box-sizing:content-box}body{margin:0;font-family:Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";line-height:1.5;min-height:100vh;-webkit-font-smoothing:antialiased;background-color:rgba(0,0,0,.05)}:target{box-shadow:2px 2px 18px rgba(0,0,0,.05);padding:12px;border:1px solid rgba(0,0,0,.1);background-color:rgba(255,255,255,1)}h1,h2,h3{margin:0 0 12px;font-weight:400}a{color:rgba(170,0,0,1);padding:4px;display:inline-block}.u-dn{display:none}.banner{margin:0;color:rgba(255,255,255,.9);box-shadow:0 2px 0 rgba(0,0,0,.1);position:relative;z-index:1;font-weight:400}.banner a{display:flex;align-items:center;line-height:1;padding:24px 12px;font-size:55px;background-image:linear-gradient(0deg,rgba(0,0,0,.05) 0,rgba(0,0,0,.02) 36%);color:rgba(0,0,0,.9);font-weight:600;border:0;box-shadow:0;text-decoration:none}.banner .oakca{margin-right:12px}.card{box-shadow:0 1px 0 rgba(0,0,0,.02);padding:12px;border:1px solid rgba(0,0,0,.005);margin-bottom:12px}.fold{margin:0 auto}.jump-top{float:right;font-size:12px;text-decoration:none;padding:4px}.messaging{margin:0 auto}.menu{display:flex;list-style-type:none;justify-content:left;padding:0;margin:0 0 12px;background-color:#a00;background-image:linear-gradient(-90deg,rgba(170,0,0,.5) 12%,rgba(221,10,10,.5) 100%);box-shadow:0 0 4px rgba(0,0,0,.2);color:rgba(0,0,0,.75)}.menu__section{box-shadow:3px 0 2px rgba(0,0,0,.1);display:flex}.menu__item{font-weight:900;font-size:16px;text-decoration:none;color:rgba(255,255,255,.9);font-weight:400;padding:12px;box-sizing:border-box}.menu__sub{margin:8px 0;list-style-type:decimal-leading-zero}.menu__sub .menu__item{padding:4px 12px 4px;width:100%}.oakca{width:100px;height:114px}.oakca__outer{fill:#05182a;stroke:#fff;stroke-miterlimit:10}.oakca__inner{fill:#ecb72f}.oakca__negative{fill:#fff}.work{padding:12px}@media screen and (max-width:500px){.menu{flex-direction:column}.menu__sub{flex-grow:2}.menu__item--full{width:100%}}
+</style>
+<link rel="preload" href="css/screen.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="css/screen.css"></noscript>
+<link rel="preload" href="css/screen-small.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="css/screen-small.css"></noscript>
+<link rel="preload" href="css/screen-medium.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="css/screen-medium.css"></noscript>
+<link rel="preload" href="css/screen-large.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="css/screen-large.css"></noscript>
+<script>!function(n){"use strict";n.loadCSS||(n.loadCSS=function(){});var o=loadCSS.relpreload={};if(o.support=function(){var e;try{e=n.document.createElement("link").relList.supports("preload")}catch(t){e=!1}return function(){return e}}(),o.bindMediaToggle=function(t){var e=t.media||"all";function a(){t.media=e}t.addEventListener?t.addEventListener("load",a):t.attachEvent&&t.attachEvent("onload",a),setTimeout(function(){t.rel="stylesheet",t.media="only x"}),setTimeout(a,3e3)},o.poly=function(){if(!o.support())for(var t=n.document.getElementsByTagName("link"),e=0;e<t.length;e++){var a=t[e];"preload"!==a.rel||"style"!==a.getAttribute("as")||a.getAttribute("data-loadcss")||(a.setAttribute("data-loadcss",!0),o.bindMediaToggle(a))}},!o.support()){o.poly();var t=n.setInterval(o.poly,500);n.addEventListener?n.addEventListener("load",function(){o.poly(),n.clearInterval(t)}):n.attachEvent&&n.attachEvent("onload",function(){o.poly(),n.clearInterval(t)})}"undefined"!=typeof exports?exports.loadCSS=loadCSS:n.loadCSS=loadCSS}("undefined"!=typeof global?global:this);</script>
 
 <!--<link rel="stylesheet" href="css/screen-small--theme-1.css">
 <link rel="stylesheet" href="css/screen-large--theme-1.css">-->
@@ -29,7 +37,7 @@
     <div class="fold">
         <div class="messaging"></div>
 
-        <h1 class="banner"><a id="home" href="#home"><svg class="oakca" aria-label="oakenfold logo"><use xlink:href="#oakca" /></svg> Chad Oakenfold</a></h1>
+        <h1 class="banner"><a id="home" href="#home"><svg class="oakca" aria-label="oakenfold logo"><use xlink:href="#oakca"/></svg> Chad Oakenfold</a></h1>
 
         <ul id="menu" class="menu">
             <li class="menu__section">
@@ -94,7 +102,7 @@
 </footer>
 
 <svg class="u-dn" xmlns="http://www.w3.org/2000/svg">
-    <symbol id="oakca" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 247.78 281.43">
+    <symbol id="oakca" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 247.78 281.43">
         <ellipse class="oakca__outer" cx="123.89" cy="140.72" rx="123.39" ry="140.22"/>
         <circle class="oakca__inner" cx="141.72" cy="127.54" r="80.43"/>
         <circle class="oakca__negative" cx="101.72" cy="127.54" r="80.43"/>

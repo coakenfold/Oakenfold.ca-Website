@@ -6,7 +6,8 @@
   "scripts": {
     "start": "browser-sync start --config 'bs-config.js'",
     "start0": "npm run copy; browser-sync start --config 'bs-config.js'",
-    "copy": "node copy.js"
+    "copy": "node buildScripts/copy.js",
+    "inlineCss": "node buildScripts/inlineCss.js"
   },
   "repository": {
     "type": "git",
@@ -22,7 +23,11 @@
     "url": "https://github.com/coakenfold/Oakenfold.ca-Website/issues"
   },
   "homepage": "https://github.com/coakenfold/Oakenfold.ca-Website",
-  "dependencies": {
-    "copy": "^0.3.2"
+  "dependencies": {},
+  "devDependencies": {
+    "copy": "^0.3.2",
+    "critical": "^1.3.2",
+    "jsdom": "^11.11.0",
+    "loadcss": "0.0.2"
   }
 }

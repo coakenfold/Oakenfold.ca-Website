@@ -13,7 +13,7 @@ body {
     line-height: 1.5;
     min-height: 100vh;
     -webkit-font-smoothing: antialiased;
-    background-color: rgba(255,255,255,0.9);
+    background-color: rgba(0, 0, 0, 0.05);
 }
 
 :target {
@@ -89,10 +89,10 @@ footer {
     align-items: center;
     line-height: 1;
     padding: 24px 12px;
-    font-size: 24px;
-    background-color: #fff /*rgba(170, 0, 0, 1)*/;
+    font-size: 55px;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0.02) 36%);
     color: rgba(0,0,0,0.9)/*rgba(255, 255, 255, 0.9)*/;
-    font-weight: 400;
+    font-weight: 600;
     border: 0;
     box-shadow: 0;
     text-decoration: none;
