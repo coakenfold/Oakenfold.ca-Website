@@ -47,8 +47,9 @@
         <li class="menu__section">
             <a href="#work" class="menu__item">Work</a>
             <ul class="menu__sub">
-                <li class=""><a href="#spa-performance" class="menu__item"><abbr title="Single Page Application">SPA</abbr> Performance</a></li>
-                <li class=""><a href="#wcag-aaa" class="menu__item"><abbr title="Web Content Accessibility Guidelines">WCAG</abbr> AAA</a></li>
+                <li class=""><a href="#spa" class="menu__item">Single Page Application</a></li>
+                <li class=""><a href="#web-performance" class="menu__item">Web Performance</a></li>
+                <li class=""><a href="#wcag" class="menu__item">Web Content Accessibility&nbsp;Guidelines</a></li>
                 <li class=""><a href="#gatsby-react" class="menu__item">Gatsby, React</a></li>
                 <li class=""><a href="#html-css" class="menu__item">HTML, CSS</a></li>
             </ul>
@@ -65,124 +66,229 @@
             <h2 class="group__title">Work</h2>
             <p>Sunt <a href="#x">esse</a> veniam culpa nostrud consectetur exercitation sit Lorem voluptate. Mollit velit mollit consequat enim eiusmod minim magna cillum commodo ea cupidatat enim. Veniam pariatur ex laboris laboris enim labore voluptate ullamco minim officia aliquip aliqua irure incididunt. Lorem nostrud duis ullamco non quis tempor do sint veniam eiusmod ut in est reprehenderit. Quis labore reprehenderit tempor tempor esse non.</p>
         </div>
-        <div id="spa-performance" class="card">
+        <section id="spa" class="card">
             <a class="jump-top" href="#top" role="button">Top</a>
-            <h3 class="card__title"><abbr title="Single Page Application">SPA</abbr> Performance</h3>
-            <p>Sunt <a href="#x">esse</a> veniam culpa nostrud consectetur exercitation sit Lorem voluptate. Mollit velit mollit consequat enim eiusmod minim magna cillum commodo ea cupidatat enim. Veniam pariatur ex laboris laboris enim labore voluptate ullamco minim officia aliquip aliqua irure incididunt. Lorem nostrud duis ullamco non quis tempor do sint veniam eiusmod ut in est reprehenderit. Quis labore reprehenderit tempor tempor esse non.</p>
-        </div>
-        <div id="wcag-aaa" class="card">
+            <div class="card__content">
+                <h3 class="card__title">Single Page Application</h3>
+                <div class="work__project-summary">
+                    <p>FyndIt</p>
+                </div>
+                <ul class="work__project-bullets">
+                    <li>Page load speed: strategic bundling of .js, inlining .css, use of content delivery networks</li>
+                    <li>Paypal integration.</li>
+                    <li>Deployed with Jenkins Continuous Integration.</li>
+                    <li>Inline .json for initial state of dynamic elements, e.g.: 'user has liked this item'</li>
+                    <li>Self initializing components. The usefullness of .js-classnames.</li>
+                    <li>Authentication: register/login with internal accounts or via 3rd parties.</li>
+                    <li>SVG symbols.</li>
+                    <li>Pleasant interface/interaction details.</li>
+                    <li>Messaging across authentication states, e.g.: saving the text of a comment when an anonymous user tries to submit to be populated after subsequent login.</li>
+                </ul>
+            </div>
+            <aside class="card__resources">
+                <h4>Resources</h4>
+                <ul>
+                    <li><a href='#' target="_blank" rel="noopener">webpagetest.org</a></li>
+                    <li><a href='//fyndit.com' target="_blank" rel="noopener">FyndIt</a></li>
+                </ul>
+            </aside>
+        </section>
+        <section id="web-performance" class="card">
             <a class="jump-top" href="#top" role="button">Top</a>
-            <h3 class="card__title"><abbr title="Web Content Accessibility Guidelines">WCAG</abbr> AAA</h3>
-            <p>Sunt esse veniam culpa nostrud consectetur exercitation sit Lorem voluptate. Mollit velit mollit consequat enim eiusmod minim magna cillum commodo ea cupidatat enim. Veniam pariatur ex laboris laboris enim labore voluptate ullamco minim officia aliquip aliqua irure incididunt. Lorem nostrud duis ullamco non quis tempor do sint veniam eiusmod ut in est reprehenderit. Quis labore reprehenderit tempor tempor esse non.</p>
+            <div class="card__content">
+                <h3 class="card__title">Web Performance</h3>
+                <div class="work__project-summary">
+                    <p>Different strategies are required for the type of site that is being delivered. Strategic bundling of .js is a good idea for a single page application but it is not as relevant on a single page hand coded html/css site.</p>
+                </div>
+
+                <h4>Successful strategies I have used in production:</h4>
+                <ul class="work__project-bullets">
+                    <li>require.js dynamic includes</li>
+                    <li>lazy loading 3rd party</li>
+                    <li>http/2</li>
+                    <li>webpagetest</li>
+                    <li>Cache static content, reduce expensive db calls, inline cache .json to rehydrate state</li>
+                </ul>
+            </div>
+            <aside class="card__resources">
+                <h4>Resources</h4>
+                <ul>
+                    <li><a href='//www.webpagetest.org/result/180523_8H_0c5289bf762d4c72c14a09f2c7129f4d/' target="_blank" rel="noopener">FyndIt: Spotty 3G, 1st load, mid-tier mobile device.</a></li>
+                    <li><a href='//www.webpagetest.org/result/180523_K4_8a65a5df97ff2e10bbd1c03a7f5a2b1f/' target="_blank" rel="noopener">FyndIt: 4G, 1st load, mid-tier mobile device.</a></li>
+                    <li><a href='//www.webpagetest.org/result/180606_W2_e54503005eb6c863fc7a7f52ba6f74f1/' target="_blank" rel="noopener">FyndIt: DSL, 1st load, desktop device.</a></li>
+                    <li><a href='//www.webpagetest.org/result/180606_81_ebcc08448ba1ad156c1242ff762eee04/' target="_blank" rel="noopener">FyndIt: Cable, 1st load, desktop device.</a></li>
+                    <li><a href='//www.webpagetest.org/result/180606_RX_5717dd9394d6d0600d8004295b0fa79c/' target="_blank" rel="noopener">Oakenfold.ca: Spotty 3G, 1st load, mid-tier mobile device.</a></li>
+                </ul>
+            </aside>
+        </section>
+        <div id="wcag" class="card">
+            <a class="jump-top" href="#top" role="button">Top</a>
+            <div class="card__content">
+                <h3 class="card__title">Web Content Accessibility&nbsp;Guidelines</h3>
+                <div class="work__project-summary">
+                    <p>Animikii, WatchMojo</p>
+                </div>
+                <ul class="work__project-bullets">
+                    <li>Met AAA rating</li>
+                    <li>Tested for visual disabilities</li>
+                    <li>Generated alternate text content.</li>
+                    <li>Semantic markup, aria labels</li>
+                </ul>
+            </div>
+            <aside class="card__resources">
+                <h4>Resources</h4>
+                <ul>
+                    <li><a href='//alistapart.com/article/diy-web-accessibility-blueprint' target="_blank" rel="noopener">A DIY Web Accessibility Blueprint.</a></li>
+                    <li><a href='//www.adatitleiii.com/2018/04/beyond-title-iii-website-accessibility-lawsuits-filed-alleging-inaccessible-online-employment-applications/' target="_blank" rel="noopener">Beyond Title III: Website Accessibility Lawsuits Filed Alleging Inaccessible Online Employment Applications.</a></li>
+                    <li><a href='//www.sgrlaw.com/is-your-website-a-place-of-public-accommodation-under-the-americans-with-disabilities-act/' target="_blank" rel="noopener">Is Your Website a “Place of Public Accommodation” Under the Americans with Disabilities Act?</a></li>
+                </ul>
+            </aside>
         </div>
         <div id="gatsby-react" class="card">
             <a class="jump-top" href="#top" role="button">Top</a>
-            <h3 class="card__title">Gatsby, React</h3>
-            <p>Sunt esse veniam culpa nostrud consectetur exercitation sit Lorem voluptate. Mollit velit mollit consequat enim eiusmod minim magna cillum commodo ea cupidatat enim. Veniam pariatur ex laboris laboris enim labore voluptate ullamco minim officia aliquip aliqua irure incididunt. Lorem nostrud duis ullamco non quis tempor do sint veniam eiusmod ut in est reprehenderit. Quis labore reprehenderit tempor tempor esse non.</p>
+            
+            
+            <div class="card__content">
+                <h3 class="card__title">Gatsby, React</h3>
+                <div class="work__project-summary">
+                    <p>XXX</p>
+                </div>
+                <ul class="work__project-bullets">
+                    <li>XXX</li>
+                    <li>XXX</li>
+                    <li>XXX</li>
+                    <li>XXX</li>
+                </ul>
+            </div>
+            <aside class="card__resources">
+                <h4>Resources</h4>
+                <ul>
+                    <li><a href='#' target="_blank" rel="noopener">webpagetest.org</a></li>
+                    <li><a href='#' target="_blank" rel="noopener">Article</a></li>
+                </ul>
+            </aside>
         </div>
         <div id="html-css" class="card">
             <a class="jump-top" href="#top" role="button">Top</a>
-            <h3 class="card__title">HTML, CSS</h3>
-            <p>Sunt esse veniam culpa nostrud consectetur exercitation sit Lorem voluptate. Mollit velit mollit consequat enim eiusmod minim magna cillum commodo ea cupidatat enim. Veniam pariatur ex laboris laboris enim labore voluptate ullamco minim officia aliquip aliqua irure incididunt. Lorem nostrud duis ullamco non quis tempor do sint veniam eiusmod ut in est reprehenderit. Quis labore reprehenderit tempor tempor esse non.</p>
+            
+            
+            <div class="card__content">
+                <h3 class="card__title">HTML, CSS</h3>
+                <div class="work__project-summary">
+                    <p>XXX</p>
+                </div>
+                <ul class="work__project-bullets">
+                    <li>XXX</li>
+                    <li>XXX</li>
+                    <li>XXX</li>
+                    <li>XXX</li>
+                </ul>
+            </div>
+            <aside class="card__resources">
+                <h4>Resources</h4>
+                <ul>
+                    <li><a href='#' target="_blank" rel="noopener">webpagetest.org</a></li>
+                    <li><a href='#' target="_blank" rel="noopener">Article</a></li>
+                </ul>
+            </aside>
         </div>
     </div>
     
     <div id="settings" class="card card--settings">
         <a class="jump-top" href="#top" role="button">Top</a>
         <h2 class="card__title">Settings</h2>
-        <p>There are multiple versions of this site.</p>
-        <p>Each one created with a different set of tools and technology.</p>
-        <p>Please load up the variations, review performance results, or check out the source code.</p>
-<figure class="settings__table-container">
-    <table class="settings__table">
-    <thead>
-        <tr>
-        <th>Variation</th>
-        <th>Performance</th>
-        <th>Code</th>
-        <th class="u-hide-small">Rating</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td><a href="#">HTML/CSS</a></td>
-            <td>
-                <a class="settings__table-link" href="https://www.webpagetest.org/result/180606_RX_5717dd9394d6d0600d8004295b0fa79c/" target="_blank" rel="noopener" title="webpagetest.org results">🔥</a>
-            </td>
-            <td>
-                <a class="settings__table-link" href="#" target="_blank" rel="noopener" title="Github">🐞</a>
-            </td>
-            <td class="u-hide-small">
-                <strong class="one-hundred" title="Lighthouse 100 rating">💯</strong>
-                <strong class="one-hundred" title="Lighthouse 100 rating">💯</strong>
-                <strong class="one-hundred" title="Lighthouse 100 rating">💯</strong>
-                <strong class="one-hundred" title="Lighthouse 100 rating">💯</strong>
-            </td>
-        </tr>
-        <tr class="settings__table-row">
-            <td><a href="#">HTML/CSS/JS</a></td>
-            <td>
-                <a class="settings__table-link" href="#" target="_blank" rel="noopener" title="webpagetest.org results">🔥</a>
-            </td>
-            <td>
-                <a class="settings__table-link" href="#" target="_blank" rel="noopener" title="Github">🐞</a>
-            </td>
-            <td class="u-hide-small">
-                <strong class="one-hundred" title="Lighthouse 100 rating">💯</strong>
-                <strong class="one-hundred" title="Lighthouse 100 rating">💯</strong>
-                <strong class="one-hundred" title="Lighthouse 100 rating">💯</strong>
-                <strong class="one-hundred" title="Lighthouse 100 rating">💯</strong>
-            </td>
-        </tr>
-        <tr class="settings__table-row">
-            <td><a href="#">Gatsby</a></td>
-            <td>
-                <a class="settings__table-link" href="#" target="_blank" rel="noopener" title="webpagetest.org results">🔥</a>
-            </td>
-            <td>
-                <a class="settings__table-link" href="#" target="_blank" rel="noopener" title="Github">🐞</a>
-            </td>
-            <td class="u-hide-small">
-                <strong class="one-hundred" title="Lighthouse 100 rating">💯</strong>
-                <strong class="one-hundred" title="Lighthouse 100 rating">💯</strong>
-                <strong class="one-hundred" title="Lighthouse 100 rating">💯</strong>
-                <strong class="one-hundred" title="Lighthouse 100 rating">💯</strong>
-            </td>
-        </tr>
-        <tr class="settings__table-row">
-            <td><a href="#">React</a></td>
-            <td>
-                <a class="settings__table-link" href="#" target="_blank" rel="noopener" title="webpagetest.org results">🔥</a>
-            </td>
-            <td>
-                <a class="settings__table-link" href="#" target="_blank" rel="noopener" title="Github">🐞</a>
-            </td>
-            <td class="u-hide-small">
-                <strong class="one-hundred" title="Lighthouse 100 rating">💯</strong>
-                <strong class="one-hundred" title="Lighthouse 100 rating">💯</strong>
-                <strong class="one-hundred" title="Lighthouse 100 rating">💯</strong>
-                <strong class="one-hundred" title="Lighthouse 100 rating">💯</strong>
-            </td>
-        </tr>
-        <tr>
-            <td><a href="#">Vue</a></td>
-            <td>
-                <a class="settings__table-link" href="#" target="_blank" rel="noopener" title="webpagetest.org results">🔥</a>
-            </td>
-            <td>
-                <a class="settings__table-link" href="#" target="_blank" rel="noopener" title="Github">🐞</a>
-            </td>
-            <td class="u-hide-small">
-                <strong class="one-hundred" title="Lighthouse 100 rating">💯</strong>
-                <strong class="one-hundred" title="Lighthouse 100 rating">💯</strong>
-                <strong class="one-hundred" title="Lighthouse 100 rating">💯</strong>
-                <strong class="one-hundred" title="Lighthouse 100 rating">💯</strong>
-            </td>
-        </tr>
-    </tbody>
-    </table>
-    <figcaption class="settings__table-caption">Performance testing prioritized 1st page load on a spotty 3G connection using a mid tier mobile device.</figcaption>
-</figure>
+        <p>There are multiple versions of this site. Each one created with a different set of tools and technology.</p>
+        <p>Please check them out, look at the performance results, or review the source code.</p>
+        <figure class="settings__table-container">
+            <table class="settings__table">
+            <thead>
+                <tr>
+                <th>Version</th>
+                <th>Performance</th>
+                <th>Code</th>
+                <th class="u-hide-small">Rating</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a class="settings__table-link" href="#">HTML/CSS</a></td>
+                    <td>
+                        <a class="settings__table-link" href="https://www.webpagetest.org/result/180606_RX_5717dd9394d6d0600d8004295b0fa79c/" target="_blank" rel="noopener" title="webpagetest.org results">🔥</a>
+                    </td>
+                    <td>
+                        <a class="settings__table-link" href="#" target="_blank" rel="noopener" title="Github">🐞</a>
+                    </td>
+                    <td class="u-hide-small">
+                        <strong class="one-hundred" title="Lighthouse 100 rating">💯</strong>
+                        <strong class="one-hundred" title="Lighthouse 100 rating">💯</strong>
+                        <strong class="one-hundred" title="Lighthouse 100 rating">💯</strong>
+                        <strong class="one-hundred" title="Lighthouse 100 rating">💯</strong>
+                    </td>
+                </tr>
+                <tr class="settings__table-row">
+                    <td><a class="settings__table-link" href="#">HTML/CSS/JS</a></td>
+                    <td>
+                        <a class="settings__table-link" href="#" target="_blank" rel="noopener" title="webpagetest.org results">🔥</a>
+                    </td>
+                    <td>
+                        <a class="settings__table-link" href="#" target="_blank" rel="noopener" title="Github">🐞</a>
+                    </td>
+                    <td class="u-hide-small">
+                        <strong class="one-hundred" title="Lighthouse 100 rating">💯</strong>
+                        <strong class="one-hundred" title="Lighthouse 100 rating">💯</strong>
+                        <strong class="one-hundred" title="Lighthouse 100 rating">💯</strong>
+                        <strong class="one-hundred" title="Lighthouse 100 rating">💯</strong>
+                    </td>
+                </tr>
+                <tr class="settings__table-row">
+                    <td><a class="settings__table-link" href="#">Gatsby</a></td>
+                    <td>
+                        <a class="settings__table-link" href="#" target="_blank" rel="noopener" title="webpagetest.org results">🔥</a>
+                    </td>
+                    <td>
+                        <a class="settings__table-link" href="#" target="_blank" rel="noopener" title="Github">🐞</a>
+                    </td>
+                    <td class="u-hide-small">
+                        <strong class="one-hundred" title="Lighthouse 100 rating">💯</strong>
+                        <strong class="one-hundred" title="Lighthouse 100 rating">💯</strong>
+                        <strong class="one-hundred" title="Lighthouse 100 rating">💯</strong>
+                        <strong class="one-hundred" title="Lighthouse 100 rating">💯</strong>
+                    </td>
+                </tr>
+                <tr class="settings__table-row">
+                    <td><a class="settings__table-link" href="#">React</a></td>
+                    <td>
+                        <a class="settings__table-link" href="#" target="_blank" rel="noopener" title="webpagetest.org results">🔥</a>
+                    </td>
+                    <td>
+                        <a class="settings__table-link" href="#" target="_blank" rel="noopener" title="Github">🐞</a>
+                    </td>
+                    <td class="u-hide-small">
+                        <strong class="one-hundred" title="Lighthouse 100 rating">💯</strong>
+                        <strong class="one-hundred" title="Lighthouse 100 rating">💯</strong>
+                        <strong class="one-hundred" title="Lighthouse 100 rating">💯</strong>
+                        <strong class="one-hundred" title="Lighthouse 100 rating">💯</strong>
+                    </td>
+                </tr>
+                <tr>
+                    <td><a class="settings__table-link" href="#">Vue</a></td>
+                    <td>
+                        <a class="settings__table-link" href="#" target="_blank" rel="noopener" title="webpagetest.org results">🔥</a>
+                    </td>
+                    <td>
+                        <a class="settings__table-link" href="#" target="_blank" rel="noopener" title="Github">🐞</a>
+                    </td>
+                    <td class="u-hide-small">
+                        <strong class="one-hundred" title="Lighthouse 100 rating">💯</strong>
+                        <strong class="one-hundred" title="Lighthouse 100 rating">💯</strong>
+                        <strong class="one-hundred" title="Lighthouse 100 rating">💯</strong>
+                        <strong class="one-hundred" title="Lighthouse 100 rating">💯</strong>
+                    </td>
+                </tr>
+            </tbody>
+            </table>
+            <figcaption class="settings__table-caption">Performance testing prioritized 1st page load on a spotty 3G connection using a mid tier mobile device.</figcaption>
+        </figure>
     </div>
 </div>
 

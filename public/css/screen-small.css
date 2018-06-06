@@ -29,7 +29,6 @@
     }
     .card--settings {
         margin: 0;
-        max-width: 100%;
         padding: 12px;
     }
     .card--settings:target {
@@ -44,6 +43,10 @@
     .menu__sub {
         flex-grow: 2;
     }
+    .menu__sub li {
+        margin-bottom: 4px;
+    }
+    
     .menu__item--full {
         width: 100%;
     }
@@ -80,12 +83,6 @@
         margin: 0;
         max-width: 100%;
         padding: 12px 0;
-    }
-    .work .card {
-        padding: 12px 12px 12px 24px;
-    }
-    .work .card:target {
-        padding: 12px 12px 12px 12px;
     }
     .work__bio {
         padding: 12px;
