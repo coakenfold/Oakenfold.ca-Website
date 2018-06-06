@@ -1,28 +1,42 @@
 
 @media screen and (max-width: 500px) {
+/* Base, Utility
+======================================== */
     footer {
         margin-top: 0;
     }
-    th {
-        text-align: left;
+    .u-hide-small {
+        display: none;
     }
+/* B
+======================================== */
     .banner {
         padding: 24px 12px;
     }
     .banner__title {
         font-size: 20px;
     }
+    .banner__roles {
+        font-size: 12px;
+    }
     .banner__logo {
         flex-shrink: 0;
     }
+/* C
+======================================== */
     .card--contact {
-        margin: 0;
+        max-width: 100%;
     }
     .card--settings {
         margin: 0;
         max-width: 100%;
         padding: 12px;
     }
+    .card--settings:target {
+        padding: 12px;
+    }
+/* M
+======================================== */
     .menu {
         flex-direction: column;
         padding: 0;
@@ -39,14 +53,9 @@
     .messaging__text {
         background-color: rgba(255,255,255,0);
     }
-    .work {
-        margin: 0;
-        max-width: 100%;
-    }
-    .work .card {
-        padding: 12px 12px 12px 24px;
-    }
     
+/* S
+======================================== */
     .settings__table-container {
         padding: 12px 0;
     }
@@ -57,11 +66,28 @@
     }
     .settings__table td {
         padding: 0;
+        text-align: left;
     }
     .settings__table th {
-        text-align: center;
+        text-align: left;
     }
     .settings__table-link {
         padding: 0;
+    }
+/* W
+======================================== */
+    .work {
+        margin: 0;
+        max-width: 100%;
+        padding: 12px 0;
+    }
+    .work .card {
+        padding: 12px 12px 12px 24px;
+    }
+    .work .card:target {
+        padding: 12px 12px 12px 12px;
+    }
+    .work__bio {
+        padding: 12px;
     }
 }

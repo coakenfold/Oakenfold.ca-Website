@@ -31,13 +31,16 @@
         <p class="messaging__inner">
             <label for="messaging__input" class="messaging__label">hide</label>
             <input type="checkbox" id="messaging__input">
-            <a href="#settings" class="messaging__text">Viewing the <strong>Html/Css</strong> project.</a>
+            <a href="#settings" class="messaging__text">Viewing the <strong>HTML/CSS</strong> project.</a>
         </p>
     </div>
     <span id="top" class="jump-top__target"></span>
     <h1 class="banner">
         <svg class="oakca banner__logo" aria-label="oakenfold logo"><use xlink:href="#oakca" /></svg>
-        <span class="banner__title">Chad Oakenfold</span>
+        <span class="banner__author">
+            <span class="banner__title">Chad Oakenfold</span>
+            <span class="banner__roles">Front End Developer / Web Engineer.</span>
+        </span>
     </h1>
 
     <ul id="menu" class="menu">
@@ -57,17 +60,19 @@
     
 
     <div id="work" class="group work">
-        <a class="jump-top" href="#top" role="button">Top</a>
-        <h2 class="group__title">Work</h2>
-        <p>Sunt <a href="#x">esse</a> veniam culpa nostrud consectetur exercitation sit Lorem voluptate. Mollit velit mollit consequat enim eiusmod minim magna cillum commodo ea cupidatat enim. Veniam pariatur ex laboris laboris enim labore voluptate ullamco minim officia aliquip aliqua irure incididunt. Lorem nostrud duis ullamco non quis tempor do sint veniam eiusmod ut in est reprehenderit. Quis labore reprehenderit tempor tempor esse non.</p>
+        <div class="work__bio">
+            <a class="jump-top" href="#top" role="button">Top</a>
+            <h2 class="group__title">Work</h2>
+            <p>Sunt <a href="#x">esse</a> veniam culpa nostrud consectetur exercitation sit Lorem voluptate. Mollit velit mollit consequat enim eiusmod minim magna cillum commodo ea cupidatat enim. Veniam pariatur ex laboris laboris enim labore voluptate ullamco minim officia aliquip aliqua irure incididunt. Lorem nostrud duis ullamco non quis tempor do sint veniam eiusmod ut in est reprehenderit. Quis labore reprehenderit tempor tempor esse non.</p>
+        </div>
         <div id="spa-performance" class="card">
             <a class="jump-top" href="#top" role="button">Top</a>
-            <h3 class="card__title">SPA Performance</h3>
+            <h3 class="card__title"><abbr title="Single Page Application">SPA</abbr> Performance</h3>
             <p>Sunt <a href="#x">esse</a> veniam culpa nostrud consectetur exercitation sit Lorem voluptate. Mollit velit mollit consequat enim eiusmod minim magna cillum commodo ea cupidatat enim. Veniam pariatur ex laboris laboris enim labore voluptate ullamco minim officia aliquip aliqua irure incididunt. Lorem nostrud duis ullamco non quis tempor do sint veniam eiusmod ut in est reprehenderit. Quis labore reprehenderit tempor tempor esse non.</p>
         </div>
         <div id="wcag-aaa" class="card">
             <a class="jump-top" href="#top" role="button">Top</a>
-            <h3 class="card__title">WCAG</h3>
+            <h3 class="card__title"><abbr title="Web Content Accessibility Guidelines">WCAG</abbr> AAA</h3>
             <p>Sunt esse veniam culpa nostrud consectetur exercitation sit Lorem voluptate. Mollit velit mollit consequat enim eiusmod minim magna cillum commodo ea cupidatat enim. Veniam pariatur ex laboris laboris enim labore voluptate ullamco minim officia aliquip aliqua irure incididunt. Lorem nostrud duis ullamco non quis tempor do sint veniam eiusmod ut in est reprehenderit. Quis labore reprehenderit tempor tempor esse non.</p>
         </div>
         <div id="gatsby-react" class="card">
@@ -95,19 +100,19 @@
         <th>Variation</th>
         <th>Performance</th>
         <th>Code</th>
-        <th>Rating</th>
+        <th class="u-hide-small">Rating</th>
         </tr>
     </thead>
     <tbody>
         <tr>
-            <td>Html/Css</td>
+            <td><a href="#">HTML/CSS</a></td>
             <td>
                 <a class="settings__table-link" href="https://www.webpagetest.org/result/180606_RX_5717dd9394d6d0600d8004295b0fa79c/" target="_blank" rel="noopener" title="webpagetest.org results">🔥</a>
             </td>
             <td>
                 <a class="settings__table-link" href="#" target="_blank" rel="noopener" title="Github">🐞</a>
             </td>
-            <td>
+            <td class="u-hide-small">
                 <strong class="one-hundred" title="Lighthouse 100 rating">💯</strong>
                 <strong class="one-hundred" title="Lighthouse 100 rating">💯</strong>
                 <strong class="one-hundred" title="Lighthouse 100 rating">💯</strong>
@@ -115,14 +120,14 @@
             </td>
         </tr>
         <tr class="settings__table-row">
-            <td>Html/Css/Js</td>
+            <td><a href="#">HTML/CSS/JS</a></td>
             <td>
                 <a class="settings__table-link" href="#" target="_blank" rel="noopener" title="webpagetest.org results">🔥</a>
             </td>
             <td>
                 <a class="settings__table-link" href="#" target="_blank" rel="noopener" title="Github">🐞</a>
             </td>
-            <td>
+            <td class="u-hide-small">
                 <strong class="one-hundred" title="Lighthouse 100 rating">💯</strong>
                 <strong class="one-hundred" title="Lighthouse 100 rating">💯</strong>
                 <strong class="one-hundred" title="Lighthouse 100 rating">💯</strong>
@@ -130,14 +135,14 @@
             </td>
         </tr>
         <tr class="settings__table-row">
-            <td>Gatsby</td>
+            <td><a href="#">Gatsby</a></td>
             <td>
                 <a class="settings__table-link" href="#" target="_blank" rel="noopener" title="webpagetest.org results">🔥</a>
             </td>
             <td>
                 <a class="settings__table-link" href="#" target="_blank" rel="noopener" title="Github">🐞</a>
             </td>
-            <td>
+            <td class="u-hide-small">
                 <strong class="one-hundred" title="Lighthouse 100 rating">💯</strong>
                 <strong class="one-hundred" title="Lighthouse 100 rating">💯</strong>
                 <strong class="one-hundred" title="Lighthouse 100 rating">💯</strong>
@@ -145,14 +150,14 @@
             </td>
         </tr>
         <tr class="settings__table-row">
-            <td>React</td>
+            <td><a href="#">React</a></td>
             <td>
                 <a class="settings__table-link" href="#" target="_blank" rel="noopener" title="webpagetest.org results">🔥</a>
             </td>
             <td>
                 <a class="settings__table-link" href="#" target="_blank" rel="noopener" title="Github">🐞</a>
             </td>
-            <td>
+            <td class="u-hide-small">
                 <strong class="one-hundred" title="Lighthouse 100 rating">💯</strong>
                 <strong class="one-hundred" title="Lighthouse 100 rating">💯</strong>
                 <strong class="one-hundred" title="Lighthouse 100 rating">💯</strong>
@@ -160,14 +165,14 @@
             </td>
         </tr>
         <tr>
-            <td>Vue</td>
+            <td><a href="#">Vue</a></td>
             <td>
                 <a class="settings__table-link" href="#" target="_blank" rel="noopener" title="webpagetest.org results">🔥</a>
             </td>
             <td>
                 <a class="settings__table-link" href="#" target="_blank" rel="noopener" title="Github">🐞</a>
             </td>
-            <td>
+            <td class="u-hide-small">
                 <strong class="one-hundred" title="Lighthouse 100 rating">💯</strong>
                 <strong class="one-hundred" title="Lighthouse 100 rating">💯</strong>
                 <strong class="one-hundred" title="Lighthouse 100 rating">💯</strong>
@@ -187,9 +192,9 @@
         <h2 class="card__title">Contact</h2>
         <dl>
         <dt>Chad Oakenfold creates &ldquo;intricate and beautiful complexities&rdquo; straight from the rainforests of Vancouver Island.</dt>
-        <dd>I'm active on <a href="https://twitter.com/coak" target="_blank" rel="noopener">Twitter,</a></dd>
-        <dd>you could mailto: <strong>web@(this url)</strong>,</dd>
-        <dd>or even connect via <a href="https://www.linkedin.com/in/chad-oakenfold-a9a65a4/" target="_blank" rel="noopener">LinkedIn.</a></dd>
+        <dd>I am active on <a href="https://twitter.com/coak" target="_blank" rel="noopener">Twitter,</a></dd>
+        <dd>You could mailto: <strong>web at (this url)</strong>,</dd>
+        <dd>Connect via <a href="https://www.linkedin.com/in/chad-oakenfold-a9a65a4/" target="_blank" rel="noopener">LinkedIn.</a></dd>
         </dl>
     </div>
 

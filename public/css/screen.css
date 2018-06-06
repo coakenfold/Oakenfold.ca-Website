@@ -96,13 +96,29 @@ h6 {
     display: flex;
     align-items: center;
     line-height: 1;
-    padding: 24px 12px 24px 5.6%;
+    padding: 24px 12px 24px 12.6%;
     font-size: 55px;
     color: rgba(0,0,0,0.9);
     font-weight: 600;
     border: 0;
     box-shadow: 0;
     text-decoration: none;
+}
+
+.banner__cycle {
+    display: inline-block;
+}
+.banner__author {
+    display: flex;
+    flex-direction: column;
+}
+.banner__title {
+    display: inline-block;
+    font-size: 20px;
+}
+.banner__roles {
+    display: inline-block;
+    font-size: 12px;
 }
 
 .banner__logo {
@@ -325,7 +341,7 @@ h6 {
 }
 
 /* S
-*/
+======================================== */
 .settings__table-container {
     display: flex;
     flex-direction: column;
@@ -366,5 +382,5 @@ h6 {
     max-width: 75%;
 }
 .work .card {
-    padding: 12px 12px 12px 24px;
+    padding: 12px 0 12px 12px;
 }
