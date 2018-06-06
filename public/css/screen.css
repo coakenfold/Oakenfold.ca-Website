@@ -182,6 +182,9 @@ h6 {
     max-width: 50%;
     background-color: rgba(255,255,255,0.75);
 }
+.card--settings:target {
+    padding: 24px;
+}
 
 
 /* G 
@@ -333,6 +336,10 @@ h6 {
 .settings__table {
     width: 100%;
     margin-bottom: 24px;
+}
+.settings__table th {
+    font-weight: 400;
+    text-decoration: underline;
 }
 .settings__table-caption {
     font-size: 12px;

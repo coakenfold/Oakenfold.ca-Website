@@ -1,0 +1,6 @@
+@media screen and (max-width: 990px) {
+    .card--settings {
+        max-width: 85%;
+        padding: 18px;
+    }
+}
