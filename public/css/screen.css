@@ -31,9 +31,9 @@ a {
     transition: all 0.25s ease-out, color 0.12s ease-out, background-color 0.12s ease-out;
 }
 a:hover {
-    background-color: rgba(170, 0, 0, 0.8);
+    background-color: rgb(236, 183, 47);
     text-decoration: underline;
-    color: #fff;
+    color: #000;
 }
 a:focus {
     background-color: rgba(170, 0, 0, 1);
