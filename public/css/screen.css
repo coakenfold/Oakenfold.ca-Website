@@ -23,19 +23,9 @@ body {
     background-color: rgba(255,255,255,1);
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    margin: 0 0 12px;
-    font-weight: 400;
-}
 a {
+    font-size: inherit;
     color: rgba(170, 0, 0, 1);
-    padding: 4px;
-    display: inline-block;
     transition: all 0.25s ease-out, color 0.12s ease-out, background-color 0.12s ease-out;
 }
 a:hover {
@@ -49,16 +39,38 @@ a:focus {
     color: #fff;
     outline-color: #ecb72f;
 }
+dl {
+    margin: 0;
+}
+dd,
+dt {
+    margin: 0 0 12px;
+}
 figure {
     margin: 0;
 }
-figcaption {
-    font-size: 12px;
-}
 footer {
     background-color: #05182A;
+    background-image: linear-gradient(180deg, rgba(0,0,0,1) 12%, rgba(0,0,0,0) 100%);
     color: #fff;
     margin-top: 56px;
+}
+p {
+    margin: 0;
+    padding: 0 0 12px;
+}
+td {
+    vertical-align: middle;
+    text-align: center;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 12px;
+    font-weight: 400;
 }
 
 .u-dn {
@@ -78,61 +90,30 @@ footer {
 .banner {
     margin: 0;
     color: rgba(255, 255, 255, 0.9);
-    box-shadow: 0 2px 0 rgba(0,0,0,0.1);
     position: relative;
     z-index:1;
     font-weight: 400;
-}
-
-.banner__link {
     display: flex;
     align-items: center;
     line-height: 1;
-    padding: 24px 12px;
+    padding: 24px 12px 24px 5.6%;
     font-size: 55px;
-    color: rgba(0,0,0,0.9)/*rgba(255, 255, 255, 0.9)*/;
+    color: rgba(0,0,0,0.9);
     font-weight: 600;
     border: 0;
     box-shadow: 0;
     text-decoration: none;
 }
-.banner__link:target {
-    box-shadow: 0;
-    outline: 0;
-    border: 0;
-    text-decoration: none;
-    background-color: transparent;
-}
-.banner__link:hover {
-    text-decoration: none;
-    background-color: transparent;
-    color: black;
-}
-.banner__link:focus {
-    text-decoration: none;
-}
+
 .banner__logo {
     margin-right: 12px;
-}
-.banner__title {
-    border-bottom: 4px solid rgba(236, 183, 47, 0);
-    color: rgb(0, 0, 0);
-    transition: border-bottom 0.25s ease-in-out, color 0.25s ease-in-out;
-}
-.banner__link:target .banner__title {
-    color: rgb(0, 0, 0);
-    border-bottom: 4px solid rgba(0, 0, 0, 1);
-}
-
-.banner__link:hover .banner__title {
-    color: rgb(236, 183, 47);
-    border-bottom: 4px solid rgba(236, 183, 47, 1);
 }
 
 .but-mighty {
     display: block;
     text-align: center;
-    padding: 12px;
+    padding: 24px 12px 36px;
+    color: rgba(255,255,255,0.6);
 }
 
 /* C 
@@ -147,7 +128,6 @@ footer {
 .card:target {
     box-shadow: 2px 2px 18px rgba(0,0,0,0.05);
     padding: 12px;
-    border: 1px solid rgba(236, 183, 47, 1);
     background-color: rgba(255,255,255,1);
 }
 .card:target .card__title {
@@ -158,7 +138,8 @@ footer {
     transition: border-bottom 0.25s ease-in-out;
 }
 .card--contact {
-    padding: 24px;
+    transition: all 0.5s ease-out;
+    padding: 12px;
     background-image: linear-gradient(180deg, rgba(0,0,0,1) 12%, rgba(0,0,0,0) 100%);
 }
 .card--contact a{
@@ -175,14 +156,15 @@ footer {
 }
 .card--contact {
     padding: 24px;
-    background-image: linear-gradient(180deg, rgba(0,0,0,1) 12%, rgba(0,0,0,0) 100%);
     box-shadow: none;
     border: 0;
     border-top: 0 solid rgba(236, 183, 47, 1);
+    max-width: 75%;
+    margin: 0 auto;
 }
 .card--contact:target {
     background-color: transparent;
-    background-image: linear-gradient(180deg, rgba(0,0,0,1) 12%, rgba(0,0,0,0) 100%);
+    background-image: transparent;
     padding: 24px;
     box-shadow: none;
     border: 0;
@@ -195,16 +177,22 @@ footer {
     border-bottom: 1px solid #ecb72f;
 }
 .card--settings {
-    margin: 12px;
+    margin: 12px auto;
+    padding: 24px;
+    max-width: 50%;
+    background-color: rgba(255,255,255,0.75);
 }
 
-/* F 
+
+/* G 
 ======================================== */
-
-.fold {
-    margin: 0 auto;
+.group__title {
+    border-bottom: 2px solid rgba(236, 183, 47, 0);
+    transition: border-bottom 0.25s ease-in-out;
 }
-
+.group:target .group__title {
+    border-bottom: 2px solid rgba(236, 183, 47, 1);
+}
 
 /* J
 ======================================== */
@@ -225,19 +213,56 @@ footer {
     background-color: #fff;
     color: #000;
 }
-
+.jump-top__target {
+    /* https://snook.ca/archives/html_and_css/hiding-content-for-accessibility */
+    position: absolute !important;
+    height: 1px; width: 1px; 
+    overflow: hidden;
+    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0;
+    border: none;
+    box-shadow: none;
+}
 /* M
 ======================================== */
 
 .messaging {
-    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+    font-size: 12px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+}
+.messaging__inner {
+    padding: 12px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+.messaging__label {
+    padding: 4px;
+}
+.messaging__text {
+    transition: all 0.25s ease-in-out;
+    padding: 4px;
+}
+
+#messaging__input:checked + .messaging__text {
+    padding: 0;
+    margin-top: -100%;
 }
 
 .menu {
     display: flex;
     list-style-type: none;
     justify-content: left;
-    padding: 0;
+    padding: 0 0 0 11.8%;
     margin: 0 0 12px;
     background-color: #aa0000;
     background-image: linear-gradient(-90deg, rgba(170, 0, 0, 0.5) 12%, rgba(221, 10, 10, 0.5) 100%);
@@ -257,6 +282,8 @@ footer {
     font-weight: 400;
     padding: 12px;
     box-sizing: border-box;
+
+    display: inline-block;
 }
 .menu__item:focus {
     background-color: #fff;
@@ -290,12 +317,47 @@ footer {
 .oakca__inner{fill:#ecb72f;}
 .oakca__negative{fill:#fff;}
 
+.one-hundreds {
+    color: green;
+}
+
+/* S
+*/
+.settings__table-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    padding: 24px;
+}
+.settings__table {
+    width: 100%;
+    margin-bottom: 24px;
+}
+.settings__table-caption {
+    font-size: 12px;
+}
+.settings__table-link {
+    text-decoration: none;
+    padding: 12px;
+}
+.settings__table-link:hover {
+    text-decoration: none;
+}
+.settings__table-link:focus {
+    text-decoration: none;
+}
+.settings__table td {
+    padding: 12px;
+}
+
 /* W
 ======================================== */
 .work {
     padding: 12px;
-    margin: 12px;
+    margin: 12px auto;
+    max-width: 75%;
 }
 .work .card {
-    padding: 12px 24px;
+    padding: 12px 12px 12px 24px;
 }

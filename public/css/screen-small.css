@@ -1,12 +1,63 @@
 
 @media screen and (max-width: 500px) {
+    th {
+        text-align: left;
+    }
+    .banner {
+        padding: 24px 12px;
+    }
+    .banner__title {
+        font-size: 20px;
+    }
+    .banner__logo {
+        flex-shrink: 0;
+    }
+    .card--contact {
+        margin: 0;
+    }
+    .card--settings {
+        margin: 0;
+        max-width: 100%;
+    }
     .menu {
         flex-direction: column;
+        padding: 0;
     }
     .menu__sub {
         flex-grow: 2;
     }
     .menu__item--full {
         width: 100%;
+    }
+    .messaging {
+        position: static;
+    }
+    .messaging__text {
+        background-color: rgba(255,255,255,0);
+    }
+    .work {
+        margin: 0;
+        max-width: 100%;
+    }
+    .work .card {
+        padding: 12px 12px 12px 24px;
+    }
+    
+    .settings__table-container {
+        padding: 12px 0;
+    }
+    .settings__table-caption {
+        font-size: 12px;
+        text-align: center;
+        padding: 12px;
+    }
+    .settings__table td {
+        padding: 0;
+    }
+    .settings__table th {
+        text-align: center;
+    }
+    .settings__table-link {
+        padding: 0;
     }
 }
