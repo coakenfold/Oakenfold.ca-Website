@@ -340,6 +340,28 @@ ul ul {
     width: 100%;
     z-index: 10;
 }
+.messaging__button {
+    position: absolute;
+    top: 16px;
+    right: 35px;
+    z-index: 0;
+    margin: 0;
+    transition: right 0.25s ease-out;
+    max-height: 0;
+    max-width: 0;
+}
+.messaging__button:focus {
+    right: 50px;
+    max-height: 100%;
+    max-width: 100%;
+}
+.messaging__button:checked + .messaging__text {
+    padding: 0;
+    margin-top: -100%;
+}
+.messaging__button:focus + .messaging__text {
+    margin-right: 18px
+}
 .messaging__inner {
     padding: 12px;
     margin: 0;
@@ -347,24 +369,6 @@ ul ul {
     align-items: center;
     flex-direction: row-reverse;
     position: relative;
-}
-.messaging__input {
-    position: absolute;
-    top: 16px;
-    right: 35px;
-    z-index: 0;
-    margin: 0;
-    transition: right 0.25s ease-out;
-}
-.messaging__input:focus {
-    right: 50px;
-}
-.messaging__input:checked + .messaging__text {
-    padding: 0;
-    margin-top: -100%;
-}
-.messaging__input:focus + .messaging__text {
-    margin-right: 18px
 }
 .messaging__label {
     padding: 4px 0;
