@@ -1,321 +1,761 @@
 <!doctype html>
 <html lang="en">
+
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
 
-<title>Hi from The West Coast! Oakenfold Enterprises (un)Ltd. ∞</title>
-<meta name="description" content="Hi from The West Coast! Oakenfold Enterprises (un)Ltd. ∞">
+    <title>Hi from The West Coast! Oakenfold Enterprises (un)Ltd. ∞</title>
+    <meta name="description" content="Hi from The West Coast! Oakenfold Enterprises (un)Ltd. ∞">
 
 
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="manifest" href="/site.webmanifest">
-<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#aa0000">
-<meta name="msapplication-TileColor" content="#aa0000">
-<meta name="theme-color" content="#ffffff">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#aa0000">
+    <meta name="msapplication-TileColor" content="#aa0000">
+    <meta name="theme-color" content="#ffffff">
 
-<link rel="stylesheet" href="css/screen.css">
-<!--<link rel="stylesheet" href="css/screen-large.css">-->
-<link rel="stylesheet" href="css/screen-medium.css">
-<link rel="stylesheet" href="css/screen-small.css">
+    <link rel="stylesheet" href="css/screen.css">
+    <!--<link rel="stylesheet" href="css/screen-large.css">-->
+    <link rel="stylesheet" href="css/screen-medium.css">
+    <link rel="stylesheet" href="css/screen-small.css">
 
-<!--<link rel="stylesheet" href="css/screen-small--theme-1.css">
-<link rel="stylesheet" href="css/screen-large--theme-1.css">-->
+    <!--<link rel="stylesheet" href="css/screen-small--theme-1.css">
+    <link rel="stylesheet" href="css/screen-large--theme-1.css">-->
 </head>
+
 <body>
-<div class="container">
+    <div class="container">
 
-    <div class="messaging">
-        <p class="messaging__inner">
-            <label for="messaging__input" class="messaging__label">hide</label>
-            <input type="checkbox" id="messaging__input">
-            <a href="#settings" class="messaging__text">Viewing the <strong>HTML/CSS</strong> project.</a>
-        </p>
-    </div>
-    <span id="top" class="jump-top__target"></span>
-    <h1 class="banner">
-        <svg class="oakca banner__logo" aria-label="oakenfold logo"><use xlink:href="#oakca" /></svg>
-        <span class="banner__author">
-            <span class="banner__title">Chad Oakenfold</span>
-            <span class="banner__roles">Front End Developer / Web Engineer.</span>
-        </span>
-    </h1>
-
-    <ul id="menu" class="menu">
-        <li class="menu__section">
-            <a href="#work" class="menu__item">Work</a>
-            <ul class="menu__sub">
-                <li class=""><a href="#spa" class="menu__item">Single Page Application</a></li>
-                <li class=""><a href="#web-performance" class="menu__item">Web Performance</a></li>
-                <li class=""><a href="#wcag" class="menu__item">Web Content Accessibility&nbsp;Guidelines</a></li>
-                <li class=""><a href="#gatsby-react" class="menu__item">Gatsby, React</a></li>
-                <li class=""><a href="#html-css" class="menu__item">HTML, CSS</a></li>
-            </ul>
-        </li>
-        <li class="menu__section"><a href="#contact" class="menu__item menu__item--full">Contact</a></li>
-        <li class="menu__section"><a href="#settings" class="menu__item menu__item--full">Settings</a></li>
-    </ul>
-
-    
-
-    <div id="work" class="group work">
-        <div class="work__bio">
-            <a class="jump-top" href="#top" role="button">Top</a>
-            <h2 class="group__title">Work</h2>
-            <p>Sunt <a href="#x">esse</a> veniam culpa nostrud consectetur exercitation sit Lorem voluptate. Mollit velit mollit consequat enim eiusmod minim magna cillum commodo ea cupidatat enim. Veniam pariatur ex laboris laboris enim labore voluptate ullamco minim officia aliquip aliqua irure incididunt. Lorem nostrud duis ullamco non quis tempor do sint veniam eiusmod ut in est reprehenderit. Quis labore reprehenderit tempor tempor esse non.</p>
+        <div class="messaging">
+            <p class="messaging__inner">
+                <label for="messaging__input" class="messaging__label">Hide</label>
+                <input class="messaging__input" type="checkbox" id="messaging__input"><!-- 
+                    keep next to each other
+                --><a href="#settings" class="messaging__text">Viewing the
+                    <strong>HTML/CSS</strong> project.</a>
+            </p>
         </div>
-        <section id="spa" class="card">
-            <a class="jump-top" href="#top" role="button">Top</a>
-            <div class="card__content">
+        <span id="top" class="jump-top__target"></span>
+        <h1 class="banner">
+            <svg class="oakca banner__logo" aria-label="oakenfold logo">
+                <use xlink:href="#oakca" />
+            </svg>
+            <span class="banner__author">
+                <span class="banner__title">Chad Oakenfold</span>
+                <span class="banner__roles">Front End Developer / Web Engineer.</span>
+            </span>
+        </h1>
+
+        <ul id="menu" class="menu">
+            <li class="menu__section">
+                <a href="#work" class="menu__item">Work</a>
+                <ul class="menu__sub">
+                    <li class="">
+                        <a href="#spa" class="menu__item">Single Page Application</a>
+                    </li>
+                    <li class="">
+                        <a href="#web-performance" class="menu__item">Web Performance</a>
+                    </li>
+                    <li class="">
+                        <a href="#wcag" class="menu__item">Web Content Accessibility&nbsp;Guidelines</a>
+                    </li>
+                    <li class="">
+                        <a href="#gatsby-react" class="menu__item">Gatsby, React</a>
+                    </li>
+                    <li class="">
+                        <a href="#html-css" class="menu__item">HTML, CSS</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="menu__section">
+                <a href="#contact" class="menu__item menu__item--full">Contact</a>
+            </li>
+            <li class="menu__section">
+                <a href="#settings" class="menu__item menu__item--full">Settings</a>
+            </li>
+        </ul>
+
+
+
+        <div id="work" class="group work">
+            <div class="work__bio">
+                <a class="jump-top" href="#top" role="button">Top</a>
+                <h2 class="group__title">Work</h2>
+                <p>Frontend Web Developer. Dedicated & reliable. Consistently improving.</p>
+                <p>
+                    I started out at
+                    <a href="//blastradius.com/vancouver-digital-marketing"
+                    target="_blank"
+                    rel="noopener">
+                        Blast Radius
+                    </a>
+                    as an <strong>Interface Developer</strong> just before their acquisition by the WPP group.
+                    In 2014 I made the jump to 100% freelancing at the small but mighty Oakenfold Enterprises Ltd (amazing owner).
+                </p>
+                <p>
+                    The majority of my work is for early stage startups based in the US. 
+                    I have brought sanity to outsourced codebases, 
+                    developed features in consultation with founders, 
+                    and delivered sites from alpha to beta to prod.
+                </p>
+                <p>Currently passionate about React, web page performance, and accessibility.</p>
+
+                <p>It's an amazing time to be a web developer (despite the absurd levels of churn in the FE Stack).</p>
+                
+            </div>
+
+
+            <section id="spa" class="card">
+                <a class="jump-top" href="#top" role="button">Top</a>
                 <h3 class="card__title">Single Page Application</h3>
-                <div class="work__project-summary">
-                    <p>FyndIt</p>
-                </div>
-                <ul class="work__project-bullets">
-                    <li>Page load speed: strategic bundling of .js, inlining .css, use of content delivery networks</li>
-                    <li>Paypal integration.</li>
-                    <li>Deployed with Jenkins Continuous Integration.</li>
-                    <li>Inline .json for initial state of dynamic elements, e.g.: 'user has liked this item'</li>
-                    <li>Self initializing components. The usefullness of .js-classnames.</li>
-                    <li>Authentication: register/login with internal accounts or via 3rd parties.</li>
-                    <li>SVG symbols.</li>
-                    <li>Pleasant interface/interaction details.</li>
-                    <li>Messaging across authentication states, e.g.: saving the text of a comment when an anonymous user tries to submit to be populated after subsequent login.</li>
-                </ul>
-            </div>
-            <aside class="card__resources">
-                <h4>Resources</h4>
-                <ul>
-                    <li><a href='#' target="_blank" rel="noopener">webpagetest.org</a></li>
-                    <li><a href='//fyndit.com' target="_blank" rel="noopener">FyndIt</a></li>
-                </ul>
-            </aside>
-        </section>
-        <section id="web-performance" class="card">
-            <a class="jump-top" href="#top" role="button">Top</a>
-            <div class="card__content">
-                <h3 class="card__title">Web Performance</h3>
-                <div class="work__project-summary">
-                    <p>Different strategies are required for the type of site that is being delivered. Strategic bundling of .js is a good idea for a single page application but it is not as relevant on a single page hand coded html/css site.</p>
-                </div>
+                        
+                <div class="card__inner">
+                    <div class="card__content">
+                        <div class="work__project-summary">
+                            <p>
+                                Lead developer working on 
+                                <a href="//www.fyndit.com/wanted_found"
+                                target="_blank"
+                                rel="noopener">
+                                    Fyndit.com.
+                                </a>
+                                <ul>
+                                <li>autocomplete</li>
+                                <li>.js-classes</li>
+                                <li>component based initialization</li>
+                                <li>lazy loaded social</li>
+                                </ul>
+                            </p>
 
-                <h4>Successful strategies I have used in production:</h4>
-                <ul class="work__project-bullets">
-                    <li>require.js dynamic includes</li>
-                    <li>lazy loading 3rd party</li>
-                    <li>http/2</li>
-                    <li>webpagetest</li>
-                    <li>Cache static content, reduce expensive db calls, inline cache .json to rehydrate state</li>
-                </ul>
-            </div>
-            <aside class="card__resources">
-                <h4>Resources</h4>
-                <ul>
-                    <li><a href='//www.webpagetest.org/result/180523_8H_0c5289bf762d4c72c14a09f2c7129f4d/' target="_blank" rel="noopener">FyndIt: Spotty 3G, 1st load, mid-tier mobile device.</a></li>
-                    <li><a href='//www.webpagetest.org/result/180523_K4_8a65a5df97ff2e10bbd1c03a7f5a2b1f/' target="_blank" rel="noopener">FyndIt: 4G, 1st load, mid-tier mobile device.</a></li>
-                    <li><a href='//www.webpagetest.org/result/180606_W2_e54503005eb6c863fc7a7f52ba6f74f1/' target="_blank" rel="noopener">FyndIt: DSL, 1st load, desktop device.</a></li>
-                    <li><a href='//www.webpagetest.org/result/180606_81_ebcc08448ba1ad156c1242ff762eee04/' target="_blank" rel="noopener">FyndIt: Cable, 1st load, desktop device.</a></li>
-                    <li><a href='//www.webpagetest.org/result/180606_RX_5717dd9394d6d0600d8004295b0fa79c/' target="_blank" rel="noopener">Oakenfold.ca: Spotty 3G, 1st load, mid-tier mobile device.</a></li>
-                </ul>
-            </aside>
-        </section>
-        <div id="wcag" class="card">
-            <a class="jump-top" href="#top" role="button">Top</a>
-            <div class="card__content">
-                <h3 class="card__title">Web Content Accessibility&nbsp;Guidelines</h3>
-                <div class="work__project-summary">
-                    <p>Animikii, WatchMojo</p>
+                            
+                        </div>
+                    </div>
+
+
+                    <aside class="card__resources">
+                        <label for="spa__resources-input" class="toggle-label">See the features, libraries, and technologies used in this project.</label>
+                        <input class="toggle-button" aria-label="See the features, libraries, and technologies used in this project." type="checkbox" id="spa__resources-input">
+                        <div class="toggle-target spa__resources-inner">
+                            <ul class="spa__resources">
+                                <li>
+                                    CSS:
+                                    <ul>
+                                        <li>
+                                            <a href="//getbem.com/introduction/" target="_blank" rel="noopener">
+                                                Block Element Modifier 
+                                                (<abbr>BEM</abbr>) CSS Methodology
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="//sass-lang.com/" target="_blank" rel="noopener">SCSS</a>
+                                        </li>
+                                        <li>
+                                            <a href="//github.com/postcss/postcss" target="_blank" rel="noopener">PostCSS</a>
+                                            <ul>
+                                                <li>
+                                                    <a href="//github.com/postcss/autoprefixer" target="_blank" rel="noopener">autoprefixer</a>
+                                                </li>
+                                                <li>
+                                                    <a href="//github.com/robwierzbowski/node-pixrem" target="_blank" rel="noopener">node-pixrem</a> (REM units)
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="//foundation.zurb.com" target="_blank" rel="noopener">Foundation</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    3rd Party Integration:
+                                    <ul>
+                                        <li>
+                                            <a href="//developer.paypal.com/docs/classic/products/digital-goods/" target="_blank" rel="noopener">Paypal: Express Checkout Digital Goods</a>
+                                        </li>
+                                        <li>
+                                            <a href="//www.google.com/analytics/" target="_blank" rel="noopener">
+                                                Google Analytics
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="//developers.google.com/maps/documentation/javascript/tutorial" target="_blank" rel="noopener">
+                                                Google Maps
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="//developers.google.com/places/web-service/intro" target="_blank" rel="noopener">
+                                                Google Places
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="//developer.foursquare.com/places-api" target="_blank" rel="noopener">
+                                                Foursquare: Places API
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    Javascript:
+                                    <ul>
+                                        <li>User authentication</li>
+                                        <li>Form Validation</li>
+                                        <li>
+                                            <a href="//bluebirdjs.com/docs/getting-started.html" target="_blank" rel="noopener">Promises: bluebird.js</a>
+                                        </li>
+                                        <li>
+                                            <a href="//github.com/mroderick/PubSubJS" target="_blank" rel="noopener">PubSubJS</a>
+                                        </li>
+                                        <li>
+                                            <a href="//underscorejs.org" target="_blank" rel="noopener">Underscore.js</a>
+                                        </li>
+                                        <li>
+                                            <a href="//momentjs.com/" target="_blank" rel="noopener">Moment.js</a>
+                                        </li>
+                                        <li>
+                                            <a href="//fineuploader.com/" target="_blank" rel="noopener">
+                                                Fine Uploader
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="//en.wikipedia.org/wiki/Asynchronous_module_definition" target="_blank" rel="noopener">
+                                                Asynchronous Module Definition
+                                                (<abbr>AMD</abbr>)
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="//requirejs.org/" target="_blank" rel="noopener">RequireJS</a>
+                                            <ul>
+                                                <li>
+                                                    <a href="//requirejs.org/docs/optimization.html" target="_blank" rel="noopener">r.js build optimizer</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="//github.com/kenwheeler/slick" target="_blank" rel="noopener">Slick.js</a>
+                                        </li>
+                                        <li>
+                                            <a href="//amsul.github.io/pickadate.js" target="_blank" rel="noopener">pickadate.js</a>
+                                        </li>
+                                        <li>
+                                            <a href="//imagesloaded.desandro.com" target="_blank" rel="noopener">imagesLoaded</a>
+                                        </li>
+                                        <!--
+                                        <li>
+                                            <a href="//camwiegert.github.io/in-view/" target="_blank" rel="noopener">in-view.js</a>
+                                        </li>
+                                        -->
+                                        <li>
+                                            <a href="//github.com/sindresorhus/query-string" target="_blank" rel="noopener">query-string</a>
+                                        </li>
+                                        <li>
+                                            <a href="//imakewebthings.com/waypoints/" target="_blank" rel="noopener">Waypoints</a>
+                                            <ul>
+                                                <li>Infinite scrolling</li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="//dropkickjs.com/" target="_blank" rel="noopener">
+                                                Dropkick
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="//afarkas.github.io/webshim/demos/index.html" target="_blank" rel="noopener">Webshim</a>
+                                        </li>
+                                        <li>
+                                            <a href="//developer.mozilla.org/en-US/docs/Web/API/Geolocation/getCurrentPosition" target="_blank" rel="noopener">
+                                                Geolocation API
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="//developer.mozilla.org/en-US/docs/Web/API/History" target="_blank" rel="noopener">
+                                                History API
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="//jquery.com/" target="_blank" rel="noopener">jQuery</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>HTML</li>
+                                <li>Email markup/styling</li>
+                                <li>SVG</li>
+                                <li>
+                                    Infrastructure, tools:
+                                    <ul>
+                                        <li>
+                                            <a href="//www.python.org/" target="_blank" rel="noopener">Python</a>
+                                        </li>
+                                        <li>
+                                            <a href="//www.tornadoweb.org/en/stable/template.html" target="_blank" rel="noopener">Tornado templates</a>
+                                        </li>
+                                        <li>
+                                            <a href="//www.rabbitmq.com/" target="_blank" rel="noopener">RabbitMQ</a>
+                                        </li>
+                                        <li>
+                                            <a href="//www.nginx.com/" target="_blank" rel="noopener">NGINX</a>
+                                        </li>
+                                        <li>
+                                            <a href="//redis.io/" target="_blank" rel="noopener">Redis</a>
+                                        </li>
+                                        <li>
+                                            <a href="//supervisord.org/" target="_blank" rel="noopener">Supervisor</a>
+                                        </li>
+                                        <li>
+                                            <a href="//jenkins.io/" target="_blank" rel="noopener">Jenkins Continuous Integration</a>
+                                        </li>
+                                        <li>
+                                            <a href="//gruntjs.com" target="_blank" rel="noopener">Grunt</a>
+                                            <!--<ul>
+                                                <li>
+                                                    <a href="//github.com/gruntjs/grunt-contrib-clean#readme" target="_blank" rel="noopener">grunt-contrib-clean</a>
+                                                </li>
+                                                <li>
+                                                    <a href="//github.com/gruntjs/grunt-contrib-copy#readme" target="_blank" rel="noopener">grunt-contrib-copy</a>
+                                                </li>
+                                                <li>
+                                                    <a href="//github.com/alanshaw/grunt-include-replace" target="_blank" rel="noopener">grunt-include-replace</a>
+                                                </li>
+                                                <li>
+                                                    <a href="//github.com/sindresorhus/grunt-sass#readme" target="_blank" rel="noopener">grunt-sass</a>
+                                                </li>
+                                                <li>
+                                                    <a href="//github.com/sindresorhus/grunt-svgmin#readme" target="_blank" rel="noopener">grunt-svgmin</a>
+                                                </li>
+                                            </ul>-->
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        
+                            <!--
+                            <h4>Technology used in previous versions of the project</h4>
+                            <ul>
+                                <li>
+                                    <a href="//compass-style.org/" target="_blank" rel="noopener">Compass</a>
+                                </li>
+                                <li>
+                                    <a href="//modernizr.com/" target="_blank" rel="noopener">modernizr.com</a>
+                                </li>
+                                <li>
+                                    <a href="//github.com/HuddleEng/PhantomCSS" target="_blank" rel="noopener">PhantomCSS</a>
+                                </li>
+                                <li>
+                                    <a href="//warpspire.com/kss/" target="_blank" rel="noopener">Knyle Style Sheets</a>
+                                </li>
+                                <li>
+                                    <a href="//www.magictoolbox.com/magiczoomplus/" target="_blank" rel="noopener">Magic Zoom Plus</a>
+                                </li>
+                                <li>
+                                    <a href="//github.com/filamentgroup/grunticon" target="_blank" rel="noopener">grunt-grunticon</a>
+                                </li>
+                                <li>
+                                    <a href="//freqdec.github.io/slabText/" target="_blank" rel="noopener">slabText</a>
+                                </li>
+                                <li>
+                                    <a href="//letteringjs.com/" target="_blank" rel="noopener">lettering.js</a>
+                                </li>
+                            </ul>
+                            -->
+                        </div>
+                    </aside>
                 </div>
-                <ul class="work__project-bullets">
-                    <li>Met AAA rating</li>
-                    <li>Tested for visual disabilities</li>
-                    <li>Generated alternate text content.</li>
-                    <li>Semantic markup, aria labels</li>
-                </ul>
-            </div>
-            <aside class="card__resources">
-                <h4>Resources</h4>
-                <ul>
-                    <li><a href='//alistapart.com/article/diy-web-accessibility-blueprint' target="_blank" rel="noopener">A DIY Web Accessibility Blueprint.</a></li>
-                    <li><a href='//www.adatitleiii.com/2018/04/beyond-title-iii-website-accessibility-lawsuits-filed-alleging-inaccessible-online-employment-applications/' target="_blank" rel="noopener">Beyond Title III: Website Accessibility Lawsuits Filed Alleging Inaccessible Online Employment Applications.</a></li>
-                    <li><a href='//www.sgrlaw.com/is-your-website-a-place-of-public-accommodation-under-the-americans-with-disabilities-act/' target="_blank" rel="noopener">Is Your Website a “Place of Public Accommodation” Under the Americans with Disabilities Act?</a></li>
-                </ul>
-            </aside>
+            </section>
+
+            <hr />
+            
+            <section id="web-performance" class="card">
+                <a class="jump-top" href="#top" role="button">Top</a>
+                <div class="card__content">
+                    <h3 class="card__title">Web Performance</h3>
+                    <div class="work__project-summary">
+                        <p>Different strategies are required for the type of site that is being delivered. Strategic bundling
+                            of .js is a good idea for a single page application but it is not as relevant on a single page
+                            hand coded html/css site.</p>
+                    </div>
+
+                    <h4>Successful strategies I have used in production:</h4>
+                    <ul class="work__project-bullets">
+                        <li>require.js dynamic includes</li>
+                        <li>lazy loading 3rd party</li>
+                        <li>http/2</li>
+                        <li>webpagetest</li>
+                        <li>Cache static content, reduce expensive db calls, inline cache .json to rehydrate state</li>
+                    </ul>
+                    <p>
+                        For the second release (<abbr>V2</abbr>) of 
+                        <a href="//www.fyndit.com/wanted_found"
+                        target="_blank"
+                        rel="noopener">
+                            fyndit.com
+                        </a>, page load performance was tested at 
+                        <a href="//webpagetest.org"
+                        target="_blank"
+                        rel="noopener">
+                            webpagetest.org
+                        </a>
+                        against a <strong><em>slow 3G connection on a mid-tier mobile device.</em></strong>
+                    </p>
+
+                    <p>This latest version of the site outperformed the previous release in several key metrics:</p>
+                    <ul>
+                        <li><strong>First Interactive</strong> time went from 17.959s down to 7.918s. <strong>A 56% reduction.</strong></li>
+                        <li><strong>Fully Loaded Bytes In</strong> size went from 1084kb down to 749kb. <strong>A 30% reduction.</strong></li>
+                        <li><strong>Fully Loaded Time</strong> went down from 27.476s to 25.09s. <strong>A 8.67% reduction.</strong></li>
+                    </ul>
+
+                    <p>
+                        V2 also outperformed sample pages from 
+                        Amazon 
+                        <sup>
+                            <a href="//www.amazon.com/Instant-Pot-Muti-Use-Programmable-Pressure/dp/B01MFEBQH1?pd_rd_wg=..._gw_ri&pf_rd_r=Q7PY8RX7D8SFP21X309C&pf_rd_p=7b6d690e-1944-54ab-a4d2-4eb3bd7e198b"
+                            target="_blank"
+                            rel="noopener">
+                                1
+                            </a>
+                        </sup>,  
+                        Reddit 
+                        <sup>
+                            <a href="//www.reddit.com/r/mildlyinteresting/comments/7a2kjo/my_tape_dispenser_broke_and_it_was_filled_with/"
+                            target="_blank"
+                            rel="noopener">
+                                2
+                            </a>
+                        </sup>
+                        and Twitter
+                        <sup>
+                            <a href="//mobile.twitter.com/HarjitSajjan/status/926133170097057792"
+                            target="_blank"
+                            rel="noopener">
+                                3
+                            </a>
+                        </sup>.
+                    </p>
+                    <ul>
+                        <li>Fyndit's <strong>Fully Loaded Time</strong> is <strong>58.42%</strong> faster than Amazon.</li>
+                        <li>Fyndit's <strong>Fully Loaded Time</strong> is <strong>29.79%</strong> faster than Reddit.</li>
+                        <li>Fyndit's <strong>Fully Loaded Time</strong> is <strong>6.27%</strong> faster than Twitter.</li>
+                    </ul>
+                </div>
+                <aside class="card__resources">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li>
+                            <a href='//www.webpagetest.org/result/180523_8H_0c5289bf762d4c72c14a09f2c7129f4d/'
+                            target="_blank"
+                            rel="noopener">
+                                FyndIt: Spotty 3G, 1st load, mid-tier mobile device.
+                            </a>
+                        </li>
+                        <li>
+                            <a href='//www.webpagetest.org/result/180523_K4_8a65a5df97ff2e10bbd1c03a7f5a2b1f/'
+                            target="_blank"
+                            rel="noopener">
+                                FyndIt: 4G, 1st load, mid-tier mobile device.
+                            </a>
+                        </li>
+                        <li>
+                            <a href='//www.webpagetest.org/result/180606_W2_e54503005eb6c863fc7a7f52ba6f74f1/'
+                            target="_blank"
+                            rel="noopener">
+                                FyndIt: DSL, 1st load, desktop device.
+                            </a>
+                        </li>
+                        <li>
+                            <a href='//www.webpagetest.org/result/180606_81_ebcc08448ba1ad156c1242ff762eee04/'
+                            target="_blank"
+                            rel="noopener">
+                                FyndIt: Cable, 1st load, desktop device.
+                            </a>
+                        </li>
+                        <li>
+                            <a href='//www.webpagetest.org/result/180606_RX_5717dd9394d6d0600d8004295b0fa79c/'
+                            target="_blank"
+                            rel="noopener">
+                                Oakenfold.ca: Spotty 3G, 1st load, mid-tier mobile device.
+                            </a>
+                        </li>
+                    </ul>
+                </aside>
+            </section>
+            
+            <hr />
+            
+            <section id="wcag" class="card">
+                <a class="jump-top" href="#top" role="button">Top</a>
+                <div class="card__content">
+                    <h3 class="card__title">Web Content Accessibility&nbsp;Guidelines</h3>
+                    <div class="work__project-summary">
+                        <p>Animikii, WatchMojo</p>
+                    </div>
+                    <ul class="work__project-bullets">
+                        <li>Met AAA rating</li>
+                        <li>Tested for visual disabilities</li>
+                        <li>Generated alternate text content.</li>
+                        <li>Semantic markup, aria labels</li>
+                    </ul>
+                </div>
+                <aside class="card__resources">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li>
+                            <a href='//alistapart.com/article/diy-web-accessibility-blueprint'
+                            target="_blank"
+                            rel="noopener">
+                                A DIY Web Accessibility Blueprint.
+                            </a>
+                        </li>
+                        <li>
+                            <a href='//www.adatitleiii.com/2018/04/beyond-title-iii-website-accessibility-lawsuits-filed-alleging-inaccessible-online-employment-applications/'
+                            target="_blank"
+                            rel="noopener">
+                                Beyond Title III: Website Accessibility Lawsuits Filed Alleging Inaccessible Online Employment Applications.
+                            </a>
+                        </li>
+                        <li>
+                            <a href='//www.sgrlaw.com/is-your-website-a-place-of-public-accommodation-under-the-americans-with-disabilities-act/'
+                            target="_blank"
+                            rel="noopener">
+                                Is Your Website a “Place of Public Accommodation” Under the Americans with Disabilities Act?
+                            </a>
+                        </li>
+                    </ul>
+                </aside>
+            </section>
+
+            <hr />
+
+            <section id="gatsby-react" class="card">
+                <a class="jump-top" href="#top" role="button">Top</a>
+
+
+                <div class="card__content">
+                    <h3 class="card__title">Gatsby, React</h3>
+                    <div class="work__project-summary">
+                        <p>XXX</p>
+                    </div>
+                    <ul class="work__project-bullets">
+                        <li>XXX</li>
+                        <li>XXX</li>
+                        <li>XXX</li>
+                        <li>XXX</li>
+                    </ul>
+                </div>
+                <aside class="card__resources">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li>
+                            <a href='#' target="_blank" rel="noopener">webpagetest.org</a>
+                        </li>
+                        <li>
+                            <a href='#' target="_blank" rel="noopener">Article</a>
+                        </li>
+                    </ul>
+                </aside>
+            </section>
+
+            <hr />
+
+            <section id="html-css" class="card">
+                <a class="jump-top" href="#top" role="button">Top</a>
+
+
+                <div class="card__content">
+                    <h3 class="card__title">HTML, CSS</h3>
+                    <div class="work__project-summary">
+                        <p>XXX</p>
+                    </div>
+                    <ul class="work__project-bullets">
+                        <li>XXX</li>
+                        <li>XXX</li>
+                        <li>XXX</li>
+                        <li>XXX</li>
+                    </ul>
+                </div>
+                <aside class="card__resources">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li>
+                            <a href='#' target="_blank" rel="noopener">webpagetest.org</a>
+                        </li>
+                        <li>
+                            <a href='#' target="_blank" rel="noopener">Article</a>
+                        </li>
+                    </ul>
+                </aside>
+            </section>
         </div>
-        <div id="gatsby-react" class="card">
+
+        
+
+        <div id="settings" class="card card--settings">
             <a class="jump-top" href="#top" role="button">Top</a>
-            
-            
-            <div class="card__content">
-                <h3 class="card__title">Gatsby, React</h3>
-                <div class="work__project-summary">
-                    <p>XXX</p>
-                </div>
-                <ul class="work__project-bullets">
-                    <li>XXX</li>
-                    <li>XXX</li>
-                    <li>XXX</li>
-                    <li>XXX</li>
-                </ul>
-            </div>
-            <aside class="card__resources">
-                <h4>Resources</h4>
-                <ul>
-                    <li><a href='#' target="_blank" rel="noopener">webpagetest.org</a></li>
-                    <li><a href='#' target="_blank" rel="noopener">Article</a></li>
-                </ul>
-            </aside>
-        </div>
-        <div id="html-css" class="card">
-            <a class="jump-top" href="#top" role="button">Top</a>
-            
-            
-            <div class="card__content">
-                <h3 class="card__title">HTML, CSS</h3>
-                <div class="work__project-summary">
-                    <p>XXX</p>
-                </div>
-                <ul class="work__project-bullets">
-                    <li>XXX</li>
-                    <li>XXX</li>
-                    <li>XXX</li>
-                    <li>XXX</li>
-                </ul>
-            </div>
-            <aside class="card__resources">
-                <h4>Resources</h4>
-                <ul>
-                    <li><a href='#' target="_blank" rel="noopener">webpagetest.org</a></li>
-                    <li><a href='#' target="_blank" rel="noopener">Article</a></li>
-                </ul>
-            </aside>
+            <h2 class="card__title">Settings</h2>
+            <p>There are multiple versions of this site. Each one created with a different set of tools and technology.</p>
+            <p>Please check them out, look at the performance results, or review the source code.</p>
+            <figure class="settings__table-container">
+                <table class="settings__table">
+                    <thead>
+                        <tr>
+                            <th>Version</th>
+                            <th>Performance</th>
+                            <th>Code</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <a class="settings__table-link" href="#">HTML/CSS</a>
+                            </td>
+                            <td>
+                                <a class="settings__table-link"
+                                href="//www.webpagetest.org/result/180606_RX_5717dd9394d6d0600d8004295b0fa79c/"
+                                target="_blank"
+                                rel="noopener"
+                                title="webpagetest.org results">
+                                    🔥🔥🔥🔥🔥
+                                </a>
+                            </td>
+                            <td>
+                                <a class="settings__table-link"
+                                href="//github.com/coakenfold/Oakenfold.ca-Website/tree/0.0.2-html"
+                                target="_blank"
+                                rel="noopener"
+                                title="Github">
+                                    🐞
+                                </a>
+                            </td>
+                        </tr>
+                        <tr class="settings__table-row">
+                            <td>
+                                <a class="settings__table-link" href="#">HTML/CSS/JS</a>
+                            </td>
+                            <td>
+                                <a class="settings__table-link"
+                                href="#"
+                                target="_blank"
+                                rel="noopener"
+                                title="webpagetest.org results">
+                                    🔥🔥🔥🔥🔥
+                                </a>
+                            </td>
+                            <td>
+                                <a class="settings__table-link"
+                                href="#"
+                                target="_blank"
+                                rel="noopener"
+                                title="Github">
+                                    🐞
+                                </a>
+                            </td>
+                        </tr>
+                        <tr class="settings__table-row">
+                            <td>
+                                <a class="settings__table-link" href="#">Gatsby</a>
+                            </td>
+                            <td>
+                                <a class="settings__table-link"
+                                href="#"
+                                target="_blank"
+                                rel="noopener"
+                                title="webpagetest.org results">
+                                    🔥🔥🔥🔥🔥
+                                </a>
+                            </td>
+                            <td>
+                                <a class="settings__table-link"
+                                href="#"
+                                target="_blank"
+                                rel="noopener"
+                                title="Github">
+                                    🐞
+                                </a>
+                            </td>
+                        </tr>
+                        <tr class="settings__table-row">
+                            <td>
+                                <a class="settings__table-link" href="#">React</a>
+                            </td>
+                            <td>
+                                <a class="settings__table-link"
+                                href="#"
+                                target="_blank"
+                                rel="noopener"
+                                title="webpagetest.org results">
+                                    🔥🔥🔥🔥🔥
+                                </a>
+                            </td>
+                            <td>
+                                <a class="settings__table-link"
+                                href="#"
+                                target="_blank"
+                                rel="noopener"
+                                title="Github">
+                                    🐞
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a class="settings__table-link" href="#">Vue</a>
+                            </td>
+                            <td>
+                                <a class="settings__table-link"
+                                href="#"
+                                target="_blank"
+                                rel="noopener"
+                                title="webpagetest.org results">
+                                    🔥🔥🔥🔥🔥
+                                </a>
+                            </td>
+                            <td>
+                                <a class="settings__table-link"
+                                href="#"
+                                target="_blank"
+                                rel="noopener"
+                                title="Github">
+                                    🐞
+                                </a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <figcaption class="settings__table-caption">Performance testing prioritized 1st page load on a spotty 3G connection using a mid tier mobile device.</figcaption>
+            </figure>
         </div>
     </div>
-    
-    <div id="settings" class="card card--settings">
-        <a class="jump-top" href="#top" role="button">Top</a>
-        <h2 class="card__title">Settings</h2>
-        <p>There are multiple versions of this site. Each one created with a different set of tools and technology.</p>
-        <p>Please check them out, look at the performance results, or review the source code.</p>
-        <figure class="settings__table-container">
-            <table class="settings__table">
-            <thead>
-                <tr>
-                <th>Version</th>
-                <th>Performance</th>
-                <th>Code</th>
-                <th class="u-hide-small">Rating</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td><a class="settings__table-link" href="#">HTML/CSS</a></td>
-                    <td>
-                        <a class="settings__table-link" href="https://www.webpagetest.org/result/180606_RX_5717dd9394d6d0600d8004295b0fa79c/" target="_blank" rel="noopener" title="webpagetest.org results">🔥</a>
-                    </td>
-                    <td>
-                        <a class="settings__table-link" href="#" target="_blank" rel="noopener" title="Github">🐞</a>
-                    </td>
-                    <td class="u-hide-small">
-                        <strong class="one-hundred" title="Lighthouse 100 rating">💯</strong>
-                        <strong class="one-hundred" title="Lighthouse 100 rating">💯</strong>
-                        <strong class="one-hundred" title="Lighthouse 100 rating">💯</strong>
-                        <strong class="one-hundred" title="Lighthouse 100 rating">💯</strong>
-                    </td>
-                </tr>
-                <tr class="settings__table-row">
-                    <td><a class="settings__table-link" href="#">HTML/CSS/JS</a></td>
-                    <td>
-                        <a class="settings__table-link" href="#" target="_blank" rel="noopener" title="webpagetest.org results">🔥</a>
-                    </td>
-                    <td>
-                        <a class="settings__table-link" href="#" target="_blank" rel="noopener" title="Github">🐞</a>
-                    </td>
-                    <td class="u-hide-small">
-                        <strong class="one-hundred" title="Lighthouse 100 rating">💯</strong>
-                        <strong class="one-hundred" title="Lighthouse 100 rating">💯</strong>
-                        <strong class="one-hundred" title="Lighthouse 100 rating">💯</strong>
-                        <strong class="one-hundred" title="Lighthouse 100 rating">💯</strong>
-                    </td>
-                </tr>
-                <tr class="settings__table-row">
-                    <td><a class="settings__table-link" href="#">Gatsby</a></td>
-                    <td>
-                        <a class="settings__table-link" href="#" target="_blank" rel="noopener" title="webpagetest.org results">🔥</a>
-                    </td>
-                    <td>
-                        <a class="settings__table-link" href="#" target="_blank" rel="noopener" title="Github">🐞</a>
-                    </td>
-                    <td class="u-hide-small">
-                        <strong class="one-hundred" title="Lighthouse 100 rating">💯</strong>
-                        <strong class="one-hundred" title="Lighthouse 100 rating">💯</strong>
-                        <strong class="one-hundred" title="Lighthouse 100 rating">💯</strong>
-                        <strong class="one-hundred" title="Lighthouse 100 rating">💯</strong>
-                    </td>
-                </tr>
-                <tr class="settings__table-row">
-                    <td><a class="settings__table-link" href="#">React</a></td>
-                    <td>
-                        <a class="settings__table-link" href="#" target="_blank" rel="noopener" title="webpagetest.org results">🔥</a>
-                    </td>
-                    <td>
-                        <a class="settings__table-link" href="#" target="_blank" rel="noopener" title="Github">🐞</a>
-                    </td>
-                    <td class="u-hide-small">
-                        <strong class="one-hundred" title="Lighthouse 100 rating">💯</strong>
-                        <strong class="one-hundred" title="Lighthouse 100 rating">💯</strong>
-                        <strong class="one-hundred" title="Lighthouse 100 rating">💯</strong>
-                        <strong class="one-hundred" title="Lighthouse 100 rating">💯</strong>
-                    </td>
-                </tr>
-                <tr>
-                    <td><a class="settings__table-link" href="#">Vue</a></td>
-                    <td>
-                        <a class="settings__table-link" href="#" target="_blank" rel="noopener" title="webpagetest.org results">🔥</a>
-                    </td>
-                    <td>
-                        <a class="settings__table-link" href="#" target="_blank" rel="noopener" title="Github">🐞</a>
-                    </td>
-                    <td class="u-hide-small">
-                        <strong class="one-hundred" title="Lighthouse 100 rating">💯</strong>
-                        <strong class="one-hundred" title="Lighthouse 100 rating">💯</strong>
-                        <strong class="one-hundred" title="Lighthouse 100 rating">💯</strong>
-                        <strong class="one-hundred" title="Lighthouse 100 rating">💯</strong>
-                    </td>
-                </tr>
-            </tbody>
-            </table>
-            <figcaption class="settings__table-caption">Performance testing prioritized 1st page load on a spotty 3G connection using a mid tier mobile device.</figcaption>
-        </figure>
-    </div>
-</div>
 
-<footer>
-    <div id="contact" class="card card--contact">
-        <a class="jump-top jump-top--light" href="#top">Top</a>
-        <h2 class="card__title">Contact</h2>
-        <dl>
-        <dt>Chad Oakenfold creates &ldquo;intricate and beautiful complexities&rdquo; straight from the rainforests of Vancouver Island.</dt>
-        <dd>I am active on <a href="https://twitter.com/coak" target="_blank" rel="noopener">Twitter,</a></dd>
-        <dd>You could mailto: <strong>web at (this url)</strong>,</dd>
-        <dd>Connect via <a href="https://www.linkedin.com/in/chad-oakenfold-a9a65a4/" target="_blank" rel="noopener">LinkedIn.</a></dd>
-        </dl>
-    </div>
+    <footer>
+        <div id="contact" class="card card--contact">
+            <a class="jump-top jump-top--light" href="#top">Top</a>
+            <h2 class="card__title">Contact</h2>
+            <dl>
+                <dt>Chad Oakenfold creates &ldquo;intricate and beautiful complexities&rdquo; straight from the rainforests of
+                    Vancouver Island.</dt>
+                <dd>I am active on
+                    <a href="//twitter.com/coak" target="_blank" rel="noopener">Twitter,</a>
+                </dd>
+                <dd>You could mailto:
+                    <strong>web at (this url)</strong>,</dd>
+                <dd>Connect via
+                    <a href="//www.linkedin.com/in/chad-oakenfold-a9a65a4/" target="_blank" rel="noopener">LinkedIn.</a>
+                </dd>
+            </dl>
+        </div>
 
-    <small class="but-mighty">Oak inc forever</small>
-</footer>
+        <small class="but-mighty">Oak inc forever</small>
+    </footer>
 
-<svg class="u-dn" xmlns="http://www.w3.org/2000/svg">
-    <symbol id="oakca" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 247.78 281.43">
-        <ellipse class="oakca__outer" cx="123.89" cy="140.72" rx="123.39" ry="140.22"/>
-        <circle class="oakca__inner" cx="141.72" cy="127.54" r="80.43"/>
-        <circle class="oakca__negative" cx="101.72" cy="127.54" r="80.43"/>
-    </symbol>
-</svg>
+    <svg class="u-dn" xmlns="http://www.w3.org/2000/svg">
+        <symbol id="oakca" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 247.78 281.43">
+            <ellipse class="oakca__outer" cx="123.89" cy="140.72" rx="123.39" ry="140.22" />
+            <circle class="oakca__inner" cx="141.72" cy="127.54" r="80.43" />
+            <circle class="oakca__negative" cx="101.72" cy="127.54" r="80.43" />
+        </symbol>
+    </svg>
 
-<!--
+    <!--
 <script src="libraries/oakenfold/oakenfold.js"></script>
 <script>
 function seedSite () {
@@ -327,4 +767,5 @@ var oak = oakenfold();
 </script>
 -->
 </body>
+
 </html>

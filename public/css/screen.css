@@ -68,13 +68,21 @@ h5,
 h6 {
     margin: 0 0 12px;
     font-weight: 400;
+    font-size: 24px;
 }
-li {
-    margin-bottom: 4px;
+hr {
+    margin: 0 auto 12px;
+    border: 0;
+    background-color: rgba(0,0,0,0.05);
+    height: 2px;
 }
 p {
     margin: 0;
     padding: 0 0 12px;
+}
+strong em {
+    text-decoration: underline;
+    font-style: inherit;
 }
 td {
     vertical-align: middle;
@@ -83,6 +91,9 @@ td {
 ul {
     margin: 0 0 12px;
     padding: 0 0 0 24px;
+}
+ul ul {
+    margin-bottom: 0;
 }
 
 .u-dn {
@@ -93,10 +104,15 @@ ul {
     position: absolute !important;
     height: 1px; width: 1px; 
     overflow: hidden;
-    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip: rect(1px 1px 1px 1px);
     clip: rect(1px, 1px, 1px, 1px);
 }
-
+.u-visually-hidden a:focus,
+.u-visually-hidden input:focus,
+.u-visually-hidden button:focus { 
+    position:static; 
+    width:auto; height:auto;
+}
 /* B
 ======================================== */
 .banner {
@@ -130,7 +146,8 @@ ul {
 }
 .banner__roles {
     display: inline-block;
-    font-size: 12px;
+    font-size: 14px;
+    padding-left: 2px;
 }
 
 .banner__logo {
@@ -205,15 +222,18 @@ ul {
     border-bottom: 1px solid #ecb72f;
 }
 .card--settings {
-    margin: 12px auto;
+    margin: 48px auto 12px;
     padding: 24px;
     max-width: 650px;
     background-color: rgba(255,255,255,0.75);
+    box-shadow: 10px 10px 1px rgba(0,0,0,0.0001);
 }
 .card--settings:target {
     padding: 24px;
 }
-
+.card__resources {
+    position: relative;
+}
 
 /* G 
 ======================================== */
@@ -266,7 +286,7 @@ ul {
     margin: 0 0 12px;
     background-color: #aa0000;
     background-image: linear-gradient(-90deg, rgba(170, 0, 0, 0.5) 12%, rgba(221, 10, 10, 0.5) 100%);
-    box-shadow: 0 0 4px rgba(0,0,0,0.2);
+    box-shadow: 0 10px 1px rgba(0,0,0,0.01);
     color: rgba(0,0,0,0.75);
 }
 .menu__item {
@@ -300,7 +320,10 @@ ul {
     margin: 8px 0;
     list-style-type: decimal-leading-zero;
     padding-left: 34px;
-}   
+}
+.menu__sub li {
+    margin-bottom: 4px;
+}
 .menu__sub .menu__item {
     padding: 4px 12px 4px;
     width: 100%;    
@@ -323,18 +346,46 @@ ul {
     display: flex;
     align-items: center;
     flex-direction: row-reverse;
+    position: relative;
+}
+.messaging__input {
+    position: absolute;
+    top: 16px;
+    right: 35px;
+    z-index: 0;
+    margin: 0;
+    transition: right 0.25s ease-out;
+}
+.messaging__input:focus {
+    right: 50px;
+}
+.messaging__input:checked + .messaging__text {
+    padding: 0;
+    margin-top: -100%;
+}
+.messaging__input:focus + .messaging__text {
+    margin-right: 18px
 }
 .messaging__label {
-    padding: 4px;
+    padding: 4px 0;
+    transition: all 0.25s ease-in-out;
+    background-color: #f2f2f2;
+    width: 35px;
+    line-height: 1;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+.messaging__label:hover {
+    background-color: #ecb72f;
+    color: #000;
+    text-decoration: underline;
 }
 .messaging__text {
     transition: all 0.25s ease-in-out;
     padding: 4px;
-}
-
-#messaging__input:checked + .messaging__text {
-    padding: 0;
-    margin-top: -100%;
+    margin-right: 4px;
+    line-height: 1;
 }
 
 /* O
@@ -384,6 +435,56 @@ ul {
 .settings__table td {
     padding: 12px;
 }
+.spa__resources-inner {
+    overflow: hidden;
+}
+.spa__resources {
+    margin-top: -500vh;
+    transition: margin 0.75s ease-out;
+}
+#spa__resources-input:checked + .spa__resources-inner .spa__resources,
+.spa__resources:focus-within {
+    margin-top: 0;
+}
+
+/* T
+======================================== */
+.toggle-button {
+    position: absolute;
+    top: 12px;
+    left: 15px;
+    margin: 0;
+    z-index: 0;
+    transition: left 0.25s ease-in-out;
+}
+.toggle-button:focus {
+    left: -15px;
+}
+
+.toggle-label {
+    cursor: pointer;
+    display: block;
+    padding: 10px;
+    transition: all 0.25s ease-in-out;
+    color: rgba(170, 0, 0, 1);
+    background-color: #fff;
+    border: 1px solid rgba(0,0,0,0.1);
+    box-shadow: 10px 10px 1px rgba(0,0,0,0.01);
+    margin-bottom: 15px;
+    line-height: 1;
+    position: relative;
+    z-index: 2;
+ }
+ .toggle-label:hover {
+     background-color: #ecb72f;
+     color: #000;
+     text-decoration: underline;
+     box-shadow: 10px 10px 3px rgba(255, 183, 0, 0.02);
+ }
+ .toggle-target a:focus {
+    position:static; 
+    width:auto; height:auto;  
+ }
 
 /* W
 ======================================== */
@@ -391,6 +492,17 @@ ul {
     margin: 0 auto;
     max-width: 75%;
 }
+
 .work__bio {
     padding: 12px;
+}
+.work__tags {
+    /*display: flex;
+    align-items: center;*/
+}
+.work__tags dd {
+    /*background-color: grey;
+    padding: 4px;
+    border: 1px solid black;
+    border-radius: 5px;*/
 }
