@@ -343,7 +343,7 @@ ul ul {
 .messaging__button {
     position: absolute;
     top: 16px;
-    right: 35px;
+    right: 24px;
     z-index: 0;
     margin: 0;
     transition: right 0.25s ease-out;
