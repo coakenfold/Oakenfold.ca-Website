@@ -390,6 +390,7 @@ ul ul {
     padding: 4px;
     margin-right: 4px;
     line-height: 1;
+    display: inline-block;
 }
 
 /* O
