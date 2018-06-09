@@ -33,7 +33,7 @@
             <p class="messaging__inner">
                 <label for="messaging__button" class="messaging__label">Hide</label>
                 <input class="messaging__button" type="checkbox" id="messaging__button"><!-- 
-                    keep next to each other
+                    Keep these next to each other in source
                 --><a href="#settings" class="messaging__text">Viewing the
                     <strong>HTML/CSS</strong> project.</a>
             </p>
@@ -96,14 +96,14 @@
                     In 2014 I made the jump to 100% freelancing at the small but mighty Oakenfold Enterprises Ltd (amazing owner).
                 </p>
                 <p>
-                    The majority of my work is for early stage startups based in the US. 
+                    Experienced working remotely with early stage startups based in the US. 
                     I have brought sanity to outsourced codebases, 
                     developed features in consultation with founders, 
                     and delivered sites from alpha to beta to prod.
                 </p>
                 <p>Currently passionate about React, web page performance, and accessibility.</p>
 
-                <p>It's an amazing time to be a web developer (despite the absurd levels of churn in the FE Stack).</p>
+                <p>It is an amazing time to be a web developer <small>(despite the absurd levels of churn in the FE Stack)</small>.</p>
                 
             </div>
 
@@ -119,9 +119,16 @@
                                 Lead developer working on 
                                 <a href="//www.fyndit.com/wanted_found"
                                 target="_blank"
-                                rel="noopener">
-                                    Fyndit.com.
-                                </a>
+                                rel="noopener">Fyndit.com.</a>
+
+                                Split out dependencies by component.
+                                Used "js only" css classes as hooks for scripting: initializing, setting state, event binding.
+                                Delayed loading of 3rd party libraries until they were on the page or had been interacted with by the user.
+                                Used a variation of the App Shell model where new content is xhr-ed into a dedicated div.
+                                The site was setup to cache static elements of the page using redis and an inline .json object was used to "rehydrate" stateful interface elements (e.g: the user has liked this item, so change the background color)
+                                Routed all xhr requests through a script so that functons could be run pre/post request.
+                                Created a system where components register their js-hooks with a function. After an xhr update the function scans a portion of the dom for any existing classes and notifies the components that they exist.
+                                Using svg symbols for reuse.
                                 <ul>
                                 <li>autocomplete</li>
                                 <li>.js-classes</li>
@@ -136,35 +143,51 @@
 
 
                     <aside class="card__resources">
-                        <label for="spa__resources-input" class="toggle-label">See the features, libraries, and technologies used in this project.</label>
-                        <input class="toggle-button" aria-label="See the features, libraries, and technologies used in this project." type="checkbox" id="spa__resources-input">
-                        <div class="toggle-target spa__resources-inner">
+                        <label class="toggle-label"
+                        for="spa__resources-input">See the features, libraries, and technologies used in this project.</label>
+                        
+                        <input id="spa__resources-input"
+                        class="toggle-button"
+                        aria-label="See the features, libraries, and technologies used in this project."
+                        type="checkbox"><!-- 
+                        Keep these next to each other in source
+                        --><div class="toggle-target spa__resources-inner">
                             <ul class="spa__resources">
                                 <li>
                                     CSS:
                                     <ul>
                                         <li>
-                                            <a href="//getbem.com/introduction/" target="_blank" rel="noopener">
-                                                Block Element Modifier 
-                                                (<abbr>BEM</abbr>) CSS Methodology
-                                            </a>
+                                            <a href="//getbem.com/introduction/"
+                                            target="_blank"
+                                            rel="noopener">Block Element Modifier 
+                                                (<abbr>BEM</abbr>) CSS Methodology</a>
                                         </li>
                                         <li>
-                                            <a href="//sass-lang.com/" target="_blank" rel="noopener">SCSS</a>
+                                            <a href="//sass-lang.com/"
+                                            target="_blank"
+                                            rel="noopener">SCSS</a>
                                         </li>
                                         <li>
-                                            <a href="//github.com/postcss/postcss" target="_blank" rel="noopener">PostCSS</a>
+                                            <a href="//github.com/postcss/postcss"
+                                            target="_blank"
+                                            rel="noopener">PostCSS</a>
                                             <ul>
                                                 <li>
-                                                    <a href="//github.com/postcss/autoprefixer" target="_blank" rel="noopener">autoprefixer</a>
+                                                    <a href="//github.com/postcss/autoprefixer"
+                                                    target="_blank"
+                                                    rel="noopener">autoprefixer</a>
                                                 </li>
                                                 <li>
-                                                    <a href="//github.com/robwierzbowski/node-pixrem" target="_blank" rel="noopener">node-pixrem</a> (REM units)
+                                                    <a href="//github.com/robwierzbowski/node-pixrem"
+                                                    target="_blank"
+                                                    rel="noopener">node-pixrem</a> (REM units)
                                                 </li>
                                             </ul>
                                         </li>
                                         <li>
-                                            <a href="//foundation.zurb.com" target="_blank" rel="noopener">Foundation</a>
+                                            <a href="//foundation.zurb.com"
+                                            target="_blank"
+                                            rel="noopener">Foundation</a>
                                         </li>
                                     </ul>
                                 </li>
@@ -172,27 +195,29 @@
                                     3rd Party Integration:
                                     <ul>
                                         <li>
-                                            <a href="//developer.paypal.com/docs/classic/products/digital-goods/" target="_blank" rel="noopener">Paypal: Express Checkout Digital Goods</a>
+                                            <a href="//developer.paypal.com/docs/classic/products/digital-goods/"
+                                            target="_blank"
+                                            rel="noopener">Paypal: Express Checkout Digital Goods</a>
                                         </li>
                                         <li>
-                                            <a href="//www.google.com/analytics/" target="_blank" rel="noopener">
-                                                Google Analytics
-                                            </a>
+                                            <a href="//www.google.com/analytics/"
+                                            target="_blank"
+                                            rel="noopener">Google Analytics</a>
                                         </li>
                                         <li>
-                                            <a href="//developers.google.com/maps/documentation/javascript/tutorial" target="_blank" rel="noopener">
-                                                Google Maps
-                                            </a>
+                                            <a href="//developers.google.com/maps/documentation/javascript/tutorial"
+                                            target="_blank"
+                                            rel="noopener">Google Maps</a>
                                         </li>
                                         <li>
-                                            <a href="//developers.google.com/places/web-service/intro" target="_blank" rel="noopener">
-                                                Google Places
-                                            </a>
+                                            <a href="//developers.google.com/places/web-service/intro"
+                                            target="_blank"
+                                            rel="noopener">Google Places</a>
                                         </li>
                                         <li>
-                                            <a href="//developer.foursquare.com/places-api" target="_blank" rel="noopener">
-                                                Foursquare: Places API
-                                            </a>
+                                            <a href="//developer.foursquare.com/places-api"
+                                            target="_blank"
+                                            rel="noopener">Foursquare: Places API</a>
                                         </li>
                                     </ul>
                                 </li>
@@ -202,79 +227,107 @@
                                         <li>User authentication</li>
                                         <li>Form Validation</li>
                                         <li>
-                                            <a href="//bluebirdjs.com/docs/getting-started.html" target="_blank" rel="noopener">Promises: bluebird.js</a>
+                                            <a href="//bluebirdjs.com/docs/getting-started.html"
+                                            target="_blank"
+                                            rel="noopener">Promises: bluebird.js</a>
                                         </li>
                                         <li>
-                                            <a href="//github.com/mroderick/PubSubJS" target="_blank" rel="noopener">PubSubJS</a>
+                                            <a href="//github.com/mroderick/PubSubJS"
+                                            target="_blank"
+                                            rel="noopener">PubSubJS</a>
                                         </li>
                                         <li>
-                                            <a href="//underscorejs.org" target="_blank" rel="noopener">Underscore.js</a>
+                                            <a href="//underscorejs.org"
+                                            target="_blank"
+                                            rel="noopener">Underscore.js</a>
                                         </li>
                                         <li>
-                                            <a href="//momentjs.com/" target="_blank" rel="noopener">Moment.js</a>
+                                            <a href="//momentjs.com/"
+                                            target="_blank"
+                                            rel="noopener">Moment.js</a>
                                         </li>
                                         <li>
-                                            <a href="//fineuploader.com/" target="_blank" rel="noopener">
-                                                Fine Uploader
-                                            </a>
+                                            <a href="//fineuploader.com/"
+                                            target="_blank"
+                                            rel="noopener">Fine Uploader</a>
                                         </li>
                                         <li>
-                                            <a href="//en.wikipedia.org/wiki/Asynchronous_module_definition" target="_blank" rel="noopener">
-                                                Asynchronous Module Definition
-                                                (<abbr>AMD</abbr>)
-                                            </a>
+                                            <a href="//en.wikipedia.org/wiki/Asynchronous_module_definition"
+                                            target="_blank"
+                                            rel="noopener">Asynchronous Module Definition
+                                                (<abbr>AMD</abbr>)</a>
                                         </li>
                                         <li>
-                                            <a href="//requirejs.org/" target="_blank" rel="noopener">RequireJS</a>
+                                            <a href="//requirejs.org/"
+                                            target="_blank"
+                                            rel="noopener">RequireJS</a>
                                             <ul>
                                                 <li>
-                                                    <a href="//requirejs.org/docs/optimization.html" target="_blank" rel="noopener">r.js build optimizer</a>
+                                                    <a href="//requirejs.org/docs/optimization.html"
+                                                    target="_blank"
+                                                    rel="noopener">r.js build optimizer</a>
                                                 </li>
                                             </ul>
                                         </li>
                                         <li>
-                                            <a href="//github.com/kenwheeler/slick" target="_blank" rel="noopener">Slick.js</a>
+                                            <a href="//github.com/kenwheeler/slick"
+                                            target="_blank"
+                                            rel="noopener">Slick.js</a>
                                         </li>
                                         <li>
-                                            <a href="//amsul.github.io/pickadate.js" target="_blank" rel="noopener">pickadate.js</a>
+                                            <a href="//amsul.github.io/pickadate.js"
+                                            target="_blank"
+                                            rel="noopener">pickadate.js</a>
                                         </li>
                                         <li>
-                                            <a href="//imagesloaded.desandro.com" target="_blank" rel="noopener">imagesLoaded</a>
+                                            <a href="//imagesloaded.desandro.com"
+                                            target="_blank"
+                                            rel="noopener">imagesLoaded</a>
                                         </li>
                                         <!--
                                         <li>
-                                            <a href="//camwiegert.github.io/in-view/" target="_blank" rel="noopener">in-view.js</a>
+                                            <a href="//camwiegert.github.io/in-view/"
+                                            target="_blank"
+                                            rel="noopener">in-view.js</a>
                                         </li>
                                         -->
                                         <li>
-                                            <a href="//github.com/sindresorhus/query-string" target="_blank" rel="noopener">query-string</a>
+                                            <a href="//github.com/sindresorhus/query-string"
+                                            target="_blank"
+                                            rel="noopener">query-string</a>
                                         </li>
                                         <li>
-                                            <a href="//imakewebthings.com/waypoints/" target="_blank" rel="noopener">Waypoints</a>
+                                            <a href="//imakewebthings.com/waypoints/"
+                                            target="_blank"
+                                            rel="noopener">Waypoints</a>
                                             <ul>
                                                 <li>Infinite scrolling</li>
                                             </ul>
                                         </li>
                                         <li>
-                                            <a href="//dropkickjs.com/" target="_blank" rel="noopener">
-                                                Dropkick
-                                            </a>
+                                            <a href="//dropkickjs.com/"
+                                            target="_blank"
+                                            rel="noopener">Dropkick</a>
                                         </li>
                                         <li>
-                                            <a href="//afarkas.github.io/webshim/demos/index.html" target="_blank" rel="noopener">Webshim</a>
+                                            <a href="//afarkas.github.io/webshim/demos/index.html"
+                                            target="_blank"
+                                            rel="noopener">Webshim</a>
                                         </li>
                                         <li>
-                                            <a href="//developer.mozilla.org/en-US/docs/Web/API/Geolocation/getCurrentPosition" target="_blank" rel="noopener">
-                                                Geolocation API
-                                            </a>
+                                            <a href="//developer.mozilla.org/en-US/docs/Web/API/Geolocation/getCurrentPosition"
+                                            target="_blank"
+                                            rel="noopener">Geolocation API</a>
                                         </li>
                                         <li>
-                                            <a href="//developer.mozilla.org/en-US/docs/Web/API/History" target="_blank" rel="noopener">
-                                                History API
-                                            </a>
+                                            <a href="//developer.mozilla.org/en-US/docs/Web/API/History"
+                                            target="_blank"
+                                            rel="noopener">History API</a>
                                         </li>
                                         <li>
-                                            <a href="//jquery.com/" target="_blank" rel="noopener">jQuery</a>
+                                            <a href="//jquery.com/"
+                                            target="_blank"
+                                            rel="noopener">jQuery</a>
                                         </li>
                                     </ul>
                                 </li>
@@ -285,43 +338,69 @@
                                     Infrastructure, tools:
                                     <ul>
                                         <li>
-                                            <a href="//www.python.org/" target="_blank" rel="noopener">Python</a>
+                                            <a href="//www.python.org/"
+                                            target="_blank"
+                                            rel="noopener">Python</a>
                                         </li>
                                         <li>
-                                            <a href="//www.tornadoweb.org/en/stable/template.html" target="_blank" rel="noopener">Tornado templates</a>
+                                            <a href="//www.tornadoweb.org/en/stable/template.html"
+                                            target="_blank"
+                                            rel="noopener">Tornado templates</a>
                                         </li>
                                         <li>
-                                            <a href="//www.rabbitmq.com/" target="_blank" rel="noopener">RabbitMQ</a>
+                                            <a href="//www.rabbitmq.com/"
+                                            target="_blank"
+                                            rel="noopener">RabbitMQ</a>
                                         </li>
                                         <li>
-                                            <a href="//www.nginx.com/" target="_blank" rel="noopener">NGINX</a>
+                                            <a href="//www.nginx.com/"
+                                            target="_blank"
+                                            rel="noopener">NGINX</a>
                                         </li>
                                         <li>
-                                            <a href="//redis.io/" target="_blank" rel="noopener">Redis</a>
+                                            <a href="//redis.io/"
+                                            target="_blank"
+                                            rel="noopener">Redis</a>
                                         </li>
                                         <li>
-                                            <a href="//supervisord.org/" target="_blank" rel="noopener">Supervisor</a>
+                                            <a href="//supervisord.org/"
+                                            target="_blank"
+                                            rel="noopener">Supervisor</a>
                                         </li>
                                         <li>
-                                            <a href="//jenkins.io/" target="_blank" rel="noopener">Jenkins Continuous Integration</a>
+                                            <a href="//jenkins.io/"
+                                            target="_blank"
+                                            rel="noopener">Jenkins Continuous Integration</a>
                                         </li>
                                         <li>
-                                            <a href="//gruntjs.com" target="_blank" rel="noopener">Grunt</a>
+                                            <a href="//gruntjs.com"
+                                            target="_blank"
+                                            rel="noopener">Grunt</a>
                                             <!--<ul>
                                                 <li>
-                                                    <a href="//github.com/gruntjs/grunt-contrib-clean#readme" target="_blank" rel="noopener">grunt-contrib-clean</a>
+                                                    <a href="//github.com/gruntjs/grunt-contrib-clean#readme"
+                                                    target="_blank"
+                                                    rel="noopener">grunt-contrib-clean</a>
                                                 </li>
                                                 <li>
-                                                    <a href="//github.com/gruntjs/grunt-contrib-copy#readme" target="_blank" rel="noopener">grunt-contrib-copy</a>
+                                                    <a href="//github.com/gruntjs/grunt-contrib-copy#readme"
+                                                    target="_blank"
+                                                    rel="noopener">grunt-contrib-copy</a>
                                                 </li>
                                                 <li>
-                                                    <a href="//github.com/alanshaw/grunt-include-replace" target="_blank" rel="noopener">grunt-include-replace</a>
+                                                    <a href="//github.com/alanshaw/grunt-include-replace"
+                                                    target="_blank"
+                                                    rel="noopener">grunt-include-replace</a>
                                                 </li>
                                                 <li>
-                                                    <a href="//github.com/sindresorhus/grunt-sass#readme" target="_blank" rel="noopener">grunt-sass</a>
+                                                    <a href="//github.com/sindresorhus/grunt-sass#readme"
+                                                    target="_blank"
+                                                    rel="noopener">grunt-sass</a>
                                                 </li>
                                                 <li>
-                                                    <a href="//github.com/sindresorhus/grunt-svgmin#readme" target="_blank" rel="noopener">grunt-svgmin</a>
+                                                    <a href="//github.com/sindresorhus/grunt-svgmin#readme"
+                                                    target="_blank"
+                                                    rel="noopener">grunt-svgmin</a>
                                                 </li>
                                             </ul>-->
                                         </li>
@@ -333,28 +412,44 @@
                             <h4>Technology used in previous versions of the project</h4>
                             <ul>
                                 <li>
-                                    <a href="//compass-style.org/" target="_blank" rel="noopener">Compass</a>
+                                    <a href="//compass-style.org/"
+                                    target="_blank"
+                                    rel="noopener">Compass</a>
                                 </li>
                                 <li>
-                                    <a href="//modernizr.com/" target="_blank" rel="noopener">modernizr.com</a>
+                                    <a href="//modernizr.com/"
+                                    target="_blank"
+                                    rel="noopener">modernizr.com</a>
                                 </li>
                                 <li>
-                                    <a href="//github.com/HuddleEng/PhantomCSS" target="_blank" rel="noopener">PhantomCSS</a>
+                                    <a href="//github.com/HuddleEng/PhantomCSS"
+                                    target="_blank"
+                                    rel="noopener">PhantomCSS</a>
                                 </li>
                                 <li>
-                                    <a href="//warpspire.com/kss/" target="_blank" rel="noopener">Knyle Style Sheets</a>
+                                    <a href="//warpspire.com/kss/"
+                                    target="_blank"
+                                    rel="noopener">Knyle Style Sheets</a>
                                 </li>
                                 <li>
-                                    <a href="//www.magictoolbox.com/magiczoomplus/" target="_blank" rel="noopener">Magic Zoom Plus</a>
+                                    <a href="//www.magictoolbox.com/magiczoomplus/"
+                                    target="_blank"
+                                    rel="noopener">Magic Zoom Plus</a>
                                 </li>
                                 <li>
-                                    <a href="//github.com/filamentgroup/grunticon" target="_blank" rel="noopener">grunt-grunticon</a>
+                                    <a href="//github.com/filamentgroup/grunticon"
+                                    target="_blank"
+                                    rel="noopener">grunt-grunticon</a>
                                 </li>
                                 <li>
-                                    <a href="//freqdec.github.io/slabText/" target="_blank" rel="noopener">slabText</a>
+                                    <a href="//freqdec.github.io/slabText/"
+                                    target="_blank"
+                                    rel="noopener">slabText</a>
                                 </li>
                                 <li>
-                                    <a href="//letteringjs.com/" target="_blank" rel="noopener">lettering.js</a>
+                                    <a href="//letteringjs.com/"
+                                    target="_blank"
+                                    rel="noopener">lettering.js</a>
                                 </li>
                             </ul>
                             -->
@@ -387,15 +482,12 @@
                         For the second release (<abbr>V2</abbr>) of 
                         <a href="//www.fyndit.com/wanted_found"
                         target="_blank"
-                        rel="noopener">
-                            fyndit.com
-                        </a>, page load performance was tested at 
+                        rel="noopener">fyndit.com</a>, 
+                        page load performance was tested at 
                         <a href="//webpagetest.org"
                         target="_blank"
-                        rel="noopener">
-                            webpagetest.org
-                        </a>
-                        against a <strong><em>slow 3G connection on a mid-tier mobile device.</em></strong>
+                        rel="noopener">webpagetest.org</a>
+                        against the <strong><em>initial load on a slow 3G connection using a mid-tier mobile device.</em></strong>
                     </p>
 
                     <p>This latest version of the site outperformed the previous release in several key metrics:</p>
@@ -411,25 +503,19 @@
                         <sup>
                             <a href="//www.amazon.com/Instant-Pot-Muti-Use-Programmable-Pressure/dp/B01MFEBQH1?pd_rd_wg=..._gw_ri&pf_rd_r=Q7PY8RX7D8SFP21X309C&pf_rd_p=7b6d690e-1944-54ab-a4d2-4eb3bd7e198b"
                             target="_blank"
-                            rel="noopener">
-                                1
-                            </a>
+                            rel="noopener">1</a>
                         </sup>,  
                         Reddit 
                         <sup>
                             <a href="//www.reddit.com/r/mildlyinteresting/comments/7a2kjo/my_tape_dispenser_broke_and_it_was_filled_with/"
                             target="_blank"
-                            rel="noopener">
-                                2
-                            </a>
+                            rel="noopener">2</a>
                         </sup>
                         and Twitter
                         <sup>
                             <a href="//mobile.twitter.com/HarjitSajjan/status/926133170097057792"
                             target="_blank"
-                            rel="noopener">
-                                3
-                            </a>
+                            rel="noopener">3</a>
                         </sup>.
                     </p>
                     <ul>
@@ -442,38 +528,35 @@
                     <h4>Resources</h4>
                     <ul>
                         <li>
-                            <a href='//www.webpagetest.org/result/180523_8H_0c5289bf762d4c72c14a09f2c7129f4d/'
-                            target="_blank"
-                            rel="noopener">
-                                FyndIt: Spotty 3G, 1st load, mid-tier mobile device.
-                            </a>
+                            Slow 3G, 1st load, mid-tier mobile device:
+                            <ul>
+                                <li>
+                                    <a href="//www.webpagetest.org/result/180606_RX_5717dd9394d6d0600d8004295b0fa79c/"
+                                    target="_blank"
+                                    rel="noopener">Oakenfold.ca</a>
+                                </li>
+                                <li>
+                                    <a href="//www.webpagetest.org/result/180523_8H_0c5289bf762d4c72c14a09f2c7129f4d/"
+                                    target="_blank"
+                                    rel="noopener">FyndIt</a>
+                                </li>
+                            </ul>
                         </li>
                         <li>
-                            <a href='//www.webpagetest.org/result/180523_K4_8a65a5df97ff2e10bbd1c03a7f5a2b1f/'
-                            target="_blank"
-                            rel="noopener">
-                                FyndIt: 4G, 1st load, mid-tier mobile device.
-                            </a>
+                            Cable, 1st load, desktop device:
+                            <ul>
+                                <li>
+                                    <a href="//www.webpagetest.org/result/180606_81_ebcc08448ba1ad156c1242ff762eee04/"
+                                    target="_blank"
+                                    rel="noopener">FyndIt</a>
+                                </li>
+                            </ul>
                         </li>
                         <li>
-                            <a href='//www.webpagetest.org/result/180606_W2_e54503005eb6c863fc7a7f52ba6f74f1/'
+                            <a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vSnScGMiZrGOEsZdyl-XyLQP16C3EAH2H0RW0LrAT-Nfouzm5GL7shK9ILnro-87gE9GMUP3nA_jXy1/pubhtml"
                             target="_blank"
                             rel="noopener">
-                                FyndIt: DSL, 1st load, desktop device.
-                            </a>
-                        </li>
-                        <li>
-                            <a href='//www.webpagetest.org/result/180606_81_ebcc08448ba1ad156c1242ff762eee04/'
-                            target="_blank"
-                            rel="noopener">
-                                FyndIt: Cable, 1st load, desktop device.
-                            </a>
-                        </li>
-                        <li>
-                            <a href='//www.webpagetest.org/result/180606_RX_5717dd9394d6d0600d8004295b0fa79c/'
-                            target="_blank"
-                            rel="noopener">
-                                Oakenfold.ca: Spotty 3G, 1st load, mid-tier mobile device.
+                                Fyndit: spreadsheet of web performance results against V1, Amazon, Twitter, Reddit
                             </a>
                         </li>
                     </ul>
@@ -500,25 +583,27 @@
                     <h4>Resources</h4>
                     <ul>
                         <li>
-                            <a href='//alistapart.com/article/diy-web-accessibility-blueprint'
+                            <a href="//alistapart.com/article/diy-web-accessibility-blueprint"
                             target="_blank"
-                            rel="noopener">
-                                A DIY Web Accessibility Blueprint.
-                            </a>
+                            rel="noopener">A DIY Web Accessibility Blueprint.</a>
                         </li>
                         <li>
-                            <a href='//www.adatitleiii.com/2018/04/beyond-title-iii-website-accessibility-lawsuits-filed-alleging-inaccessible-online-employment-applications/'
+                            <a href="//michelf.ca/projects/sim-daltonism/"
                             target="_blank"
-                            rel="noopener">
-                                Beyond Title III: Website Accessibility Lawsuits Filed Alleging Inaccessible Online Employment Applications.
-                            </a>
+                            rel="noopener">Sim Daltonism: The color blindness simulator.</a>
+                        </li>
+                        
+                        <li>
+                            <a href="//www.adatitleiii.com/2018/04/beyond-title-iii-website-accessibility-lawsuits-filed-alleging-inaccessible-online-employment-applications/"
+                            target="_blank"
+                            rel="noopener">Beyond Title III:
+                            Website Accessibility Lawsuits Filed Alleging Inaccessible Online Employment Applications.</a>
                         </li>
                         <li>
-                            <a href='//www.sgrlaw.com/is-your-website-a-place-of-public-accommodation-under-the-americans-with-disabilities-act/'
+                            <a href="//www.sgrlaw.com/is-your-website-a-place-of-public-accommodation-under-the-americans-with-disabilities-act/"
                             target="_blank"
-                            rel="noopener">
-                                Is Your Website a “Place of Public Accommodation” Under the Americans with Disabilities Act?
-                            </a>
+                            rel="noopener">Is Your Website a “Place of Public Accommodation” 
+                                Under the Americans with Disabilities Act?</a>
                         </li>
                     </ul>
                 </aside>
@@ -546,10 +631,14 @@
                     <h4>Resources</h4>
                     <ul>
                         <li>
-                            <a href='#' target="_blank" rel="noopener">webpagetest.org</a>
+                            <a href="#"
+                            target="_blank"
+                            rel="noopener">webpagetest.org</a>
                         </li>
                         <li>
-                            <a href='#' target="_blank" rel="noopener">Article</a>
+                            <a href="#"
+                            target="_blank"
+                            rel="noopener">Article</a>
                         </li>
                     </ul>
                 </aside>
@@ -577,10 +666,14 @@
                     <h4>Resources</h4>
                     <ul>
                         <li>
-                            <a href='#' target="_blank" rel="noopener">webpagetest.org</a>
+                            <a href="#"
+                            target="_blank"
+                            rel="noopener">webpagetest.org</a>
                         </li>
                         <li>
-                            <a href='#' target="_blank" rel="noopener">Article</a>
+                            <a href="#"
+                            target="_blank"
+                            rel="noopener">Article</a>
                         </li>
                     </ul>
                 </aside>
@@ -613,18 +706,14 @@
                                 href="//www.webpagetest.org/result/180606_RX_5717dd9394d6d0600d8004295b0fa79c/"
                                 target="_blank"
                                 rel="noopener"
-                                title="webpagetest.org results">
-                                    🔥🔥🔥🔥🔥
-                                </a>
+                                title="webpagetest.org results">🔥🔥🔥🔥🔥</a>
                             </td>
                             <td>
                                 <a class="settings__table-link"
                                 href="//github.com/coakenfold/Oakenfold.ca-Website/tree/0.0.2-html"
                                 target="_blank"
                                 rel="noopener"
-                                title="Github">
-                                    🐞
-                                </a>
+                                title="Github">🐞</a>
                             </td>
                         </tr>
                         <tr class="settings__table-row">
@@ -636,18 +725,14 @@
                                 href="#"
                                 target="_blank"
                                 rel="noopener"
-                                title="webpagetest.org results">
-                                    🔥🔥🔥🔥🔥
-                                </a>
+                                title="webpagetest.org results">🔥🔥🔥🔥🔥</a>
                             </td>
                             <td>
                                 <a class="settings__table-link"
                                 href="#"
                                 target="_blank"
                                 rel="noopener"
-                                title="Github">
-                                    🐞
-                                </a>
+                                title="Github">🐞</a>
                             </td>
                         </tr>
                         <tr class="settings__table-row">
@@ -659,18 +744,14 @@
                                 href="#"
                                 target="_blank"
                                 rel="noopener"
-                                title="webpagetest.org results">
-                                    🔥🔥🔥🔥🔥
-                                </a>
+                                title="webpagetest.org results">🔥🔥🔥🔥🔥</a>
                             </td>
                             <td>
                                 <a class="settings__table-link"
                                 href="#"
                                 target="_blank"
                                 rel="noopener"
-                                title="Github">
-                                    🐞
-                                </a>
+                                title="Github">🐞</a>
                             </td>
                         </tr>
                         <tr class="settings__table-row">
@@ -682,18 +763,14 @@
                                 href="#"
                                 target="_blank"
                                 rel="noopener"
-                                title="webpagetest.org results">
-                                    🔥🔥🔥🔥🔥
-                                </a>
+                                title="webpagetest.org results">🔥🔥🔥🔥🔥</a>
                             </td>
                             <td>
                                 <a class="settings__table-link"
                                 href="#"
                                 target="_blank"
                                 rel="noopener"
-                                title="Github">
-                                    🐞
-                                </a>
+                                title="Github">🐞</a>
                             </td>
                         </tr>
                         <tr>
@@ -705,23 +782,19 @@
                                 href="#"
                                 target="_blank"
                                 rel="noopener"
-                                title="webpagetest.org results">
-                                    🔥🔥🔥🔥🔥
-                                </a>
+                                title="webpagetest.org results">🔥🔥🔥🔥🔥</a>
                             </td>
                             <td>
                                 <a class="settings__table-link"
                                 href="#"
                                 target="_blank"
                                 rel="noopener"
-                                title="Github">
-                                    🐞
-                                </a>
+                                title="Github">🐞</a>
                             </td>
                         </tr>
                     </tbody>
                 </table>
-                <figcaption class="settings__table-caption">Performance testing prioritized 1st page load on a spotty 3G connection using a mid tier mobile device.</figcaption>
+                <figcaption class="settings__table-caption">Performance testing prioritized 1st page load on a slow 3G connection using a mid tier-mobile device.</figcaption>
             </figure>
         </div>
     </div>
@@ -734,12 +807,16 @@
                 <dt>Chad Oakenfold creates &ldquo;intricate and beautiful complexities&rdquo; straight from the rainforests of
                     Vancouver Island.</dt>
                 <dd>I am active on
-                    <a href="//twitter.com/coak" target="_blank" rel="noopener">Twitter,</a>
+                    <a href="//twitter.com/coak"
+                    target="_blank"
+                    rel="noopener">Twitter,</a>
                 </dd>
                 <dd>You could mailto:
                     <strong>web at (this url)</strong>,</dd>
                 <dd>Connect via
-                    <a href="//www.linkedin.com/in/chad-oakenfold-a9a65a4/" target="_blank" rel="noopener">LinkedIn.</a>
+                    <a href="//www.linkedin.com/in/chad-oakenfold-a9a65a4/"
+                    target="_blank"
+                    rel="noopener">LinkedIn.</a>
                 </dd>
             </dl>
         </div>
@@ -761,7 +838,7 @@
 function seedSite () {
 }
 seedSite ();
-if (typeof oakenfold !== 'undefined') {
+if (typeof oakenfold !== "undefined") {
 var oak = oakenfold();
 }
 </script>
