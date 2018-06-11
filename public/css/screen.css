@@ -166,8 +166,11 @@ ul ul {
 
 /* C 
 ======================================== */
-.card {
-    transition: all 0.25s ease-out;
+.card,
+section.card {
+    transition: box-shadow 0.25s ease-out,
+        padding 0.25s ease-out,
+        background-color 0.25s ease-out;
     box-shadow: 0 1px 0 rgba(0,0,0,0);
     padding: 12px;
     border: 1px solid rgba(0,0,0,0.005);

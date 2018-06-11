@@ -7,5 +7,5 @@ critical.generate({
     dest: 'index.html',
     minify: true,
     width: 1300,
-    height: 900
+    height: 1750
 });
