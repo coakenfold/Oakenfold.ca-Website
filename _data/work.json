@@ -4,7 +4,7 @@
     "experience": {
         "title": "Experience",
         "text": [
-            "At Blast Radius, I workedas an Interface Developer as part of a team, just before their acquisition by WPP group. My portfolio included clients such as [...]",
+            "At Blast Radius, I worked as an Interface Developer as part of a team, just before their acquisition by WPP group. My portfolio included clients such as Nintendo of America, Microsoft, Starbucks, Nike, BMW, Chanel, Electronic Arts, Standard Pacific Homes, and Guthy Renker.",
             "In 2014, I branched out to create the small, but mighty, corporation Oakenfold Enterprises Ltd. Since, I have collaborated and lead on variety of projects, with all kinds of impact [...]",
             "Here are some of the things I bring to the table:",
             [
@@ -20,10 +20,9 @@
     "spa": {
         "title": "Single Page Applications",
         "problem": [
-            "The baseline expectations for a website are constantly changing.",
-            "The user interface and experience of a website is an extension of the branding for a business, service, or product.",
-            "Web based Single Page Applications are sophisticated and seemless experiences that feel like native applications.",
-            "It can differentiate a company from it's competitors.",
+            "Online visitors are becoming more sophisticated and their expectations are constantly changing.",
+            "Single Page Applications provide a sophisticated and seemless experience that feels like a native application.",
+            "The user interface of a website is an extension of the brand for a business, service, or product and can differentiate a company from it's competitors.",
         ],
         "text": [
             "Developed and refined the frontend code for Fyndit.com.",
