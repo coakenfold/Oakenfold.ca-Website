@@ -4,3 +4,7 @@ node_modules
 deploy
 resources
 npm-debug.log
+_site
+.sass-cache
+.jekyll-metadata
+

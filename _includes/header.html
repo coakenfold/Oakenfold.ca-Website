@@ -1,0 +1,57 @@
+<header>
+
+    {% if page.showSettings %}
+    <div class="messaging">
+        <div class="messaging__inner">
+            <label for="messaging__button" class="messaging__label">Hide</label>
+            <input class="messaging__button" type="checkbox" id="messaging__button"><!-- 
+                Keep these next to each other in source
+            --><div class="messaging__text">
+                Viewing the <a href="#settings">
+                <strong>HTML/CSS</strong></a> project.
+            </div>
+        </div>
+    </div>
+    {% endif %}
+    <span id="top" class="jump-top__target"></span>
+    <h1 class="banner">
+        <svg class="oakca banner__logo" aria-label="oakenfold logo">
+            <use xlink:href="#oakca" />
+        </svg>
+        <span class="banner__author">
+            <span class="banner__title">Chad Oakenfold</span>
+            <span class="banner__roles">Front End Developer / Web Engineer.</span>
+        </span>
+    </h1>
+
+    <ul id="menu" class="menu">
+        <li class="menu__section">
+            <a href="#work" class="menu__item">Work</a>
+            <ul class="menu__sub">
+                <li class="">
+                    <a href="#spa" class="menu__item">Single Page Applications</a>
+                </li>
+                <li class="">
+                    <a href="#web-performance" class="menu__item">Web Performance</a>
+                </li>
+                <li class="">
+                    <a href="#wcag" class="menu__item">Web Content Accessibility&nbsp;Guidelines</a>
+                </li>
+                <li class="">
+                    <a href="#gatsby-react" class="menu__item">Gatsby, React</a>
+                </li>
+                <li class="">
+                    <a href="#html-css" class="menu__item">HTML, CSS</a>
+                </li>
+            </ul>
+        </li>
+        <li class="menu__section">
+            <a href="#contact" class="menu__item menu__item--full">Contact</a>
+        </li>
+        <li class="menu__section">
+            <a href="#settings" class="menu__item menu__item--full">Settings</a>
+        </li>
+    </ul>
+</header>
+
+
