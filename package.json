@@ -4,11 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "browser-sync start --config 'bs-config.js'",
+    "start": "npm run copy; bundle exec jekyll serve;",
     "copy": "node buildScripts/copy.js",
     "inlineCss": "node buildScripts/inlineCss.js",
-    "build": "npm run copy; npm run inlineCss;",
-    "buildServe": "npm run build; http-server ./deploy -p 8081;"
+    "build": "jekyll build; npm run inlineCss; npm run copy;"
   },
   "repository": {
     "type": "git",

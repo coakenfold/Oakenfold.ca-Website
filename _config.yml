@@ -16,7 +16,10 @@
 title: Chad Oakenfold Frontend Web Development | Oakenfold Enterprises Ltd.
 email: web@oaeknfold.ca
 description: >- # this means to ignore newlines until "baseurl:"
-  Chad Oakenfold Bio
+  Chad Oakenfold creates “intricate and beautiful complexities” on the shores of beautiful Vancouver Island, British Columbia, Canada. 
+  Deeply interested in the intersections between art  and technology, and identifying as an “urban Dene”, 
+  he balances his passion for work with his commitment to his young, adventure-loving family.  
+  Chad’s always seeking new opportunities, inspirations, and challenges. 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://oakenfold.ca" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: coak
@@ -27,8 +30,9 @@ markdown: kramdown
 # theme: minima
 plugins:
 #  - jekyll-feed
-  - jekyll-seo-tag
+#  - jekyll-seo-tag
 
+keep_files: ['images']
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
@@ -47,7 +51,10 @@ exclude:
   - package.json
   - README.md
   - public/build-notes/
+  - public/favicons/
+  - public/images/
   - node_modules
+  - npm-debug.log
 
 defaults:
   - scope:
