@@ -469,7 +469,7 @@ section.card {
     transition: left 0.25s ease-in-out;
 }
 .toggle-button:focus {
-    left: -15px;
+    left: -19px;
 }
 
 .toggle-label {

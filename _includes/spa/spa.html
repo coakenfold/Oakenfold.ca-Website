@@ -1,0 +1,21 @@
+<section id='spa' class='card' markdown='1'>
+<a class='jump-top' href='#top' role='button'>Top</a>
+
+{% include spa/content.md %}
+
+<aside class='card__resources'>
+<label class='toggle-label'
+for='spa__resources-input'>See the features, libraries, and technologies used in this project.</label>
+
+<input id='spa__resources-input'
+class='toggle-button'
+aria-label='See the features, libraries, and technologies used in this project.'
+type='checkbox'><!-- 
+Keep these next to each other in source
+--><div class='toggle-target spa__resources-inner'>
+
+{% include spa/resources.html %}
+
+</div>
+</aside>
+</section>
