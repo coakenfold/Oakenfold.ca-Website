@@ -1,9 +1,25 @@
 <section id='web-performance' class='card'>
+{% include jump-top.html %}
 
-<a class='jump-top' href='#top' role='button'>Top</a>
-
-<div class='card__content' markdown='1'>
+<div class='card__content'>
+<div markdown='1'>
 {% include performance/content.md %}
+</div>
+
+    <div class='card__supplemental'>
+        <label class='toggle-label'
+        for='toggle-button-performance'>See in depth performance results.</label>
+            <input id='toggle-button-performance'
+            class='toggle-button'
+            aria-label='See in depth performance results.'
+            type='checkbox'><!-- 
+Keep these next to each other in source
+        --><div class='toggle-target'>
+<div class='toggle-container toggle-container--performance'  markdown='1'>
+{% include performance/content-supplemental.md %}
+</div>
+        </div>
+    </div>
 </div>
 
 <aside class='card__resources' markdown='1'>
