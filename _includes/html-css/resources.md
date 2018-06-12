@@ -1,3 +1,4 @@
-#### Resources
+### Libraries used
 
-- [XXX](//xxx)
+- [critical.css](//github.com/addyosmani/critical)
+- [Jeckyll](//jekyllrb.com/)
