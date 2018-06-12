@@ -15,6 +15,7 @@ body {
     font-family: Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     line-height: 1.5;
     min-height: 100vh;
+    font-size: 16px;
     -webkit-font-smoothing: antialiased;
     background-color: rgba(0, 0, 0, 0.05);
 }
@@ -47,6 +48,13 @@ a:focus {
 abbr {
     font-variant: none;
 }
+blockquote {
+    background-color: #fff;
+    border: 1px solid rgba(0,0,0,0.1);
+    box-shadow: 10px 10px 1px rgba(0,0,0,0.01);
+    padding: 12px 12px 0;
+    margin: 12px 12px 0;
+}
 dl {
     margin: 0;
 }
@@ -64,14 +72,18 @@ footer {
     margin-top: 56px;
 }
 h1,
-h2,
+h2 {
+    font-size: 24px;
+    margin: 0 0 12px;
+    font-weight: 400;
+}
 h3,
 h4,
 h5,
 h6 {
+    font-size: 16px;
     margin: 0 0 12px;
     font-weight: 400;
-    font-size: 24px;
 }
 hr {
     margin: 0 auto 12px;
@@ -155,6 +167,13 @@ ul ul {
 
 .banner__logo {
     margin-right: 12px;
+}
+
+.blockquote-cite {
+    text-align: right;
+    font-size: 12px;
+    font-weight: 400;
+    margin: 12px;
 }
 
 .but-mighty {
