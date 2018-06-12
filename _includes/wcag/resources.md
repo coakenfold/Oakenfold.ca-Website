@@ -1,4 +1,4 @@
-#### Resources
+### Articles
 
 - [A DIY Web Accessibility Blueprint.](//alistapart.com/article/diy-web-accessibility-blueprint)
 - [Sim Daltonism: The color blindness simulator.](//michelf.ca/projects/sim-daltonism/)
