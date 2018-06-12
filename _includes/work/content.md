@@ -6,9 +6,7 @@ Frontend Web Developer:  friendly, reliable, future-focused & committed to deliv
 
 At Blast Radius, I worked as an Interface Developer as part of a team, just before their acquisition by WPP group. My portfolio included clients such as Nintendo of America, Microsoft, Starbucks, Nike, BMW, Chanel, Electronic Arts, Standard Pacific Homes, and Guthy Renker.
 
-In 2014, I branched out to create the small, but mighty, corporation Oakenfold Enterprises Ltd. Since, I have collaborated and lead on variety of projects, with all kinds of impact [...]
-
----
+In 2014, I branched out to create the small, but mighty, corporation Oakenfold Enterprises Ltd. Since, I have collaborated and lead on a variety of projects, read on to learn more about my work.
 
 Here are some of the things I bring to the table:
 

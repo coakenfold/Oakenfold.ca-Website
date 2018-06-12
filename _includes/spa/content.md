@@ -1,12 +1,12 @@
-<h2 class='card__title'>Single Page Applications</h2>
+## Single Page Applications
 
 Visitors expectations of a website are constantly evolving.
 
 Single Page Applications provide a sophisticated and seemless experience that feels like a native application.
 
-**A user interface is an extension of the brand** and can differentiate a company from their competitors.
+A user interface is an extension of brand and can differentiate a company from their competitors.
 
----
+<hr class="hr-spacer" />
 
 I developed, prototyped, and refined the frontend code for [Fyndit.com](//fyndit.com/wanted_found). Key features and deliverables include:
 

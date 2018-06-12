@@ -1,4 +1,4 @@
-<h2 class="card__title">Let’s Meet - Contact Chad Oakenfold</h2>
+## Let’s Meet - Contact Chad Oakenfold
 
 I create “intricate and beautiful complexities” on the shores of Vancouver Island, British Columbia, Canada. Deeply interested in the intersections between art  culture, design and technology, and identifying as “urban Dene”, I balance my passion for work with a commitment to my young, adventure-loving family.
 
