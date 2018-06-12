@@ -5,7 +5,36 @@ permalink: css/screen-medium.css
 @media screen and (max-width: 990px) {
 /* C
 ======================================== */
+    .card {
+        display: block;
+    }
     .card--settings {
         padding: 18px;
     }
+    .card__content {
+        padding-right: 0;
+        width: 100%;
+    }
+    .card__resources {
+        padding-left: 0;
+        width: 100%;
+    }
+    .card__resources h3 {
+        box-shadow: 6px 6px 10px rgba(0,0,0,0);
+        background-color: rgba(255,255,255,0);
+        border: 1px solid rgba(0,0,0,0);
+        border-bottom-color: rgba(0,0,0,0.05);
+        padding: 0;
+    }
+/* J
+*/
+.jump-top a {
+    position: relative;
+    left: -6px;
+}
+/* T
+*/
+.toggle-button--aside:focus {
+    left: -19px;
+}
 }

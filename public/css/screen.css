@@ -30,6 +30,7 @@ body {
 }
 
 a {
+    display: inline-block;
     font-size: inherit;
     color: rgba(170, 0, 0, 1);
     transition: all 0.25s ease-out, color 0.12s ease-out, background-color 0.12s ease-out;
@@ -86,10 +87,11 @@ h6 {
     font-weight: 400;
 }
 hr {
-    margin: 0 auto 12px;
+    margin: 0 auto 30px;
     border: 0;
-    background-color: rgba(0,0,0,0.05);
-    height: 2px;
+    background-color: rgba(0,0,0, 0.25);
+    height: 1px;
+    box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.1);
 }
 p {
     margin: 0;
@@ -185,8 +187,7 @@ ul ul {
 
 /* C 
 ======================================== */
-.card,
-section.card {
+.card {
     transition: box-shadow 0.25s ease-out,
         padding 0.25s ease-out,
         background-color 0.25s ease-out;
@@ -194,16 +195,24 @@ section.card {
     padding: 12px;
     border: 1px solid rgba(0,0,0,0.005);
     margin-bottom: 12px;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
 }
 .card:target {
     box-shadow: 2px 2px 18px rgba(0,0,0,0.05);
     padding: 12px;
     background-color: rgba(255,255,255,1);
 }
-.card:target .card__title {
+.card:target + hr {
+    background-color: rgba(0,0,0, 0);
+    box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0);
+}
+.card:target h2 {
     border-bottom: 2px solid rgba(236, 183, 47, 1);
 }
-.card__title {
+.card h2 {
     border-bottom: 2px solid rgba(236, 183, 47, 0);
     transition: border-bottom 0.25s ease-in-out;
 }
@@ -211,6 +220,7 @@ section.card {
     transition: all 0.5s ease-out;
     padding: 12px;
     background-image: linear-gradient(180deg, rgba(0,0,0,1) 12%, rgba(0,0,0,0) 100%);
+    display: block;
 }
 .card--contact a{
     color: #fff;
@@ -256,7 +266,31 @@ section.card {
 .card--settings:target {
     padding: 24px;
 }
+.card__content {
+    padding-right: 12px;
+    width: 64%;
+}
 .card__resources {
+    position: relative;
+    padding-left: 12px;
+    width: 34%;
+    font-size: 14px;
+}
+.card__resources h3 {
+    font-size: 14px;
+    box-shadow: 6px 6px 10px rgba(0,0,0,0.025);
+    background-color: rgba(255,255,255,0.75);
+    border: 1px solid rgba(0,0,0,0.01);
+    border-bottom-color: rgba(0,0,0,0.1);
+    padding: 4px;
+}
+.card__resources li {
+    margin-bottom: 6px;
+}
+.card__resources li li {
+    margin-bottom: 0;
+}
+.card__supplemental {
     position: relative;
 }
 
@@ -270,17 +304,29 @@ section.card {
     border-bottom: 2px solid rgba(236, 183, 47, 1);
 }
 
+/* H 
+======================================== */
+.hr-spacer {
+    height: 0;
+    box-shadow: none;
+    border: none;
+    background-color: transparent;
+
+    margin: 0 0 30px 0;
+}
+
 /* J
 ======================================== */
 .jump-top {
-    float: right;
-    font-size: 12px;
-    text-decoration: none;
-    padding: 4px;
+    padding: 0 12px 0 0;
 }
 .jump-top:focus {
     background-color: #aa0000;
     color: #fff;
+}
+.jump-top--alternate {
+    float: right;
+    padding: 0;
 }
 .jump-top--light {
     color: #fff;
@@ -288,6 +334,11 @@ section.card {
 .jump-top--light:focus {
     background-color: #fff;
     color: #000;
+}
+.jump-top a {
+    text-decoration: none;
+    padding: 6px;
+    font-size: 12px;
 }
 .jump-top__target {
     /* https://snook.ca/archives/html_and_css/hiding-content-for-accessibility */
@@ -465,17 +516,7 @@ section.card {
 .settings__table td {
     padding: 12px;
 }
-.spa__resources-inner {
-    overflow: hidden;
-}
-.spa__resources {
-    margin-top: -500vh;
-    transition: margin 0.75s ease-out;
-}
-#spa__resources-input:checked + .spa__resources-inner .spa__resources,
-.spa__resources:focus-within {
-    margin-top: 0;
-}
+
 
 /* T
 ======================================== */
@@ -489,6 +530,19 @@ section.card {
 }
 .toggle-button:focus {
     left: -19px;
+}
+.toggle-button--aside:focus {
+    left: -6px;
+}
+.toggle-button:checked + .toggle-target .toggle-container--spa,
+.toggle-container--spa:focus-within,
+.toggle-button:checked + .toggle-target .toggle-container--performance,
+.toggle-container--performance:focus-within {
+    margin-top: 0;
+}
+.toggle-container {
+   margin-top: -500vh;
+   transition: margin 0.75s ease-out;
 }
 
 .toggle-label {
@@ -511,9 +565,13 @@ section.card {
      text-decoration: underline;
      box-shadow: 10px 10px 3px rgba(255, 183, 0, 0.02);
  }
+ .toggle-target {
+    overflow: hidden;
+ }
  .toggle-target a:focus {
     position:static; 
-    width:auto; height:auto;  
+    width:auto;
+    height:auto;  
  }
 
 /* W
