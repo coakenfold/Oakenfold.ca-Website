@@ -9,7 +9,7 @@
     "htmlMinify": "node buildScripts/htmlMinify.js",
     "inlineCss": "node buildScripts/inlineCss.js",
     "jsMinify": "uglifyjs _site/script.js -o _site/script.js --compress",
-    "inlineSource": "cat _site/index.html | inline-source --compress false --root _site > _site/index.html",
+    "inlineSource": "mv _site/index.html _site/index.original.html; cat _site/index.original.html | inline-source --compress false --root _site > _site/index.html",
     "postcss": "postcss _site/css --dir _site/css",
     "buildCritical": "jekyll build; npm run inlineCss; npm run postcss; npm run copy; npm run htmlMinify; npm run jsMinify",
     "build": "JEKYLL_ENV=production jekyll build; npm run postcss; npm run copy; npm run inlineSource; npm run htmlMinify; npm run jsMinify"
