@@ -543,17 +543,25 @@ ul ul {
 .toggle-button--aside:focus {
     left: -6px;
 }
+
 .toggle-button:checked + .toggle-target .toggle-container--spa,
 .toggle-container--spa:focus-within,
 .toggle-button:checked + .toggle-target .toggle-container--performance,
 .toggle-container--performance:focus-within {
     margin-top: 0;
 }
+/* IE...*/
+.toggle-button-clicked + .toggle-target .toggle-container--spa,
+.toggle-button-clicked + .toggle-target .toggle-container--performance {
+    margin-top: 0;
+}
 .toggle-container {
-   margin-top: -500vh;
+    margin-top: -1000px;
+    margin-top: -500vh;
    transition: margin 0.75s ease-out;
 }
 .toggle-container--performance {
+    margin-top: -500px;
     margin-top: -150vh;
 }
 .toggle-label {
