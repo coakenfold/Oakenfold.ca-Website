@@ -55,6 +55,7 @@ blockquote {
     box-shadow: 10px 10px 1px rgba(0,0,0,0.01);
     padding: 12px 12px 0;
     margin: 12px 12px 0;
+    font-style: italic;
 }
 dl {
     margin: 0;
@@ -91,7 +92,7 @@ hr {
     border: 0;
     background-color: rgba(0,0,0, 0.25);
     height: 1px;
-    box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.01);
 }
 p {
     margin: 0;
@@ -268,6 +269,9 @@ ul ul {
     padding-right: 12px;
     width: 64%;
 }
+.card__content--full {
+    width: 100%;
+}
 .card__resources {
     position: relative;
     padding-left: 12px;
@@ -280,16 +284,20 @@ ul ul {
     background-color: rgba(255,255,255,0.75);
     border: 1px solid rgba(0,0,0,0.01);
     border-bottom-color: rgba(0,0,0,0.1);
-    padding: 4px;
+    padding: 6px 12px;
+}
+.card__resources blockquote {
+    margin: 0;
+    line-height: 1.4;
+}
+.card__resources .blockquote-cite {
+    margin: 12px 0 48px;
 }
 .card__resources li {
     margin-bottom: 6px;
 }
 .card__resources li li {
     margin-bottom: 0;
-}
-.card__supplemental {
-    position: relative;
 }
 
 /* G 
@@ -310,7 +318,7 @@ ul ul {
     border: none;
     background-color: transparent;
 
-    margin: 0 0 30px 0;
+    margin: 0 0 24px 0;
 }
 
 /* J
@@ -518,6 +526,9 @@ ul ul {
 
 /* T
 ======================================== */
+.toggle {
+    position: relative;
+}
 .toggle-button {
     position: absolute;
     top: 12px;
@@ -542,7 +553,9 @@ ul ul {
    margin-top: -500vh;
    transition: margin 0.75s ease-out;
 }
-
+.toggle-container--performance {
+    margin-top: -150vh;
+}
 .toggle-label {
     cursor: pointer;
     display: block;

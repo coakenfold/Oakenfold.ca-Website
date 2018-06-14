@@ -8,6 +8,10 @@ permalink: css/screen-small.css
     footer {
         margin-top: 0;
     }
+
+    hr {
+        max-width: 80%;
+    }
     .u-hide-small {
         display: none;
     }
@@ -80,6 +84,15 @@ permalink: css/screen-small.css
     .settings__table-link {
         padding: 0;
     }
+
+/* T
+======================================== */
+.toggle-label {
+    margin-left: 12px;
+}
+.toggle-button:focus {
+    left: -6px;
+}
 /* W
 ======================================== */
     .work {
