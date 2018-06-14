@@ -1,15 +1,12 @@
 <section id='spa' class='card' markdown='1'>
-{% include jump-top.html %}
-
-<div class='card__content' markdown='1'>
-{% include spa/content.md %}
-</div>
-
-<aside class='card__resources'>
+<div class='card__content card__content--full'>
+{% include jump-top-alternate.html %}
+<div markdown='1'>{% include spa/content.md %}</div>
+<div class="toggle">
 <label class='toggle-label'
 for='toggle-button-spa'>See more features, libraries, and technologies used in this project.</label>
 <input id='toggle-button-spa'
-class='toggle-button toggle-button--aside'
+class='toggle-button'
 aria-label='See the features, libraries, and technologies used in this project.'
 type='checkbox'><!-- 
 Keep these next to each other in source
@@ -18,6 +15,7 @@ Keep these next to each other in source
 {% include spa/resources.html %}
 </div>
 </div>
-</aside>
+</div>
+</div>
 
 </section>
