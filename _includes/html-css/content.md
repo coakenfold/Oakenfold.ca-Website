@@ -1,6 +1,6 @@
 ## HTML, CSS
 
-A large portion of the [oakenfold.ca html/css version](//oakenfold.ca/version/html-css) was developed via hand coded `HTML` and `CSS`.
+A large portion of the oakenfold.ca `html`/`css` version was developed by hand coding.
 
 Hand coding `CSS` tends to reduce selector chains and number of declarations.
 
