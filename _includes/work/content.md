@@ -16,4 +16,4 @@ Here are some of the things I bring to the table:
 - Delivering sites from alpha > beta > production
 - Incorporating new technologies into projects
 
-I am committed to continuous learning.  Currently, I am passionate about [React](//reactjs.org), [web page performance](#web-performance), and [accessibility](#wcag).
+I am committed to continuous learning.  Currently, I am passionate about [React](//reactjs.org), [web page performance](#perf), and [accessibility](#wcag).
