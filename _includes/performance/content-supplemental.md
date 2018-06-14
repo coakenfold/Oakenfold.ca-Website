@@ -1,4 +1,4 @@
-For the 2018 [fyndit.com](//www.fyndit.com/wanted_found') release, page load performance was tested with [webpagetest.org](//webpagetest.org). Focusing on the **_initial load over a slow 3G connection using a mid-tier mobile device._**
+For the 2018 [fyndit.com](//www.fyndit.com/wanted_found) release, page load performance was tested with [webpagetest.org](//webpagetest.org). Focusing on the **_initial load over a slow 3G connection using a mid-tier mobile device._**
 
 The new version outperformed the previous release in several key metrics:
 
