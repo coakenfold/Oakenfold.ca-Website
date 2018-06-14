@@ -1,6 +1,6 @@
 ## Single Page Applications
 
-Visitor’s expectations of their online experience are  are constantly evolving. Single Page Applications provide a sophisticated and seamless website experience that feels like a native application. A user interface is an extension of brand and differentiates an organization from their competitors.
+Visitor’s expectations of their online experience are constantly evolving. Single Page Applications provide a sophisticated and seamless website experience that feels like a native application. A user interface is an extension of brand and differentiates an organization from their competitors.
 
 I developed, prototyped, and refined the frontend code for [Fyndit.com](//fyndit.com/wanted_found). Key features and deliverables include:
 
@@ -21,4 +21,4 @@ I developed, prototyped, and refined the frontend code for [Fyndit.com](//fyndit
 - Code splitting at a component level
    - 2 main javascript bundles: core application scripting and related library files. The rest is dynamically loaded
    - components initialize via a callback that is registered with a central function. Communication via pubsub
-- Cross-browser tested. Most features supported down to Internet Explorer 11
+- Cross-browser tested. Most features supported down to Internet Explorer 11 on Windows 8.1

@@ -10,9 +10,6 @@ Static site generators offer a lot of benefits:
 - an easy to use yet sophisticated system that meets most business' needs
 - code quality increases due to developer tooling and plugins
 - static sites typically load faster than single page applications
-- website copy stored outside of `html` markup for easy updating
-- increased developer comfort:
-    - easily group source code by component
-    - plugins to handle repetitive tasks
-    - code reuse via `includes` or `require`s
-    - templating/loops can generate markup
+- website copy can be stored outside of `html` markup for easy updating
+- the template loops minimize repetitive typing
+- easily group source code by component
