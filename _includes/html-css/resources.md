@@ -1,4 +1,6 @@
-### Libraries used
+### Libraries &amp; technologies used
 
-- [critical.css](//github.com/addyosmani/critical)
-- [Jeckyll](//jekyllrb.com/)
+- [Browsersync](//browsersync.io/)
+- [Critical](//github.com/addyosmani/critical)
+- [Copy](//github.com/jonschlinkert/copy)
+- [http-server](//github.com/indexzero/http-server#readme)
