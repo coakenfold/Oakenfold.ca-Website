@@ -4,7 +4,7 @@ Visitor’s expectations of their online experience are  are constantly evolving
 
 I developed, prototyped, and refined the frontend code for [Fyndit.com](//fyndit.com/wanted_found). Key features and deliverables include:
 
-- Html markup
+- HTML markup
 - CSS styling
 - A 'scripting only' CSS class name, e.g.: `.js-*`. No `.css` styles attached to those classes. Useful for:
    - initializing components
