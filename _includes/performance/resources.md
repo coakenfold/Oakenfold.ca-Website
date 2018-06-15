@@ -4,12 +4,12 @@
 
 
 ### Results
-- Cable, 1st load, desktop device:
-    - [Oakenfold.ca - html/css](//www.webpagetest.org/result/180614_ZY_0fa370f9817e0e88d79b51704aa76082/)
-    - [FyndIt](//www.webpagetest.org/result/180606_81_ebcc08448ba1ad156c1242ff762eee04/)
 - Slow 3G, 1st load, mid-tier mobile device:
     - [Oakenfold.ca - html/css](//www.webpagetest.org/result/180614_05_424f6d40f4591afc32d5548729e33f17/)
     - [FyndIt](//www.webpagetest.org/result/180523_8H_0c5289bf762d4c72c14a09f2c7129f4d/)
+- Cable, 1st load, desktop device:
+    - [Oakenfold.ca - html/css](//www.webpagetest.org/result/180614_ZY_0fa370f9817e0e88d79b51704aa76082/)
+    - [FyndIt](//www.webpagetest.org/result/180606_81_ebcc08448ba1ad156c1242ff762eee04/)
 - [Fyndit V2 web performance results. Compared against V1, Amazon, Twitter, Reddit](//docs.google.com/spreadsheets/d/e/2PACX-1vSnScGMiZrGOEsZdyl-XyLQP16C3EAH2H0RW0LrAT-Nfouzm5GL7shK9ILnro-87gE9GMUP3nA_jXy1/pubhtml)
 
 ### Articles
