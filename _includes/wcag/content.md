@@ -4,6 +4,8 @@ Accessibility is increasingly important and often overlooked.  It is a net benef
 
 Legal action in the United States has recently increased over inaccessible websites.
 
+<hr class="hr-spacer" />
+
 [Animikii](//animikii.com) asked me to update and improve an interactive timeline feature. The key deliverables were:
 
 - small screen compatibility

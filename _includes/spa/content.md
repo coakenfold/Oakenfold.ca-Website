@@ -2,6 +2,8 @@
 
 Visitor’s expectations of their online experience are constantly evolving. Single Page Applications provide a sophisticated and seamless website experience that feels like a native application. A user interface is an extension of brand and differentiates an organization from their competitors.
 
+<hr class="hr-spacer" />
+
 I developed, prototyped, and refined the frontend code for [Fyndit.com](//fyndit.com/wanted_found). Key features and deliverables include:
 
 - HTML markup
