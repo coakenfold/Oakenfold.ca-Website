@@ -6,7 +6,7 @@ Visitor’s expectations of their online experience are constantly evolving. Sin
 
 <h3 class='u-visually-hidden'>Key features and deliverables</h3>
 
-I developed, prototyped, and refined the frontend code for [Fyndit.com](//fyndit.com/wanted_found). Key features and deliverables include:
+I developed, prototyped, and refined the front end code for [Fyndit.com](//fyndit.com/wanted_found). Key features and deliverables include:
 
 - HTML markup
 - CSS styling

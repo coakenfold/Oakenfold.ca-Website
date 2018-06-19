@@ -1,6 +1,6 @@
 ## Work Philosophy
 
-Frontend Web Developer:  friendly, reliable, future-focused & committed to delivering as part of a team or independently. Holistic, advanced, understanding of the challenges, factors that play a part in website development. Dedicated to innovation, problem-solving and learning.
+Front end web developer: friendly, reliable, future-focused & committed to delivering as part of a team or independently. Holistic, advanced, understanding of the challenges, factors that play a part in website development. Dedicated to innovation, problem-solving and learning.
 
 ## Experience
 
