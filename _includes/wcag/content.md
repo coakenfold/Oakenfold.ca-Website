@@ -17,3 +17,4 @@ Legal action in the United States has recently increased over inaccessible websi
    - data feed into the [TimelineJS3](//timeline.knightlab.com/) plugin
    - text for WCAG text alternative
 - used semantically appropriate markup, and aria labels
+- tested with the Web Accessibility Evaluation Tool (WAVE)
