@@ -33,17 +33,17 @@ permalink: css/screen-medium.css
         margin-bottom: 0;
     }
 /* J
-*/
-.jump-top a {
-    position: relative;
-    left: -6px;
-}
-.jump-top--alternate {
-    float: none;
-}
+======================================== */
+    .jump-top a {
+        position: relative;
+        left: -6px;
+    }
+    .jump-top--alternate {
+        float: none;
+    }
 /* T
-*/
-.toggle-button--aside:focus {
-    left: -19px;
-}
+======================================== */
+    .toggle-button--aside:focus {
+        left: -19px;
+    }
 }

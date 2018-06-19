@@ -17,7 +17,7 @@ body {
     min-height: 100vh;
     font-size: 16px;
     -webkit-font-smoothing: antialiased;
-    background-color: rgba(0, 0, 0, 0.05);
+    background-color: #f7f7f7;
 }
 ::selection {
     background: #ecb72f;
@@ -147,7 +147,7 @@ ul ul {
     color: rgba(0,0,0,0.9);
     font-weight: 600;
     border: 0;
-    box-shadow: 0;
+    box-shadow: none;
     text-decoration: none;
 }
 
@@ -230,7 +230,7 @@ ul ul {
 }
 .card--contact:target {
     background-color: transparent;
-    background-image: transparent;
+    background-image: none;
     padding: 24px;
     box-shadow: none;
     border: 0;
@@ -599,17 +599,6 @@ ul ul {
     margin: 0 auto;
     max-width: 75%;
 }
-
 .work__bio {
     padding: 12px;
-}
-.work__tags {
-    /*display: flex;
-    align-items: center;*/
-}
-.work__tags dd {
-    /*background-color: grey;
-    padding: 4px;
-    border: 1px solid black;
-    border-radius: 5px;*/
 }

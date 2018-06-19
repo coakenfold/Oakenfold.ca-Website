@@ -3,6 +3,7 @@ permalink: css/screen-small.css
 ---
 
 @media screen and (max-width: 500px) {
+
 /* Base, Utility
 ======================================== */
     footer {
@@ -87,12 +88,13 @@ permalink: css/screen-small.css
 
 /* T
 ======================================== */
-.toggle-label {
-    margin-left: 12px;
-}
-.toggle-button:focus {
-    left: -6px;
-}
+    .toggle-label {
+        margin-left: 12px;
+    }
+    .toggle-button:focus {
+        left: -6px;
+    }
+
 /* W
 ======================================== */
     .work {
