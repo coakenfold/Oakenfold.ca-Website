@@ -10,10 +10,11 @@ In 2014, I branched out to create the small, but mighty, corporation Oakenfold E
 
 Here are some of the things I bring to the table:
 
-- Success working remotely with early stage startups (in the USA)
-- Developing and refining features in consultation with project founders and stakeholders
-- Contributing features and cleaning up pre-existing codebases
 - Delivering sites from alpha > beta > production
-- Incorporating new technologies into projects
+- Developing and refining features in consultation with project founders and stakeholders
+- Contributing new UI/UX features to pre-existing or blank slate codebases
+- Success incorporating new technologies into projects
+- Success working remotely with early stage startups
+
 
 I am committed to continuous learning.  Currently, I am passionate about [React](//reactjs.org), [web page performance](#perf), and [accessibility](#wcag).

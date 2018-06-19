@@ -1,6 +1,6 @@
 ## Static Site Generators
 
-[GatsbyJS](//www.gatsbyjs.org) is a React based static site generator. I successfully developed a [large single page site](//watchmojo.com/advertise) using GatsbyJS for [WatchMojo](//watchmojo.com) .
+[GatsbyJS](//www.gatsbyjs.org) is a React based static site generator. I successfully developed a [large single page site using GatsbyJS](//watchmojo.com/advertise) for WatchMojo.
 
 <hr class="hr-spacer" />
 

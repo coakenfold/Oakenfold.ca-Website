@@ -1,4 +1,4 @@
-## Web Content Accessibility&nbsp;Guidelines
+## Web Content Accessibility Guidelines&nbsp;(WCAG)
 
 Accessibility is increasingly important and often overlooked.  It is a net benefit to provide access to more people.The more accessible and legible your content, the wider it can spread.
 
